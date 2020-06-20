@@ -1,13 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0 auto;
+	overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* HOME */
+
+.home-main {
+	background-image: url(https://www.newenglandinnsandresorts.com/sites/default/files/styles/2048/public/media-images/Jordan-Pond-Acadia-National-Park.jpg?itok=YaNtml2f);
+	margin: 0 auto;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+a {
+	text-decoration: none;
+	transition: 0.5s;
+	color: white;
+}
+
+a:hover {
+	color: black;
+}
+
+.home-title {
+	font-size: 4vmin;
+	font-family: 'Open Sans', sans-serif;
+	background: rgba(37, 15, 15, 0.459);
+	border-radius: 25px;
+
+	padding: 2%;
+	min-width: 50vw;
+	max-width: 65vw;
+}
+
+.home-title > *:hover {
+	transition: 1s;
+	color: rgb(253, 215, 143);
+}
+
+.home-title > h1 {
+	color: rgb(250, 182, 187);
+	margin-bottom: 0;
+	text-align: left;
+	border-bottom: 1px solid rgb(250, 182, 187);
+}
+
+.home-title > h2 {
+	margin-top: 0;
+	color: rgb(106, 198, 252);
+	font-size: 4vmin;
+	text-align: right;
+	/* border-top: 1px solid rgb(106, 198, 252); */
+	/* text-decoration: overline; */
+}
+
+/* OPTIONAL FOOTER */
+
+.home-main > footer {
+	background-color: rgb(236, 181, 149);
+	position: fixed;
+	width: 100vw;
+	bottom: 0;
+	padding: 1vh 0;
+	text-align: center;
+	display: none;
+}
+
+.home-caption {
+	color: white;
+	font-family: arial;
+	font-weight: 400;
+	font-size: 2.5rem;
+	/* margin: 2vmin; */
+	min-width: 60vh;
+}
+
+.stylish,
+.modern,
+.functional {
+	color: rgb(98, 151, 211);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2rem;
+	padding: 0 0.5vmin;
+	font-weight: 800;
+	transition: 1s;
+}
+
+.stylish:hover,
+.modern:hover,
+.functional:hover {
+	color: rgb(99, 62, 62);
+}
+
+.modern {
+	color: rgba(125, 125, 255, 0.678);
+}
+
+.functional {
+	color: rgba(19, 22, 197, 0.466);
+}
+
+/* NAV */
+
+.nav-container {
+	/* margin: 0 auto; */
+	background: rgb(236, 181, 149);
+	min-height: 5vh;
+	padding: 0.5vmin;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+.nav-container > * {
+	font-size: 3vmin;
+	text-align: center;
+}
+
+.nav-left {
+	list-style: none;
+	display: flex;
+}
+
+.nav-left > * {
+	padding: 0 1.5vmin;
+}
+
+.nav-right {
+	list-style: none;
+	display: flex;
+}
+.nav-right > * {
+	padding: 0 2vmin;
+	font-size: 3vmin;
+}
+
+@media (max-width: 750px) {
+	.home-title {
+		font-size: 1.5rem;
+	}
+	.home-caption {
+		font-size: 1rem;
+	}
+	.nav-container > * {
+		font-size: 0.5rem;
+	}
 }
