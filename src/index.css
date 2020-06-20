@@ -38,7 +38,8 @@ a:hover {
 
 	padding: 2%;
 	min-width: 50vw;
-	max-width: 65vw;
+  max-width: 65vw;
+  margin-bottom: 4%;
 }
 
 .home-title > *:hover {
