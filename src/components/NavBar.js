@@ -20,7 +20,10 @@ const NavBar = () => {
 				</li>
 			</ul>
 			<ul className='nav-right'>
-				<a href='https://github.com/billyhk'>
+				<a
+					href='https://github.com/billyhk'
+					target='_blank'
+					rel='noopener noreferrer'>
 					<li>
 						<FaGithub />
 					</li>

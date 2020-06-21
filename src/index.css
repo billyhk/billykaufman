@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Raleway&family=Ubuntu&display=swap');
 
 body {
 	margin: 0 auto;
-	overflow: hidden;
+	font-family: 'Open Sans', sans-serif;
 }
 
 /* HOME */
 
 .home-main {
+	/* overflow: hidden; */
 	background-image: url(https://www.newenglandinnsandresorts.com/sites/default/files/styles/2048/public/media-images/Jordan-Pond-Acadia-National-Park.jpg?itok=YaNtml2f);
 	margin: 0 auto;
 	height: 100vh;
@@ -32,14 +33,13 @@ a:hover {
 
 .home-title {
 	font-size: 4vmin;
-	font-family: 'Open Sans', sans-serif;
 	background: rgba(37, 15, 15, 0.459);
 	border-radius: 25px;
 
 	padding: 2%;
 	min-width: 50vw;
-  max-width: 65vw;
-  margin-bottom: 4%;
+	max-width: 65vw;
+	margin-bottom: 4%;
 }
 
 .home-title > *:hover {
@@ -61,52 +61,6 @@ a:hover {
 	text-align: right;
 	/* border-top: 1px solid rgb(106, 198, 252); */
 	/* text-decoration: overline; */
-}
-
-/* OPTIONAL FOOTER */
-
-.home-main > footer {
-	background-color: rgb(236, 181, 149);
-	position: fixed;
-	width: 100vw;
-	bottom: 0;
-	padding: 1vh 0;
-	text-align: center;
-	display: none;
-}
-
-.home-caption {
-	color: white;
-	font-family: arial;
-	font-weight: 400;
-	font-size: 2.5rem;
-	/* margin: 2vmin; */
-	min-width: 60vh;
-}
-
-.stylish,
-.modern,
-.functional {
-	color: rgb(98, 151, 211);
-	font-family: 'Open Sans', sans-serif;
-	font-size: 2rem;
-	padding: 0 0.5vmin;
-	font-weight: 800;
-	transition: 1s;
-}
-
-.stylish:hover,
-.modern:hover,
-.functional:hover {
-	color: rgb(99, 62, 62);
-}
-
-.modern {
-	color: rgba(125, 125, 255, 0.678);
-}
-
-.functional {
-	color: rgba(19, 22, 197, 0.466);
 }
 
 /* NAV */
@@ -158,4 +112,123 @@ a:hover {
 	.nav-container > * {
 		font-size: 0.5rem;
 	}
+}
+
+/* ABOUT */
+
+/* OPTIONAL FOOTER */
+
+.about-main {
+	background: rgba(252, 232, 232, 0.719);
+	margin: 0 auto;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	padding: 1vh;
+	font-size: 1.5rem;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+.about-heading {
+	text-align: center;
+	border-bottom: 2px solid black;
+	margin: 0 20%;
+}
+
+.about-caption {
+	color: black;
+	font-weight: 400;
+	justify-content: space-evenly;
+}
+
+.stylish,
+.modern,
+.functional {
+	color: rgb(98, 151, 211);
+	padding: 0 0.5vmin;
+	font-weight: 800;
+	transition: 1s;
+}
+
+.stylish:hover,
+.modern:hover,
+.functional:hover {
+	color: rgb(99, 62, 62);
+}
+
+.modern {
+	color: rgba(125, 125, 255, 0.678);
+}
+
+.functional {
+	color: rgba(19, 22, 197, 0.466);
+}
+
+.total-design {
+	text-transform: uppercase;
+	font-family: 'Krona One', sans-serif;
+	font-size: 1.2rem;
+	text-decoration: overline;
+	color: rgb(173, 59, 116);
+	transition: 0.5s;
+}
+
+.total-design:hover {
+	color: rgb(107, 96, 133);
+}
+
+.finest-details {
+	font-family: cursive;
+	letter-spacing: 0.1vmin;
+	color: rgb(226, 115, 115);
+	text-decoration: underline;
+	transition: 1s;
+}
+
+.finest-details:hover {
+	letter-spacing: 0.5vmin;
+	color: rgb(219, 144, 144);
+}
+
+.about-heading2 {
+	margin-top: 5%;
+	text-decoration: underline;
+	text-align: center;
+	letter-spacing: 0.5vmin;
+}
+
+.skills-list {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.skills-list li {
+	padding: 1vmin;
+	text-align: center;
+}
+
+.g-a-link {
+	color: red;
+}
+.g-a-link:hover {
+	color: rgba(255, 0, 0, 0.568);
+}
+
+.about-heading3 {
+	margin-top: 5%;
+	text-decoration: underline;
+	text-align: center;
+	letter-spacing: 0.2vmin;
+}
+
+.resume-link {
+	color: red;
+	font-size: 4rem;
+}
+
+.resume-link:hover {
+	color: rgba(255, 0, 0, 0.541);
 }
