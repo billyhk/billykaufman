@@ -15,9 +15,9 @@ const NavBar = () => {
 				<li>
 					<Link to='projects'>projects</Link>
 				</li>
-				<li>
+				{/* <li>
 					<Link to='contact'>contact</Link>
-				</li>
+				</li> */}
 			</ul>
 			<ul className='nav-right'>
 				<a
