@@ -15,7 +15,7 @@ const About = () => (
 				standard, from <span className='total-design'>total design</span> to the{' '}
 				<span className='finest-details'>finest details</span>.
 			</p>
-			<p>
+			<p className='about-caption'>
 				I studied software engineering at{' '}
 				<a
 					className='g-a-link'
@@ -52,7 +52,7 @@ const About = () => (
 			<h2 className='about-heading3'>Download My Resume</h2>
 			<a
 				className='resume-link'
-				href='https://drive.google.com/file/d/14hOkVc7KI_QagXbAhTF7P6cB2gm7feH7/view?usp=sharing'
+				href='https://drive.google.com/file/d/1vNIMtrtBbSc5WW4xl5CeVEhDGwEPG58V/view?usp=sharing'
 				target='_blank'
 				rel='noopener noreferrer'>
 				<FaFilePdf />

@@ -140,7 +140,8 @@ a:hover {
 .about-caption {
 	color: black;
 	font-weight: 400;
-	justify-content: space-evenly;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 .stylish,
