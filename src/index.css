@@ -3,15 +3,14 @@
 body {
 	margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
+	/* overflow: hidden; */
 }
 
 /* HOME */
 
 .home-main {
-	/* overflow: hidden; */
 	background-image: url(https://www.newenglandinnsandresorts.com/sites/default/files/styles/2048/public/media-images/Jordan-Pond-Acadia-National-Park.jpg?itok=YaNtml2f);
-	margin: 0 auto;
-	height: 100vh;
+	min-height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -119,13 +118,14 @@ a:hover {
 /* OPTIONAL FOOTER */
 
 .about-main {
+	/* overflow: auto; */
 	background: rgba(252, 232, 232, 0.719);
 	margin: 0 auto;
-	height: 100vh;
+	min-height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
-	padding: 1vh;
+	padding: 4vh;
 	font-size: 1.5rem;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
@@ -134,7 +134,7 @@ a:hover {
 .about-heading {
 	text-align: center;
 	border-bottom: 2px solid black;
-	margin: 0 20%;
+	margin: 1vmin 20%;
 }
 
 .about-caption {
@@ -194,7 +194,7 @@ a:hover {
 }
 
 .about-heading2 {
-	margin-top: 5%;
+	margin-top: 8%;
 	text-decoration: underline;
 	text-align: center;
 	letter-spacing: 0.5vmin;
@@ -219,7 +219,7 @@ a:hover {
 }
 
 .about-heading3 {
-	margin-top: 5%;
+	margin-top: 8%;
 	text-decoration: underline;
 	text-align: center;
 	letter-spacing: 0.2vmin;
@@ -232,4 +232,67 @@ a:hover {
 
 .resume-link:hover {
 	color: rgba(255, 0, 0, 0.541);
+}
+
+/* Footer */
+
+.about-footer {
+	min-height: 5vh;
+
+	background: rgb(236, 181, 149);
+	color: white;
+	font-family: 'ubuntu';
+	font-size: 2.5vmin;
+	letter-spacing: 0.5vmin;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-footer p {
+	padding: 1vmin;
+	border: 2px solid white;
+	border-radius: 25px;
+	transition: 1s;
+}
+
+.about-footer p:hover {
+	color: black;
+}
+
+/* Projects */
+
+.project-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	margin: 0 20vw;
+}
+
+.project-description-list {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+
+	list-style: none;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: 'Times New Roman', Times, serif;
+	line-height: 30px;
+	width: 45vw;
+}
+
+.project-sublist {
+	font-size: 1rem;
+	line-height: 20px;
+	text-align: left;
+	text-justify: auto;
+}
+
+.project-description-list a {
+	color: rgba(0, 65, 139, 0.74);
+}
+
+.project-description-list a:hover {
+	color: rgba(0, 0, 139, 0.5);
 }

@@ -7,7 +7,7 @@ import NavBar from './components/NavBar';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
+// import Contact from './components/Contact';
 
 import './index.css';
 
@@ -19,8 +19,11 @@ function App() {
 				<Route exact path='/' component={Home} />
 				<Route exact path='/about' component={About} />
 				<Route exact path='/projects' component={Projects} />
-				<Route exact path='/contact' component={Contact} />
+				{/* <Route exact path='/contact' component={Contact} /> */}
 			</main>
+			<div className='about-footer'>
+				<p>{'\u00A9 Billy Kaufman 2020'}</p>
+			</div>
 		</>
 	);
 }
