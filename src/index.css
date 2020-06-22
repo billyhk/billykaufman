@@ -126,7 +126,7 @@ a:hover {
 	background-size: cover;
 	-webkit-background-size: cover;
 	padding: 4vh;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 }
@@ -140,57 +140,60 @@ a:hover {
 .about-caption {
 	color: black;
 	font-weight: 400;
-	text-align: justify;
-	text-justify: inter-word;
+	text-align: left;
+	font-family: 'ubuntu';
+	/* text-justify: inter-word; */
 }
 
 .stylish,
 .modern,
 .functional {
-	color: rgb(98, 151, 211);
+	/* color: rgb(98, 151, 211);
 	padding: 0 0.5vmin;
 	font-weight: 800;
-	transition: 1s;
+	transition: 1s; */
+}
+
+.modern {
+	/* color: rgba(125, 125, 255, 0.678); */
+}
+
+.functional {
+	/* color: rgba(19, 22, 197, 0.466); */
+}
+
+.total-design {
+	/* text-transform: uppercase;
+	font-family: 'Krona One', sans-serif;
+	font-size: 1.2rem;
+	text-decoration: overline;
+	color: rgb(173, 59, 116);
+	transition: 0.5s; */
 }
 
 .stylish:hover,
 .modern:hover,
 .functional:hover {
-	color: rgb(99, 62, 62);
+	/* color: rgb(99, 62, 62); */
 }
 
-.modern {
-	color: rgba(125, 125, 255, 0.678);
-}
 
-.functional {
-	color: rgba(19, 22, 197, 0.466);
-}
-
-.total-design {
-	text-transform: uppercase;
-	font-family: 'Krona One', sans-serif;
-	font-size: 1.2rem;
-	text-decoration: overline;
-	color: rgb(173, 59, 116);
-	transition: 0.5s;
-}
 
 .total-design:hover {
-	color: rgb(107, 96, 133);
+	/* color: rgb(107, 96, 133); */
 }
 
 .finest-details {
-	font-family: cursive;
+	/* font-family: cursive;
 	letter-spacing: 0.1vmin;
 	color: rgb(226, 115, 115);
 	text-decoration: underline;
-	transition: 1s;
+	transition: 1s; */
 }
 
 .finest-details:hover {
-	letter-spacing: 0.5vmin;
-	color: rgb(219, 144, 144);
+	/* letter-spacing: 0.5vmin;
+	color: rgb(219, 144, 144); */
 }
 
 .about-heading2 {
@@ -204,6 +207,7 @@ a:hover {
 	list-style: none;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	padding: 0;
 }
 
 .skills-list li {
@@ -270,9 +274,9 @@ a:hover {
 }
 
 .project-description-list {
-	display: grid;
-	justify-content: center;
-	align-items: center;
+	/* display: grid; */
+	/* justify-content: center;
+	align-items: center; */
 
 	list-style: none;
 	text-align: justify;
