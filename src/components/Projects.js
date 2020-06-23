@@ -30,9 +30,18 @@ const Projects = () => (
 							href='https://github.com/billyhk/statements_frontend/blob/master/README.md'
 							target='blank'
 							rel='noopener noreferrer'>
-							Github
+							Github (front-end)
 						</a>
 					</li>
+					<li>
+						<a
+							href='https://github.com/trental/statements_backend'
+							target='blank'
+							rel='noopener noreferrer'>
+							Github (back-end)
+						</a>
+					</li>
+
 					<li>Description:</li>
 					<ul className='project-sublist'>
 						<li>React/CSS/Bootstrap-React</li>
@@ -57,9 +66,18 @@ const Projects = () => (
 							href='https://github.com/billyhk/fire-frontend'
 							target='blank'
 							rel='noopener noreferrer'>
-							Github
+							Github (front-end)
 						</a>
 					</li>
+					<li>
+						<a
+							href='https://github.com/andresaugusto/FIRE-back'
+							target='blank'
+							rel='noopener noreferrer'>
+							Github (back-end)
+						</a>
+					</li>
+
 					<li>Description:</li>
 					<ul className='project-sublist'>
 						<li>MERN stack</li>

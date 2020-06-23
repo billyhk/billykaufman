@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Portfolio
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+This app provides a space to present my personal portfolio for prospective employers or anyone who is interested in learning more about me and my work.
 
-### `npm start`
+## Front-End Technologies
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React
+- React-router
+- CSS
+- React-icons
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Wireframes
 
-### `npm test`
+![Home Page](src/readme-images/home-wireframe-png.png)
+![About Me](src/readme-images/about-wireframe-png.png)
+![Projects](src/readme-images/projects-wireframe-png.png)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## User Stories
 
-### `npm run build`
+_**MVP User Stories**_
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- _As a user, I want to read about this particular engineer._
+- _As a user, I want to view this developer's projects and repositories._
+- _As a user, I want to easily contact this individual and download their resume._
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+_**Post MVP Stretch Goals**_
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- _As a user, I want to submit a contact form to reach out to this person through the website._
+- _As a user, I want to sign up and create an account to comment on posts._
 
-### `npm run eject`
+## Component Hierarchy
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![Component Tree](src/readme-images/component-tree-png.png)
