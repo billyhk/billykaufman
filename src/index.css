@@ -66,7 +66,9 @@ a:hover {
 
 .nav-container {
 	/* margin: 0 auto; */
-	background: rgb(236, 181, 149);
+	background: rgba(108, 159, 197, 0.671);
+
+	/* background: rgb(236, 181, 149); */
 	min-height: 5vh;
 	padding: 0.5vmin;
 
@@ -115,11 +117,16 @@ a:hover {
 
 /* ABOUT */
 
-/* OPTIONAL FOOTER */
-
 .about-main {
 	/* overflow: auto; */
-	background: rgba(252, 232, 232, 0.719);
+	/* background-image: url(https://i.ytimg.com/vi/zVXnoIoWu88/maxresdefault.jpg); */
+	/* min-height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover; */
+
+	/* background: rgba(252, 232, 232, 0.719); */
+	background: rgba(213, 227, 238, 0.863);
 	margin: 0 auto;
 	min-height: 100vh;
 	background-repeat: no-repeat;
@@ -137,11 +144,18 @@ a:hover {
 	margin: 1vmin 20%;
 }
 
+.about-caption-container {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
 .about-caption {
 	color: black;
 	font-weight: 400;
-	text-align: left;
+	text-align: center;
 	font-family: 'ubuntu';
+	max-width: 60vw;
 	/* text-justify: inter-word; */
 }
 
@@ -177,8 +191,6 @@ a:hover {
 	/* color: rgb(99, 62, 62); */
 }
 
-
-
 .total-design:hover {
 	/* color: rgb(107, 96, 133); */
 }
@@ -198,7 +210,7 @@ a:hover {
 
 .about-heading2 {
 	margin-top: 8%;
-	text-decoration: underline;
+	/* text-decoration: underline; */
 	text-align: center;
 	letter-spacing: 0.5vmin;
 }
@@ -216,7 +228,7 @@ a:hover {
 }
 
 .g-a-link {
-	color: red;
+	color: rgb(185, 71, 71);
 }
 .g-a-link:hover {
 	color: rgba(255, 0, 0, 0.568);
@@ -224,7 +236,7 @@ a:hover {
 
 .about-heading3 {
 	margin-top: 8%;
-	text-decoration: underline;
+	/* text-decoration: underline; */
 	text-align: center;
 	letter-spacing: 0.2vmin;
 }
@@ -235,7 +247,7 @@ a:hover {
 }
 
 .resume-link:hover {
-	color: rgba(255, 0, 0, 0.541);
+	color: rgba(255, 0, 0, 0.568);
 }
 
 /* Footer */
@@ -243,7 +255,7 @@ a:hover {
 .about-footer {
 	min-height: 5vh;
 
-	background: rgb(236, 181, 149);
+	background: rgba(108, 159, 197, 0.671);
 	color: white;
 	font-family: 'ubuntu';
 	font-size: 2.5vmin;
@@ -273,6 +285,10 @@ a:hover {
 	margin: 0 20vw;
 }
 
+.project-container img {
+	border: 1px solid black;
+}
+
 .project-description-list {
 	/* display: grid; */
 	/* justify-content: center;
@@ -299,4 +315,89 @@ a:hover {
 
 .project-description-list a:hover {
 	color: rgba(0, 0, 139, 0.5);
+}
+
+@media (min-width: 1500px) {
+	.project-description-list {
+		display: flex;
+		/* justify-content: space; */
+		/* align-items: auto; */
+
+		font-size: 1.5rem;
+		line-height: 6vmin;
+		margin: 0;
+	}
+
+	.project-description-list section {
+		min-width: 15vw;
+		padding-left: 6vmin;
+	}
+	.project-sublist {
+		font-size: 1.2rem;
+		line-height: 4vmin;
+	}
+}
+
+/* Contact */
+
+.contact-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-info {
+	list-style: none;
+	line-height: 2.5rem;
+	margin-top: 1rem;
+}
+
+.email {
+	color: rgb(40, 78, 114);
+	transition: 1s;
+}
+
+.email:hover {
+	color: black;
+}
+
+.contact-info a {
+	color: rgb(40, 78, 114);
+}
+
+.contact-info a:hover {
+	color: black;
+	font-weight: 800;
+}
+
+.contact-info li {
+	display: flex;
+	justify-content: space-between;
+	padding: 2px 1vmin;
+	border-radius: 2ch;
+}
+
+.contact-info li:hover {
+	background: rgb(221, 238, 255);
+}
+
+.contact-info li a {
+	/* text-align: left; */
+}
+
+.contact-key {
+	padding-right: 4vmin;
+	font-family: arial;
+	font-weight: 600;
+}
+
+
+@media (max-width: 600px) {
+	.contact-info li {
+		display: grid;
+		justify-content: center;
+	}
+	.contact-key {
+		padding: 0;
+	}
 }
