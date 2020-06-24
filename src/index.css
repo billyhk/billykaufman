@@ -317,6 +317,12 @@ a:hover {
 	color: rgba(0, 0, 139, 0.5);
 }
 
+@media screen and (min-width: 900px) and (max-width: 1500px) {
+	.project-container {
+		grid-template-columns: 25vw 1fr;
+	}
+}
+
 @media (min-width: 1500px) {
 	.project-description-list {
 		display: flex;
@@ -390,7 +396,6 @@ a:hover {
 	font-family: arial;
 	font-weight: 600;
 }
-
 
 @media (max-width: 600px) {
 	.contact-info li {
