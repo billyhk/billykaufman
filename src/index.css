@@ -309,6 +309,10 @@ a:hover {
 	text-justify: auto;
 }
 
+.project-sublist > * {
+	padding-top: 1vmin;
+}
+
 .project-description-list a {
 	color: rgba(0, 65, 139, 0.74);
 }
@@ -333,6 +337,10 @@ a:hover {
 		line-height: 6vmin;
 		margin: 0;
 	}
+	.project-sublist > * {
+	padding-top: 0;
+}
+
 
 	.project-description-list section {
 		min-width: 15vw;
