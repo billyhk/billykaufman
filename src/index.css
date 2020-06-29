@@ -103,6 +103,10 @@ a:hover {
 	font-size: 3vmin;
 }
 
+.active>* {
+	color: purple;
+}
+
 @media (max-width: 750px) {
 	.home-title {
 		font-size: 1.5rem;
