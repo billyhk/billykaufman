@@ -54,7 +54,7 @@ const Projects = () => (
 					</section>
 				</ul>
 			</div>
-			{/* <h2 className='about-heading2'>f i r e</h2>
+			<h2 className='about-heading2'>f i r e</h2>
 
 			<div className='project-container'>
 				<img alt='fire-home' src={fire} width='100%' />
@@ -98,7 +98,7 @@ const Projects = () => (
 					</section>
 				</ul>
 			</div>
- */}
+
 			<h2 className='about-heading2'>Recipe Searcher</h2>
 			<div className='project-container'>
 				<img alt='statements-financial-statement' src={recipes} width='100%' />
