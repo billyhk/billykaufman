@@ -31,32 +31,32 @@ const About = () => (
 					creative process of mastering a skill; this ambition carries over as a
 					programmer.
 				</p>
-			<h2 className='about-heading2'>Skills</h2>
-			<ul className='skills-list'>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>Bootstrap</li>
-				<li>React</li>
-				<li>Javascript</li>
-				<li>Node.js</li>
-				<li>Express</li>
-				<li>MongoDB</li>
-				<li>Mongoose</li>
-				<li>Passport.js</li>
-				<li>Git</li>
-				<li>Github</li>
-				<li>RESTful API</li>
-				<li>PostgresSQL</li>
-				<li>Python</li>
-				<li>Django</li>
-				<li>Heroku</li>
-				<li>Postman</li>
-			</ul>
+				<h2 className='about-heading2'>Skills</h2>
+				<ul className='skills-list'>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Bootstrap</li>
+					<li>React</li>
+					<li>Javascript</li>
+					<li>Node.js</li>
+					<li>Express</li>
+					<li>MongoDB</li>
+					<li>Mongoose</li>
+					<li>Passport.js</li>
+					<li>Git</li>
+					<li>Github</li>
+					<li>REST API</li>
+					<li>PostgreSQL</li>
+					<li>Python</li>
+					<li>Django</li>
+					<li>Heroku</li>
+					<li>Postman</li>
+				</ul>
 			</section>
 			<h2 className='about-heading3'>Download My Resume</h2>
 			<a
 				className='resume-link'
-				href='https://drive.google.com/file/d/11b-MAjb4Rfc6V05jWT0ChrurP47Gejam/view?usp=sharing'
+				href='https://drive.google.com/file/d/1s5XbDT54HtbABhuJKVt2ONNSjlOJwDik/view?usp=sharing'
 				target='_blank'
 				rel='noopener noreferrer'>
 				<FaFilePdf />
