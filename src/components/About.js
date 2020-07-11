@@ -56,7 +56,7 @@ const About = () => (
 			<h2 className='about-heading3'>Download My Resume</h2>
 			<a
 				className='resume-link'
-				href='https://drive.google.com/file/d/1s5XbDT54HtbABhuJKVt2ONNSjlOJwDik/view?usp=sharing'
+				href='https://drive.google.com/file/d/1q4E417ihxgG1kLGLEsMHXxbKZ6WC9T3_/view?usp=sharing'
 				target='_blank'
 				rel='noopener noreferrer'>
 				<FaFilePdf />
