@@ -289,6 +289,10 @@ a:hover {
 	margin: 0 20vw;
 }
 
+.about-heading-subtitle-click {
+	font-size: 2vmin;
+}
+
 .project-container img {
 	/* border: 1px solid black; */
 }

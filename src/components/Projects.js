@@ -13,12 +13,26 @@ const Projects = () => (
 		<h1 className='about-heading'>
 			My Projects
 			<br />
-			<small>(Click on images to view more)</small>
+			<span className='about-heading-subtitle-click'>
+				(Click on images to view more)
+			</span>
 		</h1>
 		<h2 className='about-heading2'>Joel Spector</h2>
 		<div className='project-container'>
 			{/* <img alt='statements-financial-statement' src={statements} width='100%' /> */}
-			<Gallery images={GalleryImages['jspect']} enableImageSelection={false} />{' '}
+			<div
+				style={{
+					display: 'block',
+					minHeight: '1px',
+					width: '300px',
+					margin: '0',
+					padding: '0',
+				}}>
+				<Gallery
+					images={GalleryImages['jspect']}
+					enableImageSelection={false}
+				/>{' '}
+			</div>
 			<ul className='project-description-list'>
 				<section>
 					{/* <li>
@@ -60,10 +74,19 @@ const Projects = () => (
 		<h2 className='about-heading2'>Statements</h2>
 		<div className='project-container'>
 			{/* <img alt='statements-financial-statement' src={statements} width='100%' /> */}
-			<Gallery
-				images={GalleryImages['statements']}
-				enableImageSelection={false}
-			/>{' '}
+			<div
+				style={{
+					display: 'block',
+					minHeight: '1px',
+					width: '300px',
+					margin: '0',
+					padding: '0',
+				}}>
+				<Gallery
+					images={GalleryImages['statements']}
+					enableImageSelection={false}
+				/>{' '}
+			</div>
 			<ul className='project-description-list'>
 				<section>
 					<li>
@@ -149,7 +172,19 @@ const Projects = () => (
 		<h2 className='about-heading2'>Recipe Searcher</h2>
 		<div className='project-container'>
 			{/* <img alt='statements-financial-statement' src={recipes} width='100%' /> */}{' '}
-			<Gallery images={GalleryImages['recipe']} enableImageSelection={false} />{' '}
+			<div
+				style={{
+					display: 'block',
+					minHeight: '1px',
+					width: '300px',
+					margin: '0',
+					padding: '0',
+				}}>
+				<Gallery
+					images={GalleryImages['recipe']}
+					enableImageSelection={false}
+				/>{' '}
+			</div>
 			<ul className='project-description-list'>
 				<section>
 					<li>
@@ -191,7 +226,16 @@ const Projects = () => (
 		<h2 className='about-heading2'>Simon</h2>
 		<div className='project-container'>
 			{/* <img alt='statements-financial-statement' src={simon} width='100%' /> */}{' '}
-			<Gallery images={GalleryImages['simon']} enableImageSelection={false} />{' '}
+			<div
+				style={{
+					display: 'block',
+					minHeight: '1px',
+					width: '300px',
+					margin: '0',
+					padding: '0',
+				}}>
+				<Gallery images={GalleryImages['simon']} enableImageSelection={false} />{' '}
+			</div>
 			<ul className='project-description-list'>
 				<section>
 					<li>
