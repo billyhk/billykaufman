@@ -3,13 +3,13 @@
 body {
 	margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
-	/* overflow: hidden; */
 }
 
 /* HOME */
 
 .home-main {
-	background-image: url(https://www.newenglandinnsandresorts.com/sites/default/files/styles/2048/public/media-images/Jordan-Pond-Acadia-National-Park.jpg?itok=YaNtml2f);
+	/* background-image: url(https://www.newenglandinnsandresorts.com/sites/default/files/styles/2048/public/media-images/Jordan-Pond-Acadia-National-Park.jpg?itok=YaNtml2f); */
+	background-image: url(https://images.fineartamerica.com/images-medium-large/calm-blue-water-disappearing-into-axiom-photographic.jpg);
 	min-height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -58,17 +58,12 @@ a:hover {
 	color: rgb(106, 198, 252);
 	font-size: 4vmin;
 	text-align: right;
-	/* border-top: 1px solid rgb(106, 198, 252); */
-	/* text-decoration: overline; */
 }
 
 /* NAV */
 
 .nav-container {
-	/* margin: 0 auto; */
-	background: rgba(108, 159, 197, 0.671);
-
-	/* background: rgb(236, 181, 149); */
+	background: rgb(100, 193, 245);
 	min-height: 5vh;
 	padding: 0.5vmin;
 
@@ -103,7 +98,7 @@ a:hover {
 	font-size: 3vmin;
 }
 
-.active>* {
+.active > * {
 	color: purple;
 }
 
@@ -214,7 +209,6 @@ a:hover {
 
 .about-heading2 {
 	margin-top: 8%;
-	/* text-decoration: underline; */
 	text-align: center;
 	letter-spacing: 0.5vmin;
 }
@@ -240,7 +234,6 @@ a:hover {
 
 .about-heading3 {
 	margin-top: 8%;
-	/* text-decoration: underline; */
 	text-align: center;
 	letter-spacing: 0.2vmin;
 }
@@ -259,7 +252,7 @@ a:hover {
 .about-footer {
 	min-height: 5vh;
 
-	background: rgba(108, 159, 197, 0.671);
+	background: rgb(3, 97, 163);
 	color: white;
 	font-family: 'ubuntu';
 	font-size: 2.5vmin;
@@ -278,30 +271,29 @@ a:hover {
 }
 
 .about-footer p:hover {
-	color: black;
+	color: rgb(236, 139, 139);
+	border-color: rgba(219, 169, 169, 0.664);
 }
 
 /* Projects */
 
 .project-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-	margin: 0 20vw;
+	display: flex;
+	grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+	margin: 0 15%;
+	font-size: 1rem;
+}
+
+.project-container div {
+	display: flex;
+	justify-content: center;
 }
 
 .about-heading-subtitle-click {
-	font-size: 2vmin;
-}
-
-.project-container img {
-	/* border: 1px solid black; */
+	font-size: 0.75rem;
 }
 
 .project-description-list {
-	/* display: grid; */
-	/* justify-content: center;
-	align-items: center; */
-
 	list-style: none;
 	text-align: justify;
 	text-justify: inter-word;
@@ -329,26 +321,24 @@ a:hover {
 	color: rgba(0, 0, 139, 0.5);
 }
 
-@media screen and (min-width: 900px) and (max-width: 1500px) {
-	.project-container {
-		grid-template-columns: 25vw 1fr;
-	}
-}
 
 @media (min-width: 1500px) {
 	.project-description-list {
 		display: flex;
-		/* justify-content: space; */
-		/* align-items: auto; */
-
 		font-size: 1.5rem;
-		line-height: 6vmin;
+		line-height: auto;
 		margin: 0;
+		text-align: left;
 	}
-	.project-sublist > * {
-	padding-top: 0;
-}
+	.project-description-list * {
+		display: block;
+		margin: 1rem 0;
+		text-align: left;
+	}
 
+	.project-sublist > * {
+		padding-top: 0;
+	}
 
 	.project-description-list section {
 		min-width: 15vw;
@@ -376,11 +366,12 @@ a:hover {
 
 .email {
 	color: rgb(40, 78, 114);
-	transition: 1s;
+	transition: 0.5s;
 }
 
 .email:hover {
 	color: black;
+	transition: 0.5s;
 }
 
 .contact-info a {
@@ -388,6 +379,7 @@ a:hover {
 }
 
 .contact-info a:hover {
+	transition: 0.5s;
 	color: black;
 	font-weight: 800;
 }
@@ -395,16 +387,13 @@ a:hover {
 .contact-info li {
 	display: flex;
 	justify-content: space-between;
-	padding: 2px 1vmin;
+	padding: 1vmin;
 	border-radius: 2ch;
 }
 
 .contact-info li:hover {
-	background: rgb(221, 238, 255);
-}
-
-.contact-info li a {
-	/* text-align: left; */
+	transition: 0.5s;
+	background: rgba(172, 205, 238, 0.815);
 }
 
 .contact-key {
@@ -413,10 +402,15 @@ a:hover {
 	font-weight: 600;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+	.project-container {
+		display: grid;
+	}
+
 	.contact-info li {
 		display: grid;
 		justify-content: center;
+		align-items: center;
 	}
 	.contact-key {
 		padding: 0;

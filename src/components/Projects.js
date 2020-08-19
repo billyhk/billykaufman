@@ -8,123 +8,117 @@ import Gallery from 'react-grid-gallery';
 // import recipes from '../component-images/recipe-searcher.png';
 // import simon from '../component-images/simon.png';
 
-const Projects = () => (
-	<main className='about-main'>
-		<h1 className='about-heading'>
-			My Projects
-			<br />
-			<span className='about-heading-subtitle-click'>
-				(Click on images to view more)
-			</span>
-		</h1>
-		<h2 className='about-heading2'>Joel Spector</h2>
-		<div className='project-container'>
-			{/* <img alt='statements-financial-statement' src={statements} width='100%' /> */}
-			<div
-				style={{
-					display: 'block',
-					minHeight: '1px',
-					width: '300px',
-					margin: '0',
-					padding: '0',
-				}}>
-				<Gallery
-					images={GalleryImages['jspect']}
-					enableImageSelection={false}
-				/>{' '}
-			</div>
-			<ul className='project-description-list'>
-				<section>
-					{/* <li>
-						<a
-							href='https://statements-frontend.herokuapp.com'
-							target='blank'
-							rel='noopener noreferrer'>
-							Deployed URL
-						</a>
-					</li> */}
-					<li>
-						<a
-							href='https://github.com/billyhk/joel-spector-frontend'
-							target='blank'
-							rel='noopener noreferrer'>
-							Github (front-end)
-						</a>
-					</li>
-					<li>
-						<a
-							href='https://github.com/spectorari/jspect-backend'
-							target='blank'
-							rel='noopener noreferrer'>
-							Github (back-end)
-						</a>
-					</li>
-				</section>
-				<section>
-					<li>Description:</li>
-					<ul className='project-sublist'>
-						<li>React/CSS/Material-Design-Bootstrap</li>
-						<li>Java Spring Boot / MySQL</li>
-						<li>Authentication with Spring Security / JWT</li>
-					</ul>
-				</section>
-			</ul>
-		</div>
+const Projects = () => {
 
-		<h2 className='about-heading2'>Statements</h2>
-		<div className='project-container'>
-			{/* <img alt='statements-financial-statement' src={statements} width='100%' /> */}
-			<div
-				style={{
+const galleryDivStyles = {
 					display: 'block',
 					minHeight: '1px',
 					width: '300px',
 					margin: '0',
 					padding: '0',
-				}}>
-				<Gallery
-					images={GalleryImages['statements']}
-					enableImageSelection={false}
-				/>{' '}
+				}
+
+	return (
+		<main className='about-main'>
+			<h1 className='about-heading'>
+				My Projects
+				<br />
+				<span className='about-heading-subtitle-click'>
+					(Click on images to view more)
+				</span>
+			</h1>
+			<h2 className='about-heading2'>Joel Spector</h2>
+			<div className='project-container'>
+				<div style={galleryDivStyles}>
+					<Gallery
+						images={GalleryImages['jspect']}
+						enableImageSelection={false}
+					/>{' '}
+				</div>
+				<ul className='project-description-list'>
+					<section>
+						<li>
+						<a
+							href='#'
+							target='blank'
+							rel='noopener noreferrer'>
+							Deployed Link Coming Soon!
+						</a>
+					</li>
+						<li>
+							<a
+								href='https://github.com/billyhk/joel-spector-frontend'
+								target='blank'
+								rel='noopener noreferrer'>
+								Github (front-end)
+							</a>
+						</li>
+						<li>
+							<a
+								href='https://github.com/spectorari/jspect-backend'
+								target='blank'
+								rel='noopener noreferrer'>
+								Github (back-end)
+							</a>
+						</li>
+					</section>
+					<section>
+						<li>Description:</li>
+						<ul className='project-sublist'>
+							<li>React / CSS / Material-Design-Bootstrap</li>
+							<li>Java Spring Boot / MySQL</li>
+							<li>Authentication with Spring Security / JWT</li>
+						</ul>
+					</section>
+				</ul>
 			</div>
-			<ul className='project-description-list'>
-				<section>
-					<li>
-						<a
-							href='https://statements-frontend.herokuapp.com'
-							target='blank'
-							rel='noopener noreferrer'>
-							Deployed URL
-						</a>
-					</li>
-					<li>
-						<a
-							href='https://github.com/billyhk/statements_frontend/blob/master/README.md'
-							target='blank'
-							rel='noopener noreferrer'>
-							Github (front-end)
-						</a>
-					</li>
-					<li>
-						<a
-							href='https://github.com/trental/statements_backend'
-							target='blank'
-							rel='noopener noreferrer'>
-							Github (back-end)
-						</a>
-					</li>
-				</section>
-				<section>
-					<li>Description:</li>
-					<ul className='project-sublist'>
-						<li>React/CSS/Bootstrap-React</li>
-						<li>Python/Django/PostgresSQL</li>
-						<li>Authentication with JWT</li>
-					</ul>
-				</section>
-			</ul>
-		</div>
-		{/* <h2 className='about-heading2'>f i r e</h2>
+
+			<h2 className='about-heading2'>Statements</h2>
+			<div className='project-container'>
+				<div style={galleryDivStyles}>
+					<Gallery
+						images={GalleryImages['statements']}
+						enableImageSelection={false}
+					/>{' '}
+				</div>
+				<ul className='project-description-list'>
+					<section>
+						<li>
+							<a
+								href='https://statements-frontend.herokuapp.com'
+								target='blank'
+								rel='noopener noreferrer'>
+								Deployed URL
+							</a>
+						</li>
+						<li>
+							<a
+								href='https://github.com/billyhk/statements_frontend/blob/master/README.md'
+								target='blank'
+								rel='noopener noreferrer'>
+								Github (front-end)
+							</a>
+						</li>
+						<li>
+							<a
+								href='https://github.com/trental/statements_backend'
+								target='blank'
+								rel='noopener noreferrer'>
+								Github (back-end)
+							</a>
+						</li>
+					</section>
+					<section>
+						<li>Description:</li>
+						<ul className='project-sublist'>
+							<li>React / CSS / Bootstrap-React</li>
+							<li>Python / Django / PostgresSQL</li>
+							<li>Authentication with JWT</li>
+						</ul>
+					</section>
+				</ul>
+			</div>
+			{/* <h2 className='about-heading2'>f i r e</h2>
 
 		<div className='project-container'>
 			<img alt='fire-home' src={fire} width='100%' />
@@ -169,103 +163,120 @@ const Projects = () => (
 			</ul>
 		</div> */}
 
-		<h2 className='about-heading2'>Recipe Searcher</h2>
-		<div className='project-container'>
-			{/* <img alt='statements-financial-statement' src={recipes} width='100%' /> */}{' '}
-			<div
-				style={{
-					display: 'block',
-					minHeight: '1px',
-					width: '300px',
-					margin: '0',
-					padding: '0',
-				}}>
-				<Gallery
-					images={GalleryImages['recipe']}
-					enableImageSelection={false}
-				/>{' '}
-			</div>
-			<ul className='project-description-list'>
-				<section>
-					<li>
-						<a
-							href='https://recipe-searcher-2020.herokuapp.com'
-							target='_blank'
-							rel='noopener noreferrer'>
-							Deployed URL
-						</a>
-					</li>
-					<li>
-						<a
-							href='https://github.com/billyhk/recipe-app'
-							target='blank'
-							rel='noopener noreferrer'>
-							Github
-						</a>
-					</li>
-				</section>
-				<section>
-					<li>Description:</li>
-					<ul className='project-sublist'>
-						<li>Built with React Hooks</li>
+			<h2 className='about-heading2'>Recipe Searcher</h2>
+			<div className='project-container'>
+				<div style={galleryDivStyles}>
+					<Gallery
+						images={GalleryImages['recipe']}
+						enableImageSelection={false}
+					/>{' '}
+				</div>
+				<ul className='project-description-list'>
+					<section>
 						<li>
-							Utilized 3rd Party API:{' '}
 							<a
-								href='https://spoonacular.com/food-api'
-								target='blank'
+								href='https://recipe-searcher-2020.herokuapp.com'
+								target='_blank'
 								rel='noopener noreferrer'>
-								Spoonacular
+								Deployed URL
 							</a>
 						</li>
-						<li>Built with React-Router and Bootstrap stylings</li>
-					</ul>
-				</section>
-			</ul>
-		</div>
-
-		<h2 className='about-heading2'>Simon</h2>
-		<div className='project-container'>
-			{/* <img alt='statements-financial-statement' src={simon} width='100%' /> */}{' '}
-			<div
-				style={{
-					display: 'block',
-					minHeight: '1px',
-					width: '300px',
-					margin: '0',
-					padding: '0',
-				}}>
-				<Gallery images={GalleryImages['simon']} enableImageSelection={false} />{' '}
+						<li>
+							<a
+								href='https://github.com/billyhk/recipe-app'
+								target='blank'
+								rel='noopener noreferrer'>
+								Github
+							</a>
+						</li>
+					</section>
+					<section>
+						<li>Description:</li>
+						<ul className='project-sublist'>
+							<li>Built with React Hooks</li>
+							<li>
+								Utilized 3rd Party API:{' '}
+								<a
+									href='https://spoonacular.com/food-api'
+									target='blank'
+									rel='noopener noreferrer'>
+									Spoonacular
+								</a>
+							</li>
+							<li>Built Bootstrap stylings and React-Router </li>
+						</ul>
+					</section>
+				</ul>
 			</div>
-			<ul className='project-description-list'>
-				<section>
-					<li>
-						<a
-							href='https://simon-game-2020.herokuapp.com'
-							target='blank'
-							rel='noopener noreferrer'>
-							Deployed URL
-						</a>
-					</li>
-					<li>
-						<a
-							href='https://github.com/billyhk/simon-game'
-							target='blank'
-							rel='noopener noreferrer'>
-							Github
-						</a>
-					</li>
-				</section>
-				<section>
-					<li>Description:</li>
-					<ul className='project-sublist'>
-						<li>HTML5/CSS/Javacsript</li>
-						<li>Automated game engine</li>
-						<li>Sounds composed in Logic Pro / Audacity</li>
-					</ul>
-				</section>
-			</ul>
-		</div>
-	</main>
-);
+
+			<h2 className='about-heading2'>Simon</h2>
+			<div className='project-container'>
+				<div style={galleryDivStyles}>
+					<Gallery
+						images={GalleryImages['simon']}
+						enableImageSelection={false}
+					/>{' '}
+				</div>
+				<ul className='project-description-list'>
+					<section>
+						<li>
+							<a
+								href='https://simon-game-2020.herokuapp.com'
+								target='blank'
+								rel='noopener noreferrer'>
+								Deployed URL
+							</a>
+						</li>
+						<li>
+							<a
+								href='https://github.com/billyhk/simon-game'
+								target='blank'
+								rel='noopener noreferrer'>
+								Github
+							</a>
+						</li>
+					</section>
+					<section>
+						<li>Description:</li>
+						<ul className='project-sublist'>
+							<li>HTML5 / CSS3 / Javacsript</li>
+							<li>Generates and stores random sequence to facilitate turn-based gameplay</li>
+							<li>Sounds composed in Logic Pro / Audacity</li>
+						</ul>
+					</section>
+				</ul>
+			</div>
+			<h2 className='about-heading2'>This Portfolio Page</h2>
+
+			<div className='project-container'>
+				<div style={galleryDivStyles}>
+					<Gallery
+						images={GalleryImages['portfolio']}
+						enableImageSelection={false}
+					/>{' '}
+				</div>
+				<ul className='project-description-list'>
+					<section>
+						<li>
+							<a
+								href='https://github.com/billyhk/billykaufman'
+								target='blank'
+								rel='noopener noreferrer'>
+								Github
+							</a>
+						</li>
+					</section>
+					<section>
+						<li>Description:</li>
+						<ul className='project-sublist'>
+							<li>React / CSS / React-Grid-Gallery</li>
+							<li>React-Router-Dom</li>
+						</ul>
+					</section>
+				</ul>
+			</div>
+		</main>
+	);
+};
 
 export default Projects;

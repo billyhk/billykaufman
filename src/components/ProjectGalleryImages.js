@@ -19,6 +19,9 @@ import recipe2 from '../component-images/project-images/recipe-searcher/recipe-d
 import simon1 from '../component-images/project-images/simon/simon-new-game.png';
 import simon2 from '../component-images/project-images/simon/simon-win-game.png';
 
+// PORTFOLIO
+import portfolio1 from '../component-images/project-images/portfolio/landing-page.png';
+
 export const GalleryImages = {
 	jspect: [
 		{ src: jspect1, thumbnail: jspect1 },
@@ -35,4 +38,5 @@ export const GalleryImages = {
 	],
 	recipe: [{ src: recipe1, thumbnail: recipe1 }, { src: recipe2 }],
 	simon: [{ src: simon1, thumbnail: simon1 }, { src: simon2 }],
+	portfolio: [{src: portfolio1, thumbnail: portfolio1}]
 };
