@@ -9,14 +9,13 @@ import Gallery from 'react-grid-gallery';
 // import simon from '../component-images/simon.png';
 
 const Projects = () => {
-
-const galleryDivStyles = {
-					display: 'block',
-					minHeight: '1px',
-					width: '300px',
-					margin: '0',
-					padding: '0',
-				}
+	const galleryDivStyles = {
+		display: 'block',
+		minHeight: '1px',
+		width: '300px',
+		margin: '0',
+		padding: '0',
+	};
 
 	return (
 		<main className='about-main'>
@@ -27,6 +26,49 @@ const galleryDivStyles = {
 					(Click on images to view more)
 				</span>
 			</h1>
+
+			<h2 className='about-heading2'>The Chamber Collective</h2>
+			<div className='project-container'>
+				<div style={galleryDivStyles}>
+					<Gallery
+						images={GalleryImages['nucalm']}
+						enableImageSelection={false}
+					/>{' '}
+				</div>
+				<ul className='project-description-list'>
+					<section>
+						<li>
+							<a
+								href='https://chambercollective-demo.herokuapp.com'
+								target='blank'
+								rel='noopener noreferrer'>
+								Deployed Link
+							</a>
+						</li>
+						<li>
+							<a
+								href='https://github.com/billyhk/chambercollective-promotional'
+								target='blank'
+								rel='noopener noreferrer'>
+								Github
+							</a>
+						</li>
+					</section>
+					<section>
+						<li>Description:</li>
+						<ul className='project-sublist'>
+							<li>React / SCSS / Router</li>
+							<li>
+								Utilized Hubspot API to collect visitors' name and email from
+								form-data
+							</li>
+							<li>
+								Media hosting with AWS / S3; dynamic resizing with Thumbor
+							</li>
+						</ul>
+					</section>
+				</ul>
+			</div>
 			<h2 className='about-heading2'>Joel Spector</h2>
 			<div className='project-container'>
 				<div style={galleryDivStyles}>
@@ -38,13 +80,10 @@ const galleryDivStyles = {
 				<ul className='project-description-list'>
 					<section>
 						<li>
-						<a
-							href='#'
-							target='blank'
-							rel='noopener noreferrer'>
-							Deployed Link Coming Soon!
-						</a>
-					</li>
+							<a href='#' target='blank' rel='noopener noreferrer'>
+								Deployed Link Coming Soon!
+							</a>
+						</li>
 						<li>
 							<a
 								href='https://github.com/billyhk/joel-spector-frontend'
@@ -112,7 +151,7 @@ const galleryDivStyles = {
 						<li>Description:</li>
 						<ul className='project-sublist'>
 							<li>React / CSS / Bootstrap-React</li>
-							<li>Python / Django / PostgresSQL</li>
+							<li>Python / Django / PostgreSQL</li>
 							<li>Authentication with JWT</li>
 						</ul>
 					</section>
@@ -240,7 +279,10 @@ const galleryDivStyles = {
 						<li>Description:</li>
 						<ul className='project-sublist'>
 							<li>HTML5 / CSS3 / Javacsript</li>
-							<li>Generates and stores random sequence to facilitate turn-based gameplay</li>
+							<li>
+								Generates and stores random sequence to facilitate turn-based
+								gameplay
+							</li>
 							<li>Sounds composed in Logic Pro / Audacity</li>
 						</ul>
 					</section>

@@ -1,10 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa';
 
 const NavBar = () => {
+	const [open, setOpen] = useState(false);
+
+	const toggleSide = () => {
+		setOpen(!open);
+	};
+
 	return (
 		<div className='nav-container'>
+			<p className='hamburger-icon' onClick={toggleSide}>
+				{!open ? '☰' : '×'}
+			</p>{' '}
+			<nav
+				className='side-nav'
+				id={open ? 'open' : 'closed'}
+				onClick={toggleSide}>
+				<div className='sidebar-links'>
+					<Link to='/'>home</Link>
+
+					<Link to='about'>about</Link>
+
+					<Link to='projects'>projects</Link>
+
+					<Link to='contact'>contact</Link>
+				</div>
+			</nav>
 			<ul className='nav-left'>
 				<li>
 					<Link to='/'>home</Link>

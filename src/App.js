@@ -22,7 +22,7 @@ function App() {
 				<Route exact path='/contact' component={Contact} />
 			</main>
 			<div className='about-footer'>
-				<p>{'\u00A9 Billy Kaufman 2020'}</p>
+				<p>{'\u00A9 Billy Kaufman 2021'}</p>
 			</div>
 		</>
 	);
