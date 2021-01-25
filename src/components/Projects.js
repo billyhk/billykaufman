@@ -39,10 +39,11 @@ const Projects = () => {
 					<section>
 						<li>
 							<a
-								href='https://chambercollective-demo.herokuapp.com'
+								// href='https://chambercollective-demo.herokuapp.com'
+								href='http://thechambercollective.co/'
 								target='blank'
 								rel='noopener noreferrer'>
-								Deployed Link
+								Live URL
 							</a>
 						</li>
 						<li>
