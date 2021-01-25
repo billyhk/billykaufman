@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa';
 
 const NavBar = () => {
@@ -19,30 +19,47 @@ const NavBar = () => {
 				id={open ? 'open' : 'closed'}
 				onClick={toggleSide}>
 				<div className='sidebar-links'>
-					<Link to='/'>home</Link>
+					<NavLink exact to='/' activeClassName='active'>
+						home
+					</NavLink>
 
-					<Link to='about'>about</Link>
+					<NavLink to='about' activeClassName='active'>
+						about
+					</NavLink>
 
-					<Link to='projects'>projects</Link>
+					<NavLink to='projects' activeClassName='active'>
+						projects
+					</NavLink>
 
-					<Link to='contact'>contact</Link>
+					<NavLink to='contact' activeClassName='active'>
+						contact
+					</NavLink>
 				</div>
 			</nav>
 			<ul className='nav-left'>
 				<li>
-					<Link to='/'>home</Link>
+					<NavLink exact to='/' activeClassName='active'>
+						home
+					</NavLink>
 				</li>
 				<li>
-					<Link to='about'>about</Link>
+					<NavLink to='about' activeClassName='active'>
+						about
+					</NavLink>
 				</li>
 				<li>
-					<Link to='projects'>projects</Link>
+					<NavLink to='projects' activeClassName='active'>
+						projects
+					</NavLink>
 				</li>
 				<li>
-					<Link to='contact'>contact</Link>
+					<NavLink to='contact' activeClassName='active'>
+						contact
+					</NavLink>
 				</li>
 			</ul>
 			<ul className='nav-right'>
+				<p className='signature'>billy kaufman</p>
 				<a
 					href='https://github.com/billyhk'
 					target='_blank'

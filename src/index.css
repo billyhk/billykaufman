@@ -85,11 +85,11 @@ a:hover {
 	margin-left: 1vmin;
 	color: white;
 	display: none;
-	z-index: 2;
+	z-index: 3;
 }
 
 .hamburger-icon:hover {
-	color: blue;
+	color: rgb(176, 176, 245);
 }
 
 .side-nav {
@@ -98,6 +98,7 @@ a:hover {
 	width: 100%;
 	position: absolute;
 	transition: 1s;
+	z-index: 2;
 }
 #closed {
 	transform: translateX(-100%);
@@ -126,7 +127,7 @@ a:hover {
 	color: rgb(176, 176, 245);
 }
 
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 1000px) {
 	.hamburger-icon,
 	.side-nav {
 		display: unset;
@@ -139,6 +140,16 @@ a:hover {
 .nav-container > * {
 	font-size: 3vmin;
 	text-align: center;
+}
+.signature {
+	text-transform: lowercase;
+	padding: 0;
+	margin: 0;
+	transition: 0.65s;
+}
+
+.signature:hover {
+	color: white;
 }
 
 .nav-left {
@@ -159,8 +170,8 @@ a:hover {
 	font-size: 3vmin;
 }
 
-.active > * {
-	color: purple;
+.active {
+	color: rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 750px) {
