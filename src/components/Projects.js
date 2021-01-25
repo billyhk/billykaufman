@@ -81,9 +81,9 @@ const Projects = () => {
 				<ul className='project-description-list'>
 					<section>
 						<li>
-							<a href='#' target='blank' rel='noopener noreferrer'>
-								Deployed Link Coming Soon!
-							</a>
+							{/* <a href='#' target='blank' rel='noopener noreferrer'> */}
+								 * Deployed Link Coming Soon! *
+							{/* </a> */}
 						</li>
 						<li>
 							<a
