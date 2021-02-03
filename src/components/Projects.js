@@ -43,7 +43,7 @@ const Projects = () => {
 								// href='http://thechambercollective.co/'
 								target='blank'
 								rel='noopener noreferrer'>
-								Live URL
+								Deployed URL
 							</a>
 						</li>
 						<li>
