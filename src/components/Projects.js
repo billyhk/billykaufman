@@ -26,6 +26,39 @@ const Projects = () => {
 					(Click on images to view more)
 				</span>
 			</h1>
+			<h2 className='about-heading2'>The Finishing Gourmet</h2>
+			<div className='project-container'>
+				<div style={galleryDivStyles}>
+					<Gallery
+						images={GalleryImages['thefinishinggourmet']}
+						enableImageSelection={false}
+					/>{' '}
+				</div>
+				<ul className='project-description-list'>
+					<section>
+						<li>
+							<a
+								href='http://thefinishinggourmet.gretrix.com'
+								target='blank'
+								rel='noopener noreferrer'>
+								Deployed Demo URL
+							</a>
+						</li>
+					</section>
+					<section>
+						<li>Description:</li>
+						<ul className='project-sublist'>
+							<li>CSS / JavaScript / PHP</li>
+							<li>
+								Wordpress migration for Los Angeles high-class eats distributor, The Finishing Gourmet
+							</li>
+							<li>
+								eCommerce functionality with Wordpress/Divi + WooCommerce
+							</li>
+						</ul>
+					</section>
+				</ul>
+			</div>
 
 			<h2 className='about-heading2'>The Chamber Collective</h2>
 			<div className='project-container'>
@@ -81,9 +114,8 @@ const Projects = () => {
 				<ul className='project-description-list'>
 					<section>
 						<li>
-							{/* <a href='#' target='blank' rel='noopener noreferrer'> */}
-								 * Deployed Link Coming Soon! *
-							{/* </a> */}
+							{/* <a href='#' target='blank' rel='noopener noreferrer'> */}*
+							Deployed Link Coming Soon! *{/* </a> */}
 						</li>
 						<li>
 							<a
