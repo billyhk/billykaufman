@@ -27,36 +27,39 @@ const About = () => (
 						General Assembly
 					</a>
 					, and have a background in music with international performance
-					experience. As an orchestral percussionist, I have enjoyed the
-					creative process of mastering a skill; this ambition carries over as a
-					programmer.
+					experience and a{' '}
+					<a
+						className='doctorate'
+						href='https://scholarship.miami.edu/esploro/outputs/doctoral/Utilizing-Select-Project-Management-Techniques-to-Excel-in-Professional-Percussion-Auditions/991031524184102976'>
+						doctorate
+					</a>
+					! As an orchestral percussionist, I have enjoyed the creative process
+					of mastering a skill. I hold the same ambition as a programmer.
 				</p>
 				<h2 className='about-heading2'>Skills</h2>
 				<ul className='skills-list'>
 					<li>HTML</li>
-					<li>CSS</li>
-					<li>Bootstrap</li>
+					<li>CSS / SASS</li>
+					<li>JavaScript</li>
 					<li>React</li>
-					<li>Javascript</li>
-					<li>Node.js</li>
+					<li>PHP</li>
+					<li>Node</li>
 					<li>Express</li>
 					<li>MongoDB</li>
-					<li>Mongoose</li>
-					<li>Passport.js</li>
-					<li>Git</li>
-					<li>Github</li>
-					<li>REST API</li>
-					<li>PostgreSQL</li>
+					<li>Git / Github</li>
+					<li>SQL</li>
 					<li>Python</li>
 					<li>Django</li>
-					<li>Heroku</li>
-					<li>Postman</li>
+					<li>WordPress / Divi</li>
+					<li>Google Analytics</li>
+					<li>Google Tag Manager</li>
+					<li>Amazon Web Services</li>
 				</ul>
 			</section>
 			<h2 className='about-heading3'>Download My Resume</h2>
 			<a
 				className='resume-link'
-				href='https://drive.google.com/file/d/1azGZaL9zw-A8LBcKHAgIhVsI-H9A-t0P/view?usp=sharing'
+				href='https://drive.google.com/file/d/1QEKfttW5ekKLwRv7JaKYoN40h6G4XFy9/view?usp=sharing'
 				target='_blank'
 				rel='noopener noreferrer'>
 				<FaFilePdf />

@@ -50,10 +50,10 @@ const Projects = () => {
 						<ul className='project-sublist'>
 							<li>CSS / JavaScript / PHP</li>
 							<li>
-								Wordpress migration for Los Angeles high-class eats distributor, The Finishing Gourmet
+								WordPress migration for Los Angeles high-class eats distributor, The Finishing Gourmet
 							</li>
 							<li>
-								eCommerce functionality with Wordpress/Divi + WooCommerce
+								eCommerce functionality with WordPress/Divi + WooCommerce
 							</li>
 						</ul>
 					</section>
