@@ -50,7 +50,7 @@ const About = () => (
 					<li>SQL</li>
 					<li>Python</li>
 					<li>Django</li>
-					<li>WordPress / Divi</li>
+					<li>WordPress</li>
 					<li>Google Analytics</li>
 					<li>Google Tag Manager</li>
 					<li>Amazon Web Services</li>
@@ -59,7 +59,7 @@ const About = () => (
 			<h2 className='about-heading3'>Download My Resume</h2>
 			<a
 				className='resume-link'
-				href='https://drive.google.com/file/d/1QEKfttW5ekKLwRv7JaKYoN40h6G4XFy9/view?usp=sharing'
+				href='https://drive.google.com/file/d/1GlmTgBXbwoDIYj3K_kiOMu444pk1Uo-u/view?usp=sharing'
 				target='_blank'
 				rel='noopener noreferrer'>
 				<FaFilePdf />

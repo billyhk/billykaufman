@@ -3,6 +3,26 @@ import { Link, NavLink } from 'react-router-dom';
 import { FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa';
 
 const NavBar = () => {
+	// STICKY HEADER
+	const debounce = (fn) => {
+		let frame;
+		return (...params) => {
+			if (frame) {
+				cancelAnimationFrame(frame);
+			}
+			frame = requestAnimationFrame(() => {
+				fn(...params);
+				console.log(...params);
+			});
+		};
+	};
+	const storeScroll = () => {
+		document.documentElement.dataset.scroll = window.scrollY;
+	};
+	document.addEventListener('scroll', debounce(storeScroll), { passive: true });
+	storeScroll();
+	// END STICKY HEADER
+
 	const [open, setOpen] = useState(false);
 
 	const toggleSide = () => {
