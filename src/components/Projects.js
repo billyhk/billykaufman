@@ -50,7 +50,7 @@ const Projects = () => {
 						<ul className='project-sublist'>
 							<li>CSS / JavaScript / PHP</li>
 							<li>
-								WordPress migration for Los Angeles high-class eats distributor, The Finishing Gourmet
+								WordPress migration for Los Angeles high-class eats distributor: <span style={{fontStyle: 'italic'}}>The Finishing Gourmet</span>
 							</li>
 							<li>
 								eCommerce functionality with WordPress/Divi + WooCommerce
@@ -265,7 +265,7 @@ const Projects = () => {
 					<section>
 						<li>Description:</li>
 						<ul className='project-sublist'>
-							<li>Built with React Hooks</li>
+							<li>Built with React Hooks and React-Router</li>
 							<li>
 								Utilized 3rd Party API:{' '}
 								<a
@@ -275,7 +275,7 @@ const Projects = () => {
 									Spoonacular
 								</a>
 							</li>
-							<li>Built Bootstrap stylings and React-Router </li>
+							<li>Styling with Bootstrap / Bootswatch</li>
 						</ul>
 					</section>
 				</ul>

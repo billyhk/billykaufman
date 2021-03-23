@@ -15,9 +15,8 @@ body {
 	background-size: cover;
 	-webkit-background-size: cover;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: grid;
+	place-items: center;
 }
 
 a {
@@ -40,17 +39,19 @@ a:hover {
 
 .home-title {
 	background: rgba(37, 15, 15, 0.459);
-	border-radius: 25px;
+	border-radius: 1.5ch;
 
 	padding: 2%;
-	min-width: 50vw;
-	max-width: 65vw;
-	margin-bottom: 4%;
+	/* min-width: 50vw; */
+	/* max-width: 65vw; */
+	margin: 2.5%;
+	font-family: Raleway;
 }
 
 .home-title > *:hover {
 	transition: 0.35s;
 	color: rgb(253, 215, 143);
+	cursor: default;
 }
 
 .home-title > h1 {
@@ -70,11 +71,7 @@ a:hover {
 
 /* NAV */
 /* ------- Sticky Header Animation ------ */
-
-/* Reserve the same height at the top of the page as the header min-height */
-
 /* Switch to fixed positioning, and stick the header to the top of the page */
-
 html:not([data-scroll='0']) .nav-container {
 	opacity: 0.5;
 	position: fixed;
@@ -85,14 +82,14 @@ html:not([data-scroll='0']) .nav-container {
 
 html:not([data-scroll='0']) .sidebar-links {
 	background: rgb(0, 0, 0) !important;
+		box-shadow: 10px -5px 10px rgba(0, 0, 0, 1);
+
 }
 
 .nav-container:hover {
-	/* background: $header-base-color; */
 	opacity: 1 !important;
 	box-shadow: 0px 1px 10px #999;
 }
-
 /* ------- End Header Animation ------ */
 
 .nav-container {
@@ -112,7 +109,7 @@ html:not([data-scroll='0']) .sidebar-links {
 }
 
 .hamburger-icon {
-	font-size: 6vmin;
+	font-size: 3em !important;
 	transition: 1s;
 	cursor: pointer;
 	padding: 0;
@@ -152,14 +149,17 @@ html:not([data-scroll='0']) .sidebar-links {
 
 	text-align: center;
 	position: absolute;
-	padding: 10vh 2.5%;
-	width: 50vmin;
-	min-height: 50vh;
+	padding: 2em;
+	width: 50vw;
+	min-height: 60vh;
+	/* height: 100vh; */
 	border-bottom-right-radius: 2ch;
+
+	box-shadow: 10px -5px 10px rgba(0, 0, 0, .5);
 }
 
 .sidebar-links a:hover {
-	color: rgb(176, 176, 245);
+	color: rgb(126, 126, 241);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -173,7 +173,7 @@ html:not([data-scroll='0']) .sidebar-links {
 }
 
 .nav-container > * {
-	font-size: 3vmin;
+	font-size: 1.5em;
 	text-align: center;
 }
 .signature {
@@ -213,12 +213,12 @@ html:not([data-scroll='0']) .sidebar-links {
 }
 
 @media (max-width: 750px) {
-	.home-title {
+	/* .home-title {
 		font-size: 1.5rem;
-	}
-	.home-caption {
+	} */
+	/* .home-caption {
 		font-size: 1rem;
-	}
+	} */
 	/* .nav-container > * {
 		font-size: 0.5rem;
 	} */
@@ -227,24 +227,11 @@ html:not([data-scroll='0']) .sidebar-links {
 /* ABOUT */
 
 .about-main {
-	/* overflow: auto; */
-	/* background-image: url(https://i.ytimg.com/vi/zVXnoIoWu88/maxresdefault.jpg); */
-	/* min-height: 100vh;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-background-size: cover; */
 
-	/* background: rgba(252, 232, 232, 0.719); */
 	background: rgba(213, 227, 238, 0.863);
-	margin: 0 auto;
-	min-height: 100vh;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-background-size: cover;
-	padding: 4vh;
-	font-size: 1.2rem;
-	text-align: center;
+	padding: 4vh 0;
 	font-family: 'Raleway', sans-serif;
+	min-height: 100vh;
 }
 
 .about-heading {
@@ -321,6 +308,7 @@ html:not([data-scroll='0']) .sidebar-links {
 	margin-top: 8%;
 	text-align: center;
 	letter-spacing: 0.5vmin;
+	text-decoration: underline;
 }
 
 .skills-list {
@@ -351,6 +339,7 @@ html:not([data-scroll='0']) .sidebar-links {
 .resume-link {
 	color: red;
 	font-size: 4rem;
+	text-align: center;
 }
 
 .resume-link:hover {
@@ -366,9 +355,8 @@ html:not([data-scroll='0']) .sidebar-links {
 	font-size: 2.5vmin;
 	letter-spacing: 0.5vmin;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: grid;
+	place-items: center;
 }
 
 .about-footer p {
@@ -379,18 +367,21 @@ html:not([data-scroll='0']) .sidebar-links {
 }
 
 .about-footer p:hover {
-	color: rgb(236, 139, 139);
-	border-color: rgba(219, 169, 169, 0.664);
+	letter-spacing: 0.25vmin;
+
+	color: black;
+	border-color: rgb(236, 139, 139);
+	cursor: default;
 }
 
 /* Projects */
 
 .project-container {
 	display: flex;
-	grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-	margin: 0 15%;
+	justify-content: space-evenly;
 	font-size: 1rem;
 }
+
 
 .project-container div {
 	display: flex;
@@ -399,26 +390,27 @@ html:not([data-scroll='0']) .sidebar-links {
 
 .about-heading-subtitle-click {
 	font-size: 0.75rem;
+	display: inline-block;
 }
 
 .project-description-list {
 	list-style: none;
-	text-align: justify;
-	text-justify: inter-word;
+	/* text-align: justify; */
+	/* text-justify: inter-word; */
 	font-family: 'Times New Roman', Times, serif;
-	line-height: 30px;
-	width: 45vw;
+	line-height: 1.5em;
+	max-width: 50vw;
 }
 
 .project-sublist {
 	font-size: 1rem;
-	line-height: 20px;
+	/* line-height: 20px; */
 	text-align: left;
 	text-justify: auto;
 }
 
 .project-sublist > * {
-	padding-top: 1vmin;
+	padding: .5em 0;
 }
 
 .project-description-list a {
@@ -429,7 +421,7 @@ html:not([data-scroll='0']) .sidebar-links {
 	color: rgba(0, 0, 139, 0.5);
 }
 
-@media (min-width: 1500px) {
+/* @media (min-width: 1500px) {
 	.project-description-list {
 		display: flex;
 		font-size: 1.5rem;
@@ -455,20 +447,19 @@ html:not([data-scroll='0']) .sidebar-links {
 		font-size: 1.2rem;
 		line-height: 4vmin;
 	}
-}
+} */
 
 /* Contact */
 
 .contact-container {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 
 .contact-info {
 	list-style: none;
 	line-height: 2.5rem;
-	margin-top: 1rem;
 }
 
 .email {
@@ -478,33 +469,31 @@ html:not([data-scroll='0']) .sidebar-links {
 
 .email:hover {
 	color: black;
-	transition: 0.5s;
 }
 
 .contact-info a {
 	color: rgb(40, 78, 114);
+	transition: 0.5s;
 }
 
 .contact-info a:hover {
-	transition: 0.5s;
 	color: black;
-	font-weight: 800;
 }
 
 .contact-info li {
 	display: flex;
 	justify-content: space-between;
 	padding: 1vmin;
-	border-radius: 2ch;
+	border-radius: 0.75ch;
+	transition: 0.5s;
 }
 
 .contact-info li:hover {
-	transition: 0.5s;
 	background: rgba(172, 205, 238, 0.815);
 }
 
 .contact-key {
-	padding-right: 4vmin;
+	padding-right: 4vw;
 	font-family: arial;
 	font-weight: 600;
 }
@@ -513,11 +502,13 @@ html:not([data-scroll='0']) .sidebar-links {
 	.project-container {
 		display: grid;
 	}
+	.project-description-list ul {
+		width: 100%;
+	}
 
 	.contact-info li {
 		display: grid;
-		justify-content: center;
-		align-items: center;
+		place-items: center;
 	}
 	.contact-key {
 		padding: 0;

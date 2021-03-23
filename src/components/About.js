@@ -55,7 +55,6 @@ const About = () => (
 					<li>Google Tag Manager</li>
 					<li>Amazon Web Services</li>
 				</ul>
-			</section>
 			<h2 className='about-heading3'>Download My Resume</h2>
 			<a
 				className='resume-link'
@@ -64,6 +63,7 @@ const About = () => (
 				rel='noopener noreferrer'>
 				<FaFilePdf />
 			</a>
+			</section>
 		</main>
 	</>
 );

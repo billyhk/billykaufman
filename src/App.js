@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Route } from 'react-router-dom';
 
 import NavBar from './components/NavBar';
@@ -11,9 +11,14 @@ import Contact from './components/Contact';
 
 import './index.css';
 
+import ScrollToTop from './components/utils/ScrollToTop.js';
+
 function App() {
+
+
+
 	return (
-		<>
+		<ScrollToTop>
 			<NavBar />
 			<main>
 				<Route exact path='/' component={Home} />
@@ -24,7 +29,7 @@ function App() {
 			<div className='about-footer'>
 				<p>{'\u00A9 Billy Kaufman 2021'}</p>
 			</div>
-		</>
+		</ScrollToTop>
 	);
 }
 
