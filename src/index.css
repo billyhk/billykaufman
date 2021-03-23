@@ -82,8 +82,7 @@ html:not([data-scroll='0']) .nav-container {
 
 html:not([data-scroll='0']) .sidebar-links {
 	background: rgb(0, 0, 0) !important;
-		box-shadow: 10px -5px 10px rgba(0, 0, 0, 1);
-
+	box-shadow: 10px -5px 10px rgba(0, 0, 0, 1);
 }
 
 .nav-container:hover {
@@ -155,7 +154,7 @@ html:not([data-scroll='0']) .sidebar-links {
 	/* height: 100vh; */
 	border-bottom-right-radius: 2ch;
 
-	box-shadow: 10px -5px 10px rgba(0, 0, 0, .5);
+	box-shadow: 10px -5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .sidebar-links a:hover {
@@ -227,7 +226,6 @@ html:not([data-scroll='0']) .sidebar-links {
 /* ABOUT */
 
 .about-main {
-
 	background: rgba(213, 227, 238, 0.863);
 	padding: 4vh 0;
 	font-family: 'Raleway', sans-serif;
@@ -242,8 +240,9 @@ html:not([data-scroll='0']) .sidebar-links {
 
 .about-caption-container {
 	display: grid;
-	align-items: center;
-	justify-content: center;
+	place-items: center;
+	/* align-items: center;
+	justify-content: center; */
 }
 
 .about-caption {
@@ -382,7 +381,6 @@ html:not([data-scroll='0']) .sidebar-links {
 	font-size: 1rem;
 }
 
-
 .project-container div {
 	display: flex;
 	justify-content: center;
@@ -401,6 +399,11 @@ html:not([data-scroll='0']) .sidebar-links {
 	line-height: 1.5em;
 	max-width: 50vw;
 }
+@media (min-width: 701px) {
+	.project-description-list {
+		padding: 0;
+	}
+}
 
 .project-sublist {
 	font-size: 1rem;
@@ -410,7 +413,7 @@ html:not([data-scroll='0']) .sidebar-links {
 }
 
 .project-sublist > * {
-	padding: .5em 0;
+	padding: 0.5em 0;
 }
 
 .project-description-list a {
@@ -502,10 +505,14 @@ html:not([data-scroll='0']) .sidebar-links {
 	.project-container {
 		display: grid;
 	}
+	@media (min-width: 200px) {
+		.project-link {
+			white-space: nowrap;
+		}
+	}
 	.project-description-list ul {
 		width: 100%;
 	}
-
 	.contact-info li {
 		display: grid;
 		place-items: center;

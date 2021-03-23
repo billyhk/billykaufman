@@ -36,7 +36,8 @@ const Projects = () => {
 				</div>
 				<ul className='project-description-list'>
 					<section>
-						<li>
+						<li className='project-link'>
+							&#8674;{' '}
 							<a
 								href='http://thefinishinggourmet.gretrix.com'
 								target='blank'
@@ -50,11 +51,12 @@ const Projects = () => {
 						<ul className='project-sublist'>
 							<li>CSS / JavaScript / PHP</li>
 							<li>
-								WordPress migration for Los Angeles high-class eats distributor: <span style={{fontStyle: 'italic'}}>The Finishing Gourmet</span>
+								WordPress migration for Los Angeles high-class eats distributor:{' '}
+								<span style={{ fontStyle: 'italic' }}>
+									The Finishing Gourmet
+								</span>
 							</li>
-							<li>
-								eCommerce functionality with WordPress/Divi + WooCommerce
-							</li>
+							<li>eCommerce functionality with WordPress/Divi + WooCommerce</li>
 						</ul>
 					</section>
 				</ul>
@@ -70,7 +72,8 @@ const Projects = () => {
 				</div>
 				<ul className='project-description-list'>
 					<section>
-						<li>
+						<li className='project-link'>
+							&#8674;{' '}
 							<a
 								href='https://chambercollective-demo.herokuapp.com'
 								// href='http://thechambercollective.co/'
@@ -79,7 +82,8 @@ const Projects = () => {
 								Deployed URL
 							</a>
 						</li>
-						<li>
+						<li className='project-link'>
+							&#8674;{' '}
 							<a
 								href='https://github.com/billyhk/chambercollective-promotional'
 								target='blank'
@@ -113,11 +117,14 @@ const Projects = () => {
 				</div>
 				<ul className='project-description-list'>
 					<section>
-						<li>
-							{/* <a href='#' target='blank' rel='noopener noreferrer'> */}*
-							Deployed Link Coming Soon! *{/* </a> */}
+						<li className='project-link'>
+							&#8674;{' '}
+							{/* <a href='#' target='blank' rel='noopener noreferrer'> */}
+							Deployed Link Coming Soon!
+							{/* </a> */}
 						</li>
-						<li>
+						<li className='project-link'>
+							&#8674;{' '}
 							<a
 								href='https://github.com/billyhk/joel-spector-frontend'
 								target='blank'
@@ -125,7 +132,8 @@ const Projects = () => {
 								Github (front-end)
 							</a>
 						</li>
-						<li>
+						<li className='project-link'>
+							&#8674;{' '}
 							<a
 								href='https://github.com/spectorari/jspect-backend'
 								target='blank'
@@ -155,7 +163,8 @@ const Projects = () => {
 				</div>
 				<ul className='project-description-list'>
 					<section>
-						<li>
+						<li className='project-link'>
+							&#8674;{' '}
 							<a
 								href='https://statements-frontend.herokuapp.com'
 								target='blank'
@@ -163,7 +172,8 @@ const Projects = () => {
 								Deployed URL
 							</a>
 						</li>
-						<li>
+						<li className='project-link'>
+							&#8674;{' '}
 							<a
 								href='https://github.com/billyhk/statements_frontend/blob/master/README.md'
 								target='blank'
@@ -171,7 +181,8 @@ const Projects = () => {
 								Github (front-end)
 							</a>
 						</li>
-						<li>
+						<li className='project-link'>
+							&#8674;{' '}
 							<a
 								href='https://github.com/trental/statements_backend'
 								target='blank'
@@ -245,7 +256,8 @@ const Projects = () => {
 				</div>
 				<ul className='project-description-list'>
 					<section>
-						<li>
+						<li className='project-link'>
+							&#8674;{' '}
 							<a
 								href='https://recipe-searcher-2020.herokuapp.com'
 								target='_blank'
@@ -253,7 +265,8 @@ const Projects = () => {
 								Deployed URL
 							</a>
 						</li>
-						<li>
+						<li className='project-link'>
+							&#8674;{' '}
 							<a
 								href='https://github.com/billyhk/recipe-app'
 								target='blank'
@@ -291,7 +304,8 @@ const Projects = () => {
 				</div>
 				<ul className='project-description-list'>
 					<section>
-						<li>
+						<li className='project-link'>
+							&#8674;{' '}
 							<a
 								href='https://simon-game-2020.herokuapp.com'
 								target='blank'
@@ -299,7 +313,8 @@ const Projects = () => {
 								Deployed URL
 							</a>
 						</li>
-						<li>
+						<li className='project-link'>
+							&#8674;{' '}
 							<a
 								href='https://github.com/billyhk/simon-game'
 								target='blank'
@@ -332,7 +347,8 @@ const Projects = () => {
 				</div>
 				<ul className='project-description-list'>
 					<section>
-						<li>
+						<li className='project-link'>
+							&#8674;{' '}
 							<a
 								href='https://github.com/billyhk/billykaufman'
 								target='blank'
