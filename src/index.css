@@ -176,7 +176,8 @@ html:not([data-scroll='0']) .sidebar-links {
 	text-align: center;
 }
 .signature {
-	text-transform: lowercase;
+	/* text-transform: lowercase; */
+	text-transform: none !important;
 	padding: 0;
 	margin: 0;
 	transition: 0.65s;
@@ -376,14 +377,39 @@ html:not([data-scroll='0']) .sidebar-links {
 /* Projects */
 
 .project-container {
-	display: flex;
-	justify-content: space-evenly;
+	/* display: flex; */
+	display: grid;
 	font-size: 1rem;
 }
+@media (min-width: 701px) {
+	.project-container {
+		grid-template-columns: 1fr 1fr;
+		place-items: center;
+	}
+	.project-description-list {
+		width: 100%;
+		margin-right: 2%;
+	}
+}
+@media (max-width: 700px) {
+	.project-container {
+		display: grid;
+		justify-content: center;
+	}
+	.project-container div {
+		display: flex;
+		justify-content: center;
+	}
 
-.project-container div {
-	display: flex;
-	justify-content: center;
+	@media (min-width: 280px) {
+		.project-link {
+			white-space: nowrap;
+		}
+	}
+
+	.project-description-list ul {
+		width: 100%;
+	}
 }
 
 .about-heading-subtitle-click {
@@ -395,7 +421,9 @@ html:not([data-scroll='0']) .sidebar-links {
 	list-style: none;
 	/* text-align: justify; */
 	/* text-justify: inter-word; */
-	font-family: 'Times New Roman', Times, serif;
+	/* font-family: 'Times New Roman', Times, serif; */
+	font-family: 'Raleway';
+
 	line-height: 1.5em;
 	max-width: 50vw;
 }
@@ -502,17 +530,6 @@ html:not([data-scroll='0']) .sidebar-links {
 }
 
 @media (max-width: 700px) {
-	.project-container {
-		display: grid;
-	}
-	@media (min-width: 200px) {
-		.project-link {
-			white-space: nowrap;
-		}
-	}
-	.project-description-list ul {
-		width: 100%;
-	}
 	.contact-info li {
 		display: grid;
 		place-items: center;

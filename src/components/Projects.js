@@ -361,7 +361,7 @@ const Projects = () => {
 						<li>Description:</li>
 						<ul className='project-sublist'>
 							<li>React / CSS / React-Grid-Gallery</li>
-							<li>React-Router-Dom</li>
+							<li>React-Router</li>
 						</ul>
 					</section>
 				</ul>
