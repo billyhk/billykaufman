@@ -96,8 +96,11 @@ html:not([data-scroll='0']) .sidebar-links {
 }
 
 html:not([data-scroll='0']) .nav-to-top {
-	transform: translateY(-100%) rotate(-90deg);
+	transform: translateY(-80%) rotate(-90deg);
 	background: rgb(164, 213, 255);
+
+	/* border-bottom-right-radius: 50%;
+	border-top-right-radius: 50%; */
 }
 
 .nav-container:hover {
@@ -114,10 +117,11 @@ html:not([data-scroll='0']) .nav-to-top {
 	z-index: 999;
 	transition: 1s;
 	opacity: 0.5;
-	font-size: 2.5em;
+	font-size: 2em;
 	border: 2px solid black;
-	padding: 1%;
-	margin: 2%;
+	padding: 2%;
+	margin-right: 2%;
+
 	border-radius: 50%;
 	cursor: pointer;
 	transform: translateY(150%) rotate(90deg);
@@ -126,11 +130,12 @@ html:not([data-scroll='0']) .nav-to-top {
 
 .nav-to-top:hover {
 	opacity: 1;
+
+	/* box-shadow: 4px 4px 2px 4px rgba(0, 0, 0, 0.5); */
 }
 
 .nav-container {
 	background: rgb(100, 193, 245);
-	min-height: 5vh;
 	padding: 0.5vmin;
 
 	display: flex;
@@ -360,14 +365,9 @@ html:not([data-scroll='0']) .nav-to-top {
 	.skills-list {
 		grid-template-columns: 50% 50%;
 	}
-	@media (min-width: 1000px) {
+	@media (min-width: 1200px) {
 		.skills-list {
-			grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
-		}
-		@media (min-width: 1400px) {
-			.skills-list {
-				grid-template-columns: 25% 25% 25% 25%;
-			}
+			grid-template-columns: 25% 25% 25% 25%;
 		}
 	}
 }
