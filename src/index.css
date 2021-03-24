@@ -243,8 +243,9 @@ html:not([data-scroll='0']) .nav-to-top {
 	display: flex;
 }
 .nav-right > * {
-	padding: 0 2vmin;
-	font-size: 3vmin;
+	padding: 0 1vw;
+	font-size: 4.5vmin;
+	/* font-size: .75em; */
 }
 
 .side-nav .active {
