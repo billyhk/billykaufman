@@ -108,7 +108,7 @@ html:not([data-scroll='0']) .sidebar-links {
 }
 
 .hamburger-icon {
-	font-size: 3em !important;
+	font-size: 2em !important;
 	transition: 1s;
 	cursor: pointer;
 	padding: 0;
