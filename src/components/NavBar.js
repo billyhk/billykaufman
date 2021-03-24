@@ -79,7 +79,9 @@ const NavBar = () => {
 				</li>
 			</ul>
 			<ul className='nav-right'>
-				<p className='signature' style={{cursor: "default"}}>Billy Kaufman</p>
+				<p className='signature' style={{ cursor: 'default' }}>
+					Billy Kaufman
+				</p>
 				<a
 					href='https://github.com/billyhk'
 					target='_blank'

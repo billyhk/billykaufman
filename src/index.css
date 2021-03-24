@@ -3,6 +3,7 @@
 body {
 	margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
+	position: relative;
 }
 
 /* HOME */
@@ -38,14 +39,23 @@ a:hover {
 }
 
 .home-title {
-	background: rgba(37, 15, 15, 0.459);
+	/* background: rgba(37, 15, 15, 0.459); */
+	background: linear-gradient(black, transparent);
+
 	border-radius: 1.5ch;
 
-	padding: 2%;
+	padding: 4% 2%;
 	/* min-width: 50vw; */
 	/* max-width: 65vw; */
+	min-height: 40vh;
 	margin: 2.5%;
 	font-family: Raleway;
+}
+
+@media (max-width: 800px) {
+	.home-title {
+		background: linear-gradient(black, transparent);
+	}
 }
 
 .home-title > *:hover {
@@ -85,11 +95,38 @@ html:not([data-scroll='0']) .sidebar-links {
 	box-shadow: 10px -5px 10px rgba(0, 0, 0, 1);
 }
 
+html:not([data-scroll='0']) .nav-to-top {
+	transform: translateY(-100%) rotate(-90deg);
+	background: rgb(164, 213, 255);
+}
+
 .nav-container:hover {
 	opacity: 1 !important;
 	box-shadow: 0px 1px 10px #999;
 }
 /* ------- End Header Animation ------ */
+
+.nav-to-top {
+	color: black;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 999;
+	transition: 1s;
+	opacity: 0.5;
+	font-size: 2.5em;
+	border: 2px solid black;
+	padding: 1%;
+	margin: 2%;
+	border-radius: 50%;
+	cursor: pointer;
+	transform: translateY(150%) rotate(90deg);
+	background: black;
+}
+
+.nav-to-top:hover {
+	opacity: 1;
+}
 
 .nav-container {
 	background: rgb(100, 193, 245);
@@ -305,17 +342,34 @@ html:not([data-scroll='0']) .sidebar-links {
 }
 
 .about-heading2 {
-	margin-top: 8%;
+	margin-top: 5%;
 	text-align: center;
-	letter-spacing: 0.5vmin;
+	letter-spacing: 0.25vmin;
 	text-decoration: underline;
 }
 
 .skills-list {
 	list-style: none;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-	padding: 0;
+	border-radius: 1.5ch;
+	background: rgb(174, 213, 255);
+	box-shadow: 0px 1px 10px #999;
+	padding: 2%;
+}
+@media (min-width: 701px) {
+	.skills-list {
+		grid-template-columns: 50% 50%;
+	}
+	@media (min-width: 1000px) {
+		.skills-list {
+			grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+		}
+		@media (min-width: 1400px) {
+			.skills-list {
+				grid-template-columns: 25% 25% 25% 25%;
+			}
+		}
+	}
 }
 
 .skills-list li {
@@ -331,7 +385,7 @@ html:not([data-scroll='0']) .sidebar-links {
 }
 
 .about-heading3 {
-	margin-top: 8%;
+	margin-top: 5%;
 	text-align: center;
 	letter-spacing: 0.2vmin;
 }
@@ -380,25 +434,40 @@ html:not([data-scroll='0']) .sidebar-links {
 	/* display: flex; */
 	display: grid;
 	font-size: 1rem;
+	transition: 1s;
 }
 @media (min-width: 701px) {
 	.project-container {
 		grid-template-columns: 1fr 1fr;
 		place-items: center;
 	}
+	.project-container:hover {
+		/* background: rgba(147, 214, 255, 0.5); */
+	}
+
 	.project-description-list {
 		width: 100%;
 		margin-right: 2%;
 	}
 }
+
 @media (max-width: 700px) {
 	.project-container {
 		display: grid;
-		justify-content: center;
 	}
-	.project-container div {
+	.ReactGridGallery {
 		display: flex;
 		justify-content: center;
+	}
+	@media (min-width: 401px) {
+		.project-container {
+			place-items: center;
+		}
+	}
+	@media (max-width: 400px) {
+		.project-container {
+			justify-content: center;
+		}
 	}
 
 	@media (min-width: 280px) {
@@ -491,6 +560,11 @@ html:not([data-scroll='0']) .sidebar-links {
 .contact-info {
 	list-style: none;
 	line-height: 2.5rem;
+
+	padding: 2%;
+	border-radius: 1.5ch;
+	background: rgb(174, 213, 255);
+	box-shadow: 0px 1px 10px #999;
 }
 
 .email {
@@ -515,12 +589,13 @@ html:not([data-scroll='0']) .sidebar-links {
 	display: flex;
 	justify-content: space-between;
 	padding: 1vmin;
-	border-radius: 0.75ch;
+	border-radius: 0.5ch;
 	transition: 0.5s;
 }
 
 .contact-info li:hover {
-	background: rgba(172, 205, 238, 0.815);
+	background: rgb(134, 237, 255);
+	box-shadow: 0px 0px 25px 0px #999;
 }
 
 .contact-key {
@@ -531,10 +606,13 @@ html:not([data-scroll='0']) .sidebar-links {
 
 @media (max-width: 700px) {
 	.contact-info li {
-		display: grid;
+		display: flex;
+		flex-direction: column;
 		place-items: center;
 	}
-	.contact-key {
+	.contact-key,
+	.email {
 		padding: 0;
+		text-align: center;
 	}
 }
