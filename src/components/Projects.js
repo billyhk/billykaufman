@@ -19,6 +19,12 @@ const Projects = () => {
 
 	return (
 		<main className='about-main'>
+			<h1
+				className='nav-to-top'
+				onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+				&#10513;
+			</h1>
+
 			<h1 className='about-heading'>
 				My Projects
 				<br />

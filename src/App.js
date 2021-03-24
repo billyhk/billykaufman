@@ -27,11 +27,6 @@ function App() {
 				<p>{'\u00A9 Billy Kaufman 2021'}</p>
 			</div>
 
-			<h1
-				className='nav-to-top'
-				onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-				&#10513;
-			</h1>
 		</ScrollToTop>
 	);
 }
