@@ -27,11 +27,11 @@ a {
 }
 
 a.doctorate {
-	color: #0d5330;
+	color: #f47525;
 }
 
 a.doctorate:hover {
-	color: #f47525;
+	color: #0d5330;
 }
 
 a:hover {
@@ -119,8 +119,8 @@ html:not([data-scroll='0']) .nav-to-top {
 	opacity: 0.5;
 	font-size: 2em;
 	border: 2px solid black;
-	padding: .25em .5em;
-	margin-left: .5em;
+	padding: 0.25em 0.5em;
+	margin-left: 0.5em;
 
 	border-radius: 50%;
 	cursor: pointer;

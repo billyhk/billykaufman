@@ -30,7 +30,9 @@ const About = () => (
 					experience and a{' '}
 					<a
 						className='doctorate'
-						href='https://scholarship.miami.edu/esploro/outputs/doctoral/Utilizing-Select-Project-Management-Techniques-to-Excel-in-Professional-Percussion-Auditions/991031524184102976'>
+						href='https://scholarship.miami.edu/esploro/outputs/doctoral/Utilizing-Select-Project-Management-Techniques-to-Excel-in-Professional-Percussion-Auditions/991031524184102976'
+						target='_blank'
+						rel='noopener noreferrer'>
 						doctorate
 					</a>
 					! As an orchestral percussionist, I have enjoyed the creative process
@@ -55,14 +57,14 @@ const About = () => (
 					<li>Google Tag Manager</li>
 					<li>Amazon Web Services</li>
 				</ul>
-			<h2 className='about-heading3'>Download My Resume</h2>
-			<a
-				className='resume-link'
-				href='https://drive.google.com/file/d/1GlmTgBXbwoDIYj3K_kiOMu444pk1Uo-u/view?usp=sharing'
-				target='_blank'
-				rel='noopener noreferrer'>
-				<FaFilePdf />
-			</a>
+				<h2 className='about-heading3'>Download My Resume</h2>
+				<a
+					className='resume-link'
+					href='https://drive.google.com/file/d/1t0t-3e3yh513QpxNJ7oeLADcrsCfW06u/view?usp=sharing'
+					target='_blank'
+					rel='noopener noreferrer'>
+					<FaFilePdf />
+				</a>
 			</section>
 		</main>
 	</>

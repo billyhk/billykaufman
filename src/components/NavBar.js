@@ -98,7 +98,7 @@ const NavBar = () => {
 						<FaLinkedin />
 					</li>
 				</a>
-				<a href='mailto:billyhkaufman@outlook.com'>
+				<a href='mailto:billyhkaufman@gmail.com'>
 					<li>
 						<FaEnvelope />
 					</li>

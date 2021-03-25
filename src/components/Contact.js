@@ -22,7 +22,7 @@ const Contact = () => (
 				<li>
 					<span className='contact-key'>Email:</span>{' '}
 					<span className='email'>
-						<span>billyhkaufman@outlook.com</span>
+						<span>billyhkaufman@gmail.com</span>
 					</span>
 				</li>
 				<li>
