@@ -244,8 +244,14 @@ html:not([data-scroll='0']) .nav-to-top {
 }
 .nav-right > * {
 	padding: 0 1vw;
-	font-size: 4.5vmin;
+	font-size: 1em;
 	/* font-size: .75em; */
+}
+@media (max-width: 1000px) {
+	.nav-right > * {
+		font-size: 5vw;
+		padding: 0 2vw;
+	}
 }
 
 .side-nav .active {
