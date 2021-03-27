@@ -262,7 +262,7 @@ html:not([data-scroll='0']) .nav-to-top {
 	.signature {
 		border-radius: 0.5ch;
 		margin-right: 2vw;
-		text-decoration: underline;
+		/* text-decoration: underline; */
 	}
 }
 
