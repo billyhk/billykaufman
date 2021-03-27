@@ -55,14 +55,15 @@ const Projects = () => {
 					<section>
 						<li>Description:</li>
 						<ul className='project-sublist'>
-							<li>CSS / JavaScript / PHP</li>
 							<li>
-								WordPress migration for Los Angeles high-class eats distributor:{' '}
+								WordPress migration for Los Angeles high-class eats distributor{' '}
 								<span style={{ fontStyle: 'italic' }}>
 									The Finishing Gourmet
 								</span>
+								.
 							</li>
 							<li>eCommerce functionality with WordPress/Divi + WooCommerce</li>
+							<li>CSS / JavaScript / PHP</li>
 						</ul>
 					</section>
 				</ul>
@@ -101,14 +102,18 @@ const Projects = () => {
 					<section>
 						<li>Description:</li>
 						<ul className='project-sublist'>
-							<li>React / SCSS / Router</li>
 							<li>
-								Utilized Hubspot API to collect visitors' name and email from
-								form-data
+								Promotional vehicle for Fitness Tech startup{' '}
+								<span style={{ fontStyle: 'italic' }}>
+									The Chamber Collective
+								</span>
+								. This app utilized the Hubspot API to collect visitors' name and email from
+								form-data.
 							</li>
 							<li>
 								Media hosting with AWS / S3; dynamic resizing with Thumbor
 							</li>
+							<li>React / SCSS / React-Router</li>
 						</ul>
 					</section>
 				</ul>
@@ -151,9 +156,12 @@ const Projects = () => {
 					<section>
 						<li>Description:</li>
 						<ul className='project-sublist'>
+							<li>
+								Digital art gallary for New England artist,{' '}
+								<span style={{ fontStyle: 'italic' }}>Joel Spector</span>.
+							</li>
 							<li>React / CSS / Material-Design-Bootstrap</li>
-							<li>Java Spring Boot / MySQL</li>
-							<li>Authentication with Spring Security / JWT</li>
+							<li>Java Spring Boot / MySQL / Spring Security / JWT</li>
 						</ul>
 					</section>
 				</ul>
@@ -200,6 +208,15 @@ const Projects = () => {
 					<section>
 						<li>Description:</li>
 						<ul className='project-sublist'>
+							<li>
+								Financial statement generator that accounts for 28 transation
+								types. Based on a book by Thomas Ittelson,{' '}
+								<span style={{ fontStyle: 'italic' }}>
+									Financial Statements: A Step-by-Step Guide to Understanding
+									and Creating Financial Reports
+								</span>
+								.
+							</li>
 							<li>React / CSS / Bootstrap-React</li>
 							<li>Python / Django / PostgreSQL</li>
 							<li>Authentication with JWT</li>
@@ -284,7 +301,11 @@ const Projects = () => {
 					<section>
 						<li>Description:</li>
 						<ul className='project-sublist'>
-							<li>Built with React Hooks and React-Router</li>
+							<li>
+								Search engine for recipes of all kinds. Queries are flexible to
+								allow search by recipe title, ingredient, category, and dietary
+								restriction (i.e. 'vegan', 'vegetarian', 'paleo', 'dairy free').
+							</li>
 							<li>
 								Utilized 3rd Party API:{' '}
 								<a
@@ -294,7 +315,8 @@ const Projects = () => {
 									Spoonacular
 								</a>
 							</li>
-							<li>Styling with Bootstrap / Bootswatch</li>
+							<li>Theme-based styling with Bootstrap / Bootswatch</li>
+							<li>React / CSS / React-Router</li>
 						</ul>
 					</section>
 				</ul>
@@ -332,12 +354,14 @@ const Projects = () => {
 					<section>
 						<li>Description:</li>
 						<ul className='project-sublist'>
-							<li>HTML5 / CSS3 / Javacsript</li>
 							<li>
-								Generates and stores random sequence to facilitate turn-based
-								gameplay
+								JavaScript clone of 1978 handheld eletronic game,{' '}
+								<span style={{ fontStyle: 'italic' }}>SIMON</span>. This app
+								generates and stores random sequence to facilitate turn-based
+								gameplay.
 							</li>
 							<li>Sounds composed in Logic Pro / Audacity</li>
+							<li>HTML / CSS / JavaSript / PHP</li>
 						</ul>
 					</section>
 				</ul>
@@ -366,8 +390,15 @@ const Projects = () => {
 					<section>
 						<li>Description:</li>
 						<ul className='project-sublist'>
-							<li>React / CSS / React-Grid-Gallery</li>
-							<li>React-Router</li>
+							<li>
+								Personal web page to display my updated contact info and some of
+								my past projects. This is a also space for me to experiment with
+								UI / UX design and implementation.
+							</li>
+
+							<li>
+								React / CSS / React-Grid-Gallery / React-Icons / React-Router
+							</li>
 						</ul>
 					</section>
 				</ul>
