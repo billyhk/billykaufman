@@ -2,8 +2,8 @@ import React from 'react';
 
 const Contact = () => (
 	<main className='about-main'>
-		<h1 className='about-heading'>Contact</h1>
-		<section className='about-caption-container'>
+		<h1 className='about-heading contact'>Contact</h1>
+		<section className='about-caption-container contact'>
 			<section className='about-caption'>
 				<p>Thank you for visiting! I hope you've enojyed my portfolio.</p>
 				<p>

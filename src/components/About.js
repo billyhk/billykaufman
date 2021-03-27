@@ -9,13 +9,10 @@ const About = () => (
 			<h1 className='about-heading'>About Me</h1>
 			<section className='about-caption-container'>
 				<p className='about-caption'>
-					Hi, my name is Billy. I create{' '}
-					<span className='stylish'>stylish</span>,{' '}
-					<span className='modern'>modern</span>,{' '}
-					<span className='functional'>functional</span> websites to serve any
+					Hi, my name is Billy. I create stylish, modern, functional websites to serve any
 					purpose for your business. I am committed to holding my work to a high
-					standard, from <span className='total-design'>total design</span> to
-					the <span className='finest-details'>finest details</span>.
+					standard, from total design to
+					the finest details.
 				</p>
 				<p className='about-caption'>
 					I studied software engineering at{' '}
@@ -57,7 +54,7 @@ const About = () => (
 					<li>Google Tag Manager</li>
 					<li>Amazon Web Services</li>
 				</ul>
-				<h2 className='about-heading3'>Download My Resume</h2>
+				<h2 className='about-heading2'>Download My Resume</h2>
 				<a
 					className='resume-link'
 					href='https://drive.google.com/file/d/1t0t-3e3yh513QpxNJ7oeLADcrsCfW06u/view?usp=sharing'
