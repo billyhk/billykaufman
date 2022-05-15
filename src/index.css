@@ -43,15 +43,18 @@ a:hover {
 }
 
 .home-title {
-	background: linear-gradient(black, transparent);
+	background: linear-gradient(rgb(0, 16, 78), transparent);
 
 	border-radius: 1.5ch;
 	padding: 4% 2%;
 	min-height: 40vh;
 	margin: 2.5%;
 	font-family: 'Raleway';
-
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 	transition: 1s;
+
+  display: grid;
+  place-content: center;
 }
 
 .home-title > * {
@@ -148,7 +151,7 @@ html:not([data-scroll='0']) .nav-to-top {
 }
 
 .hamburger-icon {
-	font-size: 2em !important;
+	font-size: 3rem !important;
 	transition: 1s;
 	cursor: pointer;
 	padding: 1%;
@@ -276,7 +279,7 @@ html:not([data-scroll='0']) .nav-to-top {
 /* ABOUT */
 
 .about-main {
-	padding-top: 7.5em;
+	padding-top: 8em;
 	padding-bottom: 15%;
 
 	font-family: 'Raleway', sans-serif;
@@ -494,12 +497,6 @@ html:not([data-scroll='0']) .nav-to-top {
 	margin-bottom: 5%;
 }
 
-@media (max-width: 1000px) {
-	.about-caption-container.contact {
-		margin-bottom: 15%;
-	}
-}
-
 .contact-container {
 	display: flex;
 	align-items: center;
@@ -534,6 +531,7 @@ html:not([data-scroll='0']) .nav-to-top {
 .contact-info a {
 	color: rgb(40, 78, 114);
 	transition: 0.5s;
+	/* text-align: center; */
 }
 
 .contact-info a:hover {

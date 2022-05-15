@@ -10,9 +10,6 @@ const Contact = () => (
 					Don't be shy... Reach out! I love coding and creating new things. It
 					would be my pleasure to build something with you.{' '}
 				</p>
-				<p>
-					I am currently looking for freelance, part-time, or full-time employment.
-				</p>
 			</section>
 		</section>
 			<h2 className='about-heading2'>Contact Info</h2>
