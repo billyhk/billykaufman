@@ -16,7 +16,7 @@ const NavBar = () => {
   // 		});
   // 	};
   // };
-  
+
   // const storeScroll = () => {
   // 	document.documentElement.dataset.scroll = window.scrollY;
   // };

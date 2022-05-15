@@ -17,10 +17,15 @@ body {
 
 .page-container {
   /* padding-top: 5rem; */
-  display: flex;
-  flex-direction: column;
   overflow-y: auto;
+}
+
+main {
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
   flex: 1 1 0%;
+  padding-bottom: 2rem;
 }
 
 /* HOME */
