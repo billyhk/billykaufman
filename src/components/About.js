@@ -46,7 +46,7 @@ const About = () => (
           <li>Node</li>
           <li>GraphQL</li>
           <li>MongoDB</li>
-          <li>Git/Github/Bitbucket/Gitlab</li>
+          <li>Git/Github</li>
           <li>Google Analytics</li>
           <li>Google Tag Manager</li>
           <li>Amazon Web Services</li>
