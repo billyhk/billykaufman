@@ -173,13 +173,10 @@ html:not([data-scroll='0']) .nav-to-top {
 	font-size: 3rem !important;
 	transition: 0.5;
 	cursor: pointer;
-	padding: 1%;
-	margin: 0;
-	margin-left: 1vmin;
+	margin-left: 1rem;
 	color: white;
 	display: none;
 	z-index: 3;
-	border-radius: 5px;
 }
 
 .hamburger-icon:hover {
@@ -235,6 +232,12 @@ html:not([data-scroll='0']) .nav-to-top {
 	.nav-left > * {
 		display: none;
 	}
+  .home-title h1 {
+    font-size: 4rem;
+  }
+  .home-title h2 {
+    font-size: 2.5rem;
+  }
 }
 
 .nav-container > * {
