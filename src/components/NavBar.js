@@ -1,37 +1,38 @@
 import React, { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa'
+import { pagePaths } from '../utils/routing'
+
+const linkElements = Object.entries(pagePaths).map(([field, value]) => (
+  <NavLink exact to={value} activeClassName='active'>
+    {field}
+  </NavLink>
+))
+
+const navRightIcons = [
+  {
+    icon: <FaGithub />,
+    href: 'https://github.com/billyhk',
+  },
+  {
+    icon: <FaLinkedin />,
+    href: 'https://www.linkedin.com/in/williamhkaufman/',
+  },
+  {
+    icon: <FaEnvelope />,
+    href: 'mailto:billyhkaufman@gmail.com',
+  },
+]
 
 const NavBar = () => {
-  // STICKY HEADER
-  // const debounce = (fn) => {
-  // 	let frame;
-  // 	return (...params) => {
-  // 		if (frame) {
-  // 			cancelAnimationFrame(frame);
-  // 		}
-  // 		frame = requestAnimationFrame(() => {
-  // 			fn(...params);
-  // 			console.log(...params);
-  // 		});
-  // 	};
-  // };
-
-  // const storeScroll = () => {
-  // 	document.documentElement.dataset.scroll = window.scrollY;
-  // };
-  // document.addEventListener('scroll', debounce(storeScroll), { passive: true });
-  // storeScroll();
-  // END STICKY HEADER
-
   const [open, setOpen] = useState(false)
-
   const toggleSide = () => {
     setOpen(!open)
   }
 
   return (
     <div className='nav-container'>
+      {/* Mobile Nav Header */}
       <p className='hamburger-icon' onClick={toggleSide}>
         {!open ? '☰' : '×'}
       </p>
@@ -39,73 +40,27 @@ const NavBar = () => {
         className='side-nav'
         id={open ? 'open' : 'closed'}
         onClick={toggleSide}>
-        <div className='sidebar-links'>
-          <NavLink exact to='/' activeClassName='active'>
-            home
-          </NavLink>
-
-          <NavLink to='about' activeClassName='active'>
-            about
-          </NavLink>
-
-          <NavLink to='projects' activeClassName='active'>
-            projects
-          </NavLink>
-
-          <NavLink to='contact' activeClassName='active'>
-            contact
-          </NavLink>
-        </div>
+        {/* Mobile Nav Menu */}
+        <div className='sidebar-links'>{linkElements}</div>
       </nav>
-      <ul className='nav-left'>
-        <li>
-          <NavLink exact to='/' activeClassName='active'>
-            home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to='about' activeClassName='active'>
-            about
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to='projects' activeClassName='active'>
-            projects
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to='contact' activeClassName='active'>
-            contact
-          </NavLink>
-        </li>
-      </ul>
-      <ul className='nav-right'>
+
+      {/* Desktop Nav */}
+      <ul className='nav-left'>{linkElements}</ul>
+
+      <div className='nav-right'>
+        {/* Signature in both desktop & mobile nav */}
         <NavLink to='/'>
           <p className='signature'>Billy Kaufman</p>
         </NavLink>
 
-        <a
-          href='https://github.com/billyhk'
-          target='_blank'
-          rel='noopener noreferrer'>
+        {navRightIcons.map((el) => (
           <li>
-            <FaGithub />
+            <a href={el.href} target='_blank' rel='noopener noreferrer'>
+              {el.icon}
+            </a>
           </li>
-        </a>
-        <a
-          href='https://www.linkedin.com/in/williamhkaufman/'
-          target='_blank'
-          rel='noopener noreferrer'>
-          <li>
-            <FaLinkedin />
-          </li>
-        </a>
-        <a href='mailto:billyhkaufman@gmail.com'>
-          <li>
-            <FaEnvelope />
-          </li>
-        </a>
-      </ul>
+        ))}
+      </div>
     </div>
   )
 }
