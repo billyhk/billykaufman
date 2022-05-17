@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Raleway&family=Ubuntu&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
 	margin: 0;
   font-family: 'Raleway',
@@ -9,15 +13,12 @@ body {
   overflow-y: hidden;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .site-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   overflow-y: hidden;
+  height: 100vh;
+  height: -webkit-fill-available;
 }
 
 .page-container {
