@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa'
-import { pagePaths, routes } from '../../utils/routing'
+import { routes } from '../../utils/routing'
 import { XIcon } from './XIcon'
 import { HamburgerButton } from './HamburgerButton'
+import { useClickOutside } from '../../utils/hooks'
 
 const linkElements = routes.map((r) => (
   <NavLink exact to={r.path} activeClassName='active'>
@@ -31,6 +32,7 @@ const NavBar = () => {
   const toggleSide = () => {
     setOpen(!open)
   }
+  const ref = useClickOutside(toggleSide)
 
   return (
     <div className='nav-container'>
@@ -38,13 +40,15 @@ const NavBar = () => {
       <span className='menu-toggle-button' onClick={toggleSide}>
         {!open ? <HamburgerButton /> : <XIcon />}
       </span>
-      <nav
-        className='side-nav'
-        id={open ? 'open' : 'closed'}
-        onClick={toggleSide}>
+
+      {/* Mobile Nav Menu */}
+      <nav className='side-nav' id={open ? 'open' : 'closed'}>
         {/* Mobile Nav Menu */}
-        <div className='sidebar-links'>{linkElements}</div>
+        <div className='sidebar-links' ref={ref}>
+          {linkElements}
+        </div>
       </nav>
+      {/* END Mobile Nav */}
 
       {/* Desktop Nav */}
       <div className='nav-left'>{linkElements}</div>
@@ -52,11 +56,15 @@ const NavBar = () => {
       <div className='nav-right'>
         {/* Signature in both desktop & mobile nav */}
         <NavLink to='/'>
-          <p className='signature'>Billy Kaufman</p>
+          <span className='signature'>Billy Kaufman</span>
         </NavLink>
 
         {navRightIcons.map((el) => (
-          <a className='nav-right-icon' href={el.href} target='_blank' rel='noopener noreferrer'>
+          <a
+            className='nav-right-icon'
+            href={el.href}
+            target='_blank'
+            rel='noopener noreferrer'>
             {el.icon}
           </a>
         ))}
