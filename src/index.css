@@ -18,8 +18,8 @@ body {
   flex-direction: column;
   overflow-y: hidden;
   height: 100vh;
-  max-height: 100vh;
-  min-height: -webkit-fill-available;
+  /* max-height: 100vh; */
+  max-height: -webkit-fill-available;
 }
 
 .page-container {
