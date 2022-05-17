@@ -1,13 +1,13 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 import { Route } from 'react-router-dom'
 
-import NavBar from './components/NavBar'
+import NavBar from './components/Navigation/NavBar'
 
 //route components
-import Home from './components/Home'
-import About from './components/About'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
+import Home from './components/pages/Home'
+import About from './components/pages/About'
+import Projects from './components/pages/Projects'
+import Contact from './components/pages/Contact'
 
 import './index.css'
 import { useScrollToTopOnNav } from './utils/hooks/scrollToTopOnNav'

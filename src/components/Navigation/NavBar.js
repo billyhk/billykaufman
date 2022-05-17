@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa'
-import { pagePaths } from '../utils/routing'
+import { pagePaths } from '../../utils/routing'
+import { XIcon } from './XIcon'
+import { HamburgerButton } from './HamburgerButton'
 
 const linkElements = Object.entries(pagePaths).map(([field, value]) => (
   <NavLink exact to={value} activeClassName='active'>
@@ -33,9 +35,9 @@ const NavBar = () => {
   return (
     <div className='nav-container'>
       {/* Mobile Nav Header */}
-      <p className='hamburger-icon' onClick={toggleSide}>
-        {!open ? '☰' : '×'}
-      </p>
+      <span className='menu-toggle-button' onClick={toggleSide}>
+        {!open ? <HamburgerButton /> : <XIcon />}
+      </span>
       <nav
         className='side-nav'
         id={open ? 'open' : 'closed'}

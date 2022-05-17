@@ -1,8 +1,6 @@
 import React from 'react';
 import { FaFilePdf } from 'react-icons/fa';
 
-import '../index.css';
-
 const About = () => (
   <>
     <main className='about-main'>

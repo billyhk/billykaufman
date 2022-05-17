@@ -1,6 +1,6 @@
-import React, { useRef } from 'react'
-import { GalleryImages } from './ProjectGalleryImages'
+import React from 'react'
 import Gallery from 'react-grid-gallery'
+import { GalleryImages } from '../../utils/ProjectGalleryImages'
 
 // import local images
 // import statements from '../component-images/statements.png';
