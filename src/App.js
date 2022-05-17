@@ -24,9 +24,9 @@ function App() {
             />
           )
         })}
-      </div>
-      <div className='about-footer'>
-        <span>{'\u00A9 Billy Kaufman 2022'}</span>
+        <div className='about-footer'>
+          <span>{'\u00A9 Billy Kaufman 2022'}</span>
+        </div>
       </div>
     </div>
   )

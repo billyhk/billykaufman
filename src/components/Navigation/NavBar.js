@@ -6,12 +6,6 @@ import { XIcon } from './XIcon'
 import { HamburgerButton } from './HamburgerButton'
 import { useClickOutside } from '../../utils/hooks'
 
-const linkElements = routes.map((r) => (
-  <NavLink exact to={r.path} activeClassName='active'>
-    {r.name}
-  </NavLink>
-))
-
 const navRightIcons = [
   {
     icon: <FaGithub />,
@@ -32,8 +26,16 @@ const NavBar = () => {
   const toggleSide = () => {
     setOpen(!open)
   }
-  const ref = useClickOutside(toggleSide)
+  const closeNav = () => {
+    if (open) setOpen(false)
+  }
+  const ref = useClickOutside(closeNav)
 
+  const linkElements = routes.map((r) => (
+    <NavLink exact to={r.path} activeClassName='active' onClick={closeNav}>
+      {r.name}
+    </NavLink>
+  ))
   return (
     <div className='nav-container'>
       {/* Mobile Nav Header */}
