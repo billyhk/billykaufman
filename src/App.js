@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { Route } from 'react-router-dom'
 import { routes } from './utils/routing'
-import { useScrollToTopOnNav } from './utils/hooks/scrollToTopOnNav'
+import { useScrollToTopOnNav } from './utils/hooks'
 import NavBar from './components/Navigation/NavBar'
 import './index.css'
 
@@ -25,9 +25,9 @@ function App() {
           )
         })}
       </div>
-      {/* <div className='about-footer'>
-        <p>{'\u00A9 Billy Kaufman 2022'}</p>
-      </div> */}
+      <div className='about-footer'>
+        <span>{'\u00A9 Billy Kaufman 2022'}</span>
+      </div>
     </div>
   )
 }

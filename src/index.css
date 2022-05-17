@@ -19,7 +19,7 @@ body {
   overflow-y: hidden;
   height: 100vh;
   /* max-height: 100vh; */
-  /* max-height: -webkit-fill-available; */
+  min-height: -webkit-fill-available;
 }
 
 .page-container {
@@ -121,33 +121,10 @@ a:hover {
 	text-align: right;
 }
 
-/* NAV */
-/* ------- Sticky Header Animation ------ */
-/* Switch to fixed positioning, and stick the header to the top of the page */
-/* html:not([data-scroll='0']) .nav-container {
-	opacity: 0.5;
-}
-
-html:not([data-scroll='0']) .sidebar-links {
-	background: rgb(0, 0, 0) !important;
-	box-shadow: 10px -5px 10px rgba(0, 0, 0, 1);
-}
-
-html:not([data-scroll='0']) .nav-to-top {
-	transform: translateY(-100%) rotate(-90deg);
-	background: rgb(164, 213, 255);
-}
-
-.nav-container:hover {
-	opacity: 1 !important;
-	box-shadow: 0px 1px 10px #999;
-} */
-/* ------- End Header Animation ------ */
-
 .nav-container {
 	/* background: rgb(100, 193, 245); */
   background: rgb(58, 157, 228);
-	height: 5rem;
+	height: 4rem;
   padding: 0 1rem;
 
 	display: flex;
@@ -158,13 +135,6 @@ html:not([data-scroll='0']) .nav-to-top {
 	text-transform: uppercase;
 
 	transition: 0.5s;
-
-	/* position: sticky; */
-	/* position: fixed;
-  height: 5rem;
-	width: 100%;
-	top: 0;
-	z-index: 999; */
 }
 
 .nav-to-top {
@@ -205,7 +175,6 @@ html:not([data-scroll='0']) .nav-to-top {
 .menu-toggle-button {
   cursor: pointer;
   z-index: 3;
-  margin-left: 1rem;
   display: none;
 }
 
@@ -418,6 +387,7 @@ html:not([data-scroll='0']) .nav-to-top {
 /* Footer */
 
 .about-footer {
+  height: 4rem;
 	background: rgb(58, 157, 228);
 	color: white;
 	font-family: 'ubuntu';
@@ -427,14 +397,14 @@ html:not([data-scroll='0']) .nav-to-top {
 	place-items: center;
 }
 
-.about-footer p {
+.about-footer span {
 	padding: 0.5rem;
 	border: 2px solid white;
 	border-radius: 25px;
 	transition: 0.5s;
 }
 
-.about-footer p:hover {
+.about-footer span:hover {
 	letter-spacing: 0.25vmin;
 
 	color: black;
