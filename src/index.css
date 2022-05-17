@@ -31,8 +31,8 @@ main {
 /* HOME */
 
 .home-main {
-	/* background-image: url(https://www.newenglandinnsandresorts.com/sites/default/files/styles/2048/public/media-images/Jordan-Pond-Acadia-National-Park.jpg?itok=YaNtml2f); */
-	background-image: url(https://images.fineartamerica.com/images-medium-large/calm-blue-water-disappearing-into-axiom-photographic.jpg);
+	background-image: url(https://www.newenglandinnsandresorts.com/sites/default/files/styles/2048/public/media-images/Jordan-Pond-Acadia-National-Park.jpg?itok=YaNtml2f);
+	/* background-image: url(https://images.fineartamerica.com/images-medium-large/calm-blue-water-disappearing-into-axiom-photographic.jpg); */
 	background-repeat: no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -73,7 +73,22 @@ a:hover {
   display: grid;
   place-content: center;
   width: 90vw;
+  margin: 2rem 0;
+  animation: bounce 3s infinite;
 }
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-2rem);
+    animation-timing-function: ease-in-out;
+  }
+
+  50% {
+    transform: translateY(0);
+    animation-timing-function: ease-in-out;  }
+}
+
 
 .home-title > * {
 	transition: 0.35s;
@@ -86,7 +101,6 @@ a:hover {
 
 .home-title > h1 {
 	font-size: 10vw;
-  /* font-size: 5rem; */
 	color: rgb(250, 182, 187);
 	margin-bottom: 0;
 	text-align: left;
@@ -95,7 +109,6 @@ a:hover {
 
 .home-title > h2 {
 	font-size: 4vw;
-  /* font-size: 3rem; */
 	margin-top: 0;
 	color: rgb(106, 198, 252);
 	text-align: right;
