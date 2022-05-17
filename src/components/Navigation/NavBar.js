@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa'
-import { pagePaths } from '../../utils/routing'
+import { pagePaths, routes } from '../../utils/routing'
 import { XIcon } from './XIcon'
 import { HamburgerButton } from './HamburgerButton'
 
-const linkElements = Object.entries(pagePaths).map(([field, value]) => (
-  <NavLink exact to={value} activeClassName='active'>
-    {field}
+const linkElements = routes.map((r) => (
+  <NavLink exact to={r.path} activeClassName='active'>
+    {r.name}
   </NavLink>
 ))
 
@@ -47,7 +47,7 @@ const NavBar = () => {
       </nav>
 
       {/* Desktop Nav */}
-      <ul className='nav-left'>{linkElements}</ul>
+      <div className='nav-left'>{linkElements}</div>
 
       <div className='nav-right'>
         {/* Signature in both desktop & mobile nav */}
@@ -56,11 +56,9 @@ const NavBar = () => {
         </NavLink>
 
         {navRightIcons.map((el) => (
-          <li>
-            <a href={el.href} target='_blank' rel='noopener noreferrer'>
-              {el.icon}
-            </a>
-          </li>
+          <a className='nav-right-icon' href={el.href} target='_blank' rel='noopener noreferrer'>
+            {el.icon}
+          </a>
         ))}
       </div>
     </div>

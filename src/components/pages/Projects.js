@@ -21,9 +21,7 @@ const Projects = ({ referenceEl }) => {
     <main className='about-main'>
       <div
         className='nav-to-top'
-        onClick={() =>
-          referenceEl.current?.scrollTo({ top: 0, behavior: 'smooth' })
-        }>
+        onClick={() => referenceEl.current?.scrollTo({ top: 0 })}>
         <span>^</span>
       </div>
 
