@@ -1,0 +1,72 @@
+.experience-header {
+  background-color: #a100ff;
+  color: white;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-header:first-child {
+  font-size: 1.5rem;
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  /* border: 1px solid black; */
+}
+
+.experience-item img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.experience-description {
+  /* border: 1px solid black; */
+  width: 100%;
+}
+
+.experience-description > * {
+  margin: 0;
+}
+
+.experience-item img {
+  max-width:400px;
+  max-height:400px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.experience-item .gx-logo,
+.experience-item .ruckus-logo {
+  padding: 0.5rem;
+}
+
+.timeline-date {
+  color: #000
+}
+
+@media only screen and (min-width: 1170px) { 
+  .experience-header {
+    place-items: center;
+  }
+  .experience-item img {
+    width: 50%;
+    min-height: 200px;
+  }
+  /* .experience-description:nth-of-type(odd) {
+    order: 2
+  } */
+}
+
+@media only screen and (max-width: 767px) {
+  .experience-item {
+    flex-direction: column;
+  }
+  .experience-description {
+    order: 1
+  }
+}
