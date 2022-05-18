@@ -73,8 +73,8 @@ a:hover {
 	padding: 4% 2%;
 	font-family: 'Raleway';
   /* box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); */
-  -webkit-box-shadow: 0 -10px 12px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 0 -10px 12px rgba(50, 50, 50, 0.75);
+  -webkit-box-shadow: 0 -10px 140px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0 -10px 140px rgba(50, 50, 50, 0.75);
   box-shadow: 0 -10px 12px rgba(50, 50, 50, 0.75);
 
   display: grid;
@@ -215,6 +215,8 @@ a:hover {
   max-height: -webkit-fill-available;
 }
 
+
+
 #closed {
 	transform: translateX(-100%);
 }
@@ -232,6 +234,7 @@ a:hover {
 	text-align: center;
 	box-shadow: 10px -5px 10px rgba(0, 0, 0, 0.5);
   min-height: 100%;
+  min-width: 100%;
 }
 
 .sidebar-links a {
@@ -262,6 +265,20 @@ a:hover {
     font-size: 2.5rem;
   }
 }
+@media only screen and (max-width: 400px) {
+    .home-title h1 {
+      font-size: 10vw;
+    }
+    
+    .home-title h2 {
+      font-size: 7vw;
+    }
+
+    .side-nav {
+     width: 100vw !important;
+     }
+}
+
 
 .nav-container > * {
 	font-size: 1.25rem;
@@ -276,6 +293,18 @@ a:hover {
   color: #e2f0fb;
 	font-family: 'Raleway';
   transition: 0.5s;
+}
+
+@media only screen and (max-width: 300px) {
+  .signature {
+    font-size: 10vw;
+  }
+  .about-footer span {
+    font-size: 10vw;
+  }
+  .nav-container {
+     padding: 0;
+  }
 }
 
 .signature:hover {
