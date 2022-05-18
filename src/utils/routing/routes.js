@@ -13,16 +13,16 @@ export const routes = [
     path: pagePaths.home,
     Component: Home,
   },
-  {
-    name: 'About',
-    path: pagePaths.about,
-    Component: About,
-  },
   // {
-  //   name: 'Experience',
-  //   path: pagePaths.experience,
-  //   Component: Experience,
+  //   name: 'About',
+  //   path: pagePaths.about,
+  //   Component: About,
   // },
+  {
+    name: 'Experience',
+    path: pagePaths.experience,
+    Component: Experience,
+  },
   {
     name: 'Projects',
     path: pagePaths.projects,
