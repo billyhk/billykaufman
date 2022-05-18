@@ -13,11 +13,11 @@ export const routes = [
     path: pagePaths.home,
     Component: Home,
   },
-  // {
-  //   name: 'About',
-  //   path: pagePaths.about,
-  //   Component: About,
-  // },
+  {
+    name: 'About',
+    path: pagePaths.about,
+    Component: About,
+  },
   {
     name: 'Experience',
     path: pagePaths.experience,

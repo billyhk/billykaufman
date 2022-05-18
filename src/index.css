@@ -215,14 +215,17 @@ a:hover {
   display: flex;
   flex-direction: column;
   place-content: center;
-  gap: 2rem;
+  justify-content: space-around;
 	text-align: center;
 	box-shadow: 10px -5px 10px rgba(0, 0, 0, 0.5);
   min-height: 100%;
 }
 
 .sidebar-links a {
-  padding: 2rem 0;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  flex: 1;
 }
 
 .sidebar-links a:hover {
