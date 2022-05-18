@@ -18,7 +18,6 @@ body {
   flex-direction: column;
   overflow-y: hidden;
   height: 100vh;
-  /* max-height: 100vh; */
   max-height: -webkit-fill-available;
 }
 
@@ -199,7 +198,8 @@ a:hover {
 	z-index: 2;
   overflow-y: auto;
   width: 50vw;
-  min-height: 100vh;
+  height: 100vh;
+  max-height: -webkit-fill-available;
 }
 
 #closed {
@@ -218,7 +218,7 @@ a:hover {
   gap: 2rem;
 	text-align: center;
 	box-shadow: 10px -5px 10px rgba(0, 0, 0, 0.5);
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .sidebar-links a {
