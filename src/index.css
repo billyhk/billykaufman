@@ -37,8 +37,8 @@ main {
 /* HOME */
 
 .home-main {
-	/* background-image: url(https://www.newenglandinnsandresorts.com/sites/default/files/styles/2048/public/media-images/Jordan-Pond-Acadia-National-Park.jpg?itok=YaNtml2f); */
-	background-image: url(https://images.fineartamerica.com/images-medium-large/calm-blue-water-disappearing-into-axiom-photographic.jpg);
+	background-image: url(https://www.newenglandinnsandresorts.com/sites/default/files/styles/2048/public/media-images/Jordan-Pond-Acadia-National-Park.jpg?itok=YaNtml2f);
+	/* background-image: url(https://images.fineartamerica.com/images-medium-large/calm-blue-water-disappearing-into-axiom-photographic.jpg); */
 	background-repeat: no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -131,7 +131,7 @@ a:hover {
 	justify-content: space-between;
 
 	font-family: 'Open Sans', sans-serif;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 
 	transition: 0.5s;
 }
@@ -210,7 +210,7 @@ a:hover {
 }
 
 .sidebar-links {
-	background: rgb(31, 87, 135);
+	background: rgba(31, 87, 135, 0.90);
 	transition: 0.5;
   display: flex;
   flex-direction: column;
