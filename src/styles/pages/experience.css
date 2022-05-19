@@ -1,3 +1,8 @@
+.experience-main {
+    /* background-color: rgb(62, 107, 189); */
+    background-color: #6687c4;
+}
+
 .experience-header {
   background-color: #a100ff;
   color: white;
@@ -6,6 +11,8 @@
   flex-direction: column;
   gap: 1rem;
   font-size: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+  0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 .experience-header > * {

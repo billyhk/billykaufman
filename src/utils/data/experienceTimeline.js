@@ -30,7 +30,7 @@ export const experienceData = [
       />
     ),
     iconBackgroundColor: '#000',
-    backgroundColor: 'rgba(	13, 83, 48, 0.15)',
+    backgroundColor: '#dce5df',
     textColor: '',
     Image: <img alt='' src={umLogoLg} className='logo-padding' />,
     title: 'Doctor of Music',
@@ -65,7 +65,7 @@ export const experienceData = [
       />
     ),
     iconBackgroundColor: '#fff',
-    backgroundColor: 'rgba(255,41,65, 0.15)',
+    backgroundColor: '#ffe2e3',
     textColor: '',
     Image: (
       <Fragment>
@@ -78,7 +78,7 @@ export const experienceData = [
       'Full-time, fully-emersive education in the skills required to be a pro software engineer.',
     description2:
       'This web-dev centric bootcamp taught me the fundamentals of programming beyond the syntax, and got me exposed to many areas in the CS space. From the moment at GA I was hooked on this never-ending and ever-evolving field.',
-    dateRange: 'March 2020 -> June 2020',
+    dateRange: 'March 2020 - June 2020',
   },
   {
     institutionName: 'Freelancing, Projects, Study',
@@ -106,7 +106,7 @@ export const experienceData = [
       />
     ),
     iconBackgroundColor: '',
-    backgroundColor: '',
+    backgroundColor: '#b2dbef',
     textColor: '',
     Image: <img alt='' src={gretrixLogo3} className='logo-padding' />,
     title: '',
@@ -127,8 +127,8 @@ export const experienceData = [
         width='100%'
       />
     ),
-    iconBackgroundColor: '',
-    backgroundColor: '',
+    iconBackgroundColor: '#fff',
+    backgroundColor: '#ccc',
     textColor: '',
     Image: (
       <Fragment>
@@ -154,7 +154,7 @@ export const experienceData = [
       </svg>
     ),
     iconBackgroundColor: '#ff8300',
-    backgroundColor: '',
+    backgroundColor: '#ffbd00',
     textColor: '',
     Image: <img alt='' src={ruckusLogoSvg} className='logo-padding' />,
     title: '',

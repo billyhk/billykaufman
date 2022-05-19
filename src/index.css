@@ -9,7 +9,8 @@ body {
   font-family: 'Raleway',
   sans-serif;
   position: relative;
-	background: rgba(213, 227, 238, 0.863);
+  /* background: rgb(62, 107, 189); */
+	/* background: rgba(213, 227, 238, 0.863); */
   /* background: #e0e3ea; */
   overflow-y: hidden;
 }
@@ -38,8 +39,9 @@ main {
 /* HOME */
 
 .home-main {
+  background-image: url('https://d346xxcyottdqx.cloudfront.net/wp-content/uploads/2016/02/Big-data-storage-e1455012396729.jpg');
 	/* background-image: url(https://www.newenglandinnsandresorts.com/sites/default/files/styles/2048/public/media-images/Jordan-Pond-Acadia-National-Park.jpg?itok=YaNtml2f); */
-	background-image: url(https://images.fineartamerica.com/images-medium-large/calm-blue-water-disappearing-into-axiom-photographic.jpg);
+	/* background-image: url(https://images.fineartamerica.com/images-medium-large/calm-blue-water-disappearing-into-axiom-photographic.jpg); */
 	background-repeat: no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
