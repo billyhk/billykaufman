@@ -267,13 +267,14 @@ a:hover {
 }
 @media only screen and (max-width: 400px) {
     .home-title h1 {
-      font-size: 10vw;
+      font-size: 14vw;
+      margin: 0;
+      text-align: center;
     }
     
     .home-title h2 {
       font-size: 7vw;
     }
-
     .side-nav {
      width: 100vw !important;
      }
