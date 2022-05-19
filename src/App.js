@@ -25,7 +25,7 @@ function App() {
           )
         })}
         <div className='about-footer'>
-          <span>{'\u00A9 Billy Kaufman 2022'}</span>
+          <span>{`\u00A9 Billy Kaufman ${new Date().getFullYear()}`}</span>
         </div>
       </div>
     </div>

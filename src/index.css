@@ -55,12 +55,12 @@ a {
 }
 
 a.doctorate {
-	color: #f47525;
+  color: #0d5330;
 }
 
 a.doctorate:hover {
-	color: #0d5330;
-}
+  color: #f47525;
+} 
 
 a:hover {
 	color: black;
