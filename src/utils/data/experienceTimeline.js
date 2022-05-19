@@ -82,13 +82,8 @@ export const experienceData = [
   },
   {
     institutionName: 'Freelancing, Projects, Study',
-    Icon: (
-      <GiBookmarklet
-        className='bookmarkletSvgIcon'
-        fill='#fff'
-      />
-    ),
-    iconBackgroundColor: 'rgb(50, 198, 252)',
+    Icon: <GiBookmarklet className='bookmarkletSvgIcon' fill='#fff' />,
+    iconBackgroundColor: '#fd23de',
     backgroundColor: '',
     textColor: '',
     Image: '',
