@@ -50,7 +50,7 @@ export const experienceData = [
         That kind structured mindset was about to influence me in a major way...
       </Fragment>
     ),
-    dateRange: '2017 (coursework)/2020 (final defense)',
+    dateRange: '2017 (coursework) / 2020 (final defense)',
   },
   {
     institutionName: 'General Assembly',
@@ -128,7 +128,7 @@ export const experienceData = [
       />
     ),
     iconBackgroundColor: '#fff',
-    backgroundColor: '#ccc',
+    backgroundColor: '#ddd',
     textColor: '',
     Image: (
       <Fragment>
