@@ -35,12 +35,12 @@ export const experienceData = [
     Image: <img alt='' src={umLogoLg} className='logo-padding' />,
     title: 'Doctor of Music',
     description1:
-      'After many years of studying music, I achieved a doctorate in the field of music performance.',
+      'After many years of studying classical percussion, I achieved a doctorate in the field of music performance.',
     description2: (
       <Fragment>
         My{' '}
         <a
-          className='doctorate'
+          className='dissertation'
           href='https://scholarship.miami.edu/esploro/outputs/doctoral/Utilizing-Select-Project-Management-Techniques-to-Excel-in-Professional-Percussion-Auditions/991031524184102976'
           target='_blank'
           rel='noopener noreferrer'>
@@ -76,8 +76,21 @@ export const experienceData = [
     title: 'Full Stack Software Engineering Bootcamp (remote)',
     description1:
       'Full-time, fully-emersive education in the skills required to be a pro software engineer.',
-    description2:
-      'This web-dev centric bootcamp taught me the fundamentals of programming beyond the syntax, and got me exposed to many areas in the CS space. From the moment at GA I was hooked on this never-ending and ever-evolving field.',
+    description2: (
+      <p>
+        This web-dev centric bootcamp taught me the fundamentals of programming
+        beyond the syntax, and introduced me to many critical areas in the CS space.
+        From the moment I started at{' '}
+        <a
+          className='ga-link-sei'
+          href='https://generalassemb.ly/education/software-engineering-immersive/new-york-city?ga_campaign=immersive-remote&amp;ga_variation=sei-tile'
+          target='_blank'
+          rel='noopener noreferrer'>
+          GA
+        </a>
+        , I was hooked on this never-ending and ever-evolving discipline.
+      </p>
+    ),
     dateRange: 'March 2020 - June 2020',
   },
   {

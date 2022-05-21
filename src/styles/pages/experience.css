@@ -59,6 +59,24 @@
   transform: scale(1.25) translateY(0.1rem)
 }
 
+a.dissertation {
+  color: #0d5330;
+  text-decoration: underline;
+}
+
+a.dissertation:hover {
+  color: #f47525;
+}
+
+.ga-link-sei {
+  color: rgb(185, 71, 71);
+  text-decoration: underline;
+}
+
+.ga-link-sei:hover {
+  color: rgba(255, 0, 0, 0.568);
+}
+
 @media only screen and (min-width: 1170px) { 
   .experience-header {
     place-items: center;
