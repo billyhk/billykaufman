@@ -96,6 +96,9 @@ a.dissertation:hover {
   .bookmarkletSvgIcon {
     transform: scale(2) translateY(0.1rem)
   }
+  .timeline-date {
+    color: #fff
+  }
 }
 
 @media only screen and (max-width: 1170px) {

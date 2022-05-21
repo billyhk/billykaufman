@@ -79,8 +79,8 @@ export const experienceData = [
     description2: (
       <p>
         This web-dev centric bootcamp taught me the fundamentals of programming
-        beyond the syntax, and introduced me to many critical areas in the CS space.
-        From the moment I started at{' '}
+        beyond the syntax, and introduced me to many critical areas in the CS
+        space. From the moment I started at{' '}
         <a
           className='ga-link-sei'
           href='https://generalassemb.ly/education/software-engineering-immersive/new-york-city?ga_campaign=immersive-remote&amp;ga_variation=sei-tile'
@@ -97,10 +97,10 @@ export const experienceData = [
     institutionName: 'Freelancing, Projects, Study',
     Icon: <GiBookmarklet className='bookmarkletSvgIcon' fill='#fff' />,
     iconBackgroundColor: '#fd23de',
-    backgroundColor: '',
+    backgroundColor: '#fff',
     textColor: '',
     Image: '',
-    title: '',
+    title: 'Full-Stack Web Developer',
     description1: '',
     description2: '',
     dateRange: '',
@@ -122,10 +122,10 @@ export const experienceData = [
     backgroundColor: '#b2dbef',
     textColor: '',
     Image: <img alt='' src={gretrixLogo3} className='logo-padding' />,
-    title: '',
+    title: 'Front-End Engineer',
     description1: '',
     description2: '',
-    dateRange: '',
+    dateRange: 'Feb 2021 - Oct 2021',
   },
   {
     institutionName: 'Look Far Labs',
@@ -149,10 +149,10 @@ export const experienceData = [
         <img alt='' src={lookFarLogoCrop} className='responsiveImgSm' />
       </Fragment>
     ),
-    title: '',
+    title: 'React / TypeScript Developer',
     description1: '',
     description2: '',
-    dateRange: '',
+    dateRange: 'April 2021 - Oct 2021',
   },
   {
     institutionName: 'Ruckus Marketing (NYC)',
@@ -170,10 +170,24 @@ export const experienceData = [
     backgroundColor: '#ffbd00',
     textColor: '',
     Image: <img alt='' src={ruckusLogoSvg} className='logo-padding' />,
-    title: '',
+    title: 'Front-End Software Engineer',
     description1: '',
     description2: '',
-    dateRange: '',
+    dateRange: 'Oct 2021 - Present',
+  },
+  {
+    iconBackgroundColor: 'rgb(233, 30, 99)',
+    backgroundColor: '#fff',
+    textColor: '',
+    title: <h3 className='vertical-timeline-element-title'>What's Next?</h3>,
+    description1: (
+      <p>
+        Keeping up with current technologies and design trends. <br />
+        Continuing to further my knowledgebase for the love of software design!
+      </p>
+    ),
+    description2: '',
+    dateRange: `${new Date().getFullYear()} and beyond!`,
   },
 ]
 
@@ -287,6 +301,18 @@ export const experienceData = [
             <img alt='' src={gretrixLogo3} className='gx-logo' />
           </div>
         </VerticalTimelineElement>
+         <VerticalTimelineElement
+            dateClassName='timeline-date'
+            className='vertical-timeline-element--education'
+            date={`${new Date().getFullYear()} and beyond!`}
+            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+            icon={''}>
+            <h3 className='vertical-timeline-element-title'>What's Next ?</h3>
+            <p>
+              Keeping up with current technologies and design trends. Continuing
+              to further my knowledgebase for the love of software design!
+            </p>
+          </VerticalTimelineElement>
         <VerticalTimelineElement
           className='vertical-timeline-element--education'
           date='2002 - 2006'
@@ -304,7 +330,4 @@ export const experienceData = [
           iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
           icon={''}
         />
-
-
-
  */
