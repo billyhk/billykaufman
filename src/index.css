@@ -273,7 +273,6 @@ a:hover {
     .home-title h1 {
       font-size: 14vw;
       margin: 0;
-      text-align: center;
     }
     
     .home-title h2 {
@@ -491,7 +490,7 @@ a:hover {
 		display: flex;
 		justify-content: center;
 	}
-	@media (min-width: 401px) {
+	@media (min-width: 400px) {
 		.project-container {
 			place-items: center;
 		}
