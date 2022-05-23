@@ -204,13 +204,13 @@ a:hover {
 }
 
 .side-nav {
-	display: none;
-	height: 100%;
-	position: absolute;
+  display: none;
+  height: 100%;
+  position: absolute;
   top: 0;
   left: 0;
-	transition: 0.25s;
-	z-index: 2;
+  transition: 0.25s;
+  z-index: 2;
   overflow-y: auto;
   width: 50vw;
   height: 100vh;
@@ -220,10 +220,11 @@ a:hover {
 
 
 #closed {
-	transform: translateX(-100%);
+  transform: translateX(-100%);
 }
+
 #open {
-	transform: translateX(0);
+  transform: translateX(0);
 }
 
 .sidebar-links {
