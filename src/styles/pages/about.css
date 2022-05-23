@@ -1,7 +1,7 @@
 .about-main {
   /* background-color: #6687c4; */
   background-color: rgb(119, 176, 195);
-  padding: 2rem 0;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   place-items: center;
+  text-align: center;
   row-gap: 0.5rem;
   color: #fff;
 }
@@ -25,7 +26,7 @@
   display: grid;
   place-items: center;
   gap: 1rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
   max-width: 1400px;
   width: 100%;
 }
@@ -70,6 +71,7 @@
 @media only screen and (max-width: 676px) {
   .about__content-text {
     text-align: center;
+    order: 2;
   }
 
   .about__content-text--header-name {
@@ -78,6 +80,10 @@
 
   .about__content-text--header-title {
     font-size: 1rem;
+  }
+
+  .about__content-headshot {
+    order: 1
   }
 }
 
