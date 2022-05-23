@@ -1,0 +1,21 @@
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="291" height="75.2" viewBox="0 0 291 75.2">
+  <g id="Group_3" data-name="Group 3" transform="translate(-250.6 -268.4)">
+    <g id="Group_1" data-name="Group 1">
+      <path id="Path_1" data-name="Path 1" d="M266.5,296.7l16.7-9.7-.2-18.6L250.6,287Z" fill="#bfbfbf"/>
+      <path id="Path_2" data-name="Path 2" d="M250.6,325V287l15.9,9.7v18.5Z" fill="#e6e7e8"/>
+      <path id="Path_3" data-name="Path 3" d="M299.3,315.1l16.4,9.5V287.4l-16.4,9.2Z" fill="#00adeb"/>
+      <path id="Path_4" data-name="Path 4" d="M299.3,315.1l-16.1-9.4,16.1-9.1Z" fill="#009fdd"/>
+      <path id="Path_5" data-name="Path 5" d="M315.7,324.6l-32.7,19,.2-18.8,16.1-9.7Z" fill="#4dc4f1"/>
+      <path id="Path_6" data-name="Path 6" d="M283,343.6,250.6,325l15.9-9.8,16.7,9.6Z" fill="#b2dbef"/>
+    </g>
+    <g id="Group_2" data-name="Group 2">
+      <path id="Path_7" data-name="Path 7" d="M364.9,305.2v10.4c-2.6,2.4-6.7,3.9-11.4,3.9-9.1,0-15-6.2-15-13.4s5.9-13.4,15-13.4a15.629,15.629,0,0,1,10.8,3.9l-2.7,2.5a11.754,11.754,0,0,0-8.1-2.9c-6.5,0-11,4.5-11,9.9s4.5,9.9,11,9.9a14.518,14.518,0,0,0,7.4-1.9v-5.5h-7.5v-3.4Z" fill="#999"/>
+      <path id="Path_8" data-name="Path 8" d="M387.2,309h-3.7v10h-4V293h7.9c6,0,9.5,3.9,9.5,8,0,3.4-2.1,6.3-5.9,7.5l7.1,10.4h-4.5Zm-3.7-3.4h3.8c3.3,0,5.6-1.9,5.6-4.6s-2.3-4.6-5.6-4.6h-3.8Z" fill="#999"/>
+      <path id="Path_9" data-name="Path 9" d="M415,296.4V304h9.3v3.4H415v8.1h12.1v3.4h-16V293h16v3.4Z" fill="#999"/>
+      <path id="Path_10" data-name="Path 10" d="M456.6,296.5h-7.2V319h-4V296.5H438V293h18.6Z" fill="#999"/>
+      <path id="Path_11" data-name="Path 11" d="M476.6,309H473v10h-4V293h7.9c6,0,9.5,3.9,9.5,8,0,3.4-2.1,6.3-5.9,7.5l7.1,10.4h-4.5Zm-3.6-3.4h3.8c3.3,0,5.6-1.9,5.6-4.6s-2.3-4.6-5.6-4.6H473Z" fill="#999"/>
+      <path id="Path_12" data-name="Path 12" d="M500.5,293h4v26h-4Z" fill="#999"/>
+      <path id="Path_13" data-name="Path 13" d="M536.7,319l-7.6-10.4L521.5,319h-4.7l10-13-9.7-12.9h4.6l7.5,10.3,7.5-10.3h4.6L531.6,306l10,13Z" fill="#999"/>
+    </g>
+  </g>
+</svg>

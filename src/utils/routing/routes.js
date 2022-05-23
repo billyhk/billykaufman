@@ -18,11 +18,11 @@ export const routes = [
     path: pagePaths.about,
     Component: About,
   },
-  // {
-  //   name: 'Experience',
-  //   path: pagePaths.experience,
-  //   Component: Experience,
-  // },
+  {
+    name: 'Experience',
+    path: pagePaths.experience,
+    Component: Experience,
+  },
   {
     name: 'Projects',
     path: pagePaths.projects,
