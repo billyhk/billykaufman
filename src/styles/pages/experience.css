@@ -77,6 +77,14 @@ a.dissertation:hover {
   color: rgba(255, 0, 0, 0.568);
 }
 
+.timeline__um-icon {
+  transform: translateY(0.85rem) scale(0.8)
+}
+
+.timeline__ga-icon {
+  transform: translateY(0.3rem);
+}
+
 @media only screen and (min-width: 1170px) { 
   .experience-header {
     place-items: center;
@@ -107,6 +115,12 @@ a.dissertation:hover {
   }
   .experience-item img {
     margin-bottom: 1rem;
+  }
+  .timeline__um-icon {
+    transform: translateY(0.5rem) scale(0.8)
+  }
+  .timeline__ga-icon {
+    transform: translateY(0.175rem);
   }
 }
 
