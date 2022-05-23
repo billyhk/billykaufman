@@ -1,0 +1,171 @@
+.about-main {
+  /* background-color: #6687c4; */
+  background-color: rgb(119, 176, 195);
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  place-items: center;
+}
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  row-gap: 0.5rem;
+  color: #fff;
+}
+
+.about-header > *,
+.about__content-text--header > * {
+  margin: 0;
+}
+
+.about__content-container {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.about__content-text {
+  display: grid;
+  color: #fff;
+}
+
+.about__content-text--header {
+  display: grid;
+  row-gap: 0.5rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about__content-text--header-name {
+  font-size: 2rem;
+}
+
+.about__content-text--header-title {
+  font-size: 1.25rem;
+}
+
+.about__content-headshot {
+  width: 100%;
+  max-width: 20rem;
+  border-radius: 50%;
+  border: 4px solid white;
+  -webkit-box-shadow: 0 0 15px rgba(0 0 0 / 0.25);
+  box-shadow: 0 0 15px rgba(0 0 0 / 0.25);
+}
+
+@media only screen and (min-width: 676px) {
+  .about__content-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (max-width: 676px) {
+  .about__content-text {
+    text-align: center;
+  }
+
+  .about__content-text--header-name {
+    font-size: 1.25rem;
+  }
+
+  .about__content-text--header-title {
+    font-size: 1rem;
+  }
+}
+
+/* .about-heading {
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.about-caption-container {
+  display: grid;
+  place-items: center;
+}
+
+.about-caption {
+  color: black;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'ubuntu';
+  max-width: 60rem;
+  padding: 0 2rem;
+}
+
+.about-heading2 {
+  margin-top: 5%;
+  text-align: center;
+  letter-spacing: 0.25vmin;
+  text-decoration: underline;
+}
+
+.skills-list {
+  list-style: none;
+  display: grid;
+  place-items: center;
+  border-radius: 1.5ch;
+  background: rgb(174, 213, 255);
+  box-shadow: 0px 1px 10px #999;
+  padding: 2%;
+
+  transition: 0.5s;
+}
+
+.skills-list:hover {
+  box-shadow: 0px 1px 10px 4px #999;
+}
+
+@media (min-width: 701px) {
+  .skills-list {
+    grid-template-columns: 50% 50%;
+  }
+
+  @media (min-width: 1200px) {
+    .skills-list {
+      grid-template-columns: 25% 25% 25% 25%;
+    }
+  }
+}
+
+.skills-list li {
+  padding: 1vmin;
+  text-align: center;
+}
+
+.g-a-link {
+  color: rgb(185, 71, 71);
+}
+
+.g-a-link:hover {
+  color: rgba(255, 0, 0, 0.568);
+}
+
+.resume-link {
+  color: red;
+  font-size: 4em;
+  text-align: center;
+  padding: 0.4em;
+  padding-top: .5em;
+  opacity: 1;
+  border-radius: 1ch;
+
+  transition: 0.5;
+}
+
+.resume-link:hover {
+  color: red;
+  opacity: 0.65;
+  box-shadow: 0px 1px 10px #999;
+}
+
+.resume-link:active {
+  box-shadow: 0px 1px 10px 4px #999;
+} */

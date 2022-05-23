@@ -64,9 +64,9 @@ const Experience = ({ referenceEl }) => {
               </VerticalTimelineElement>
             )
           )}
-          <VerticalTimelineElement
+          {/* <VerticalTimelineElement
             iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-          />
+          /> */}
         </VerticalTimeline>
       </main>
     </Fragment>
