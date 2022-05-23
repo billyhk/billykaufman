@@ -211,7 +211,7 @@ a:hover {
   top: 0;
   left: 0;
   transition: 0.25s;
-  z-index: 2;
+  z-index: 3;
   overflow-y: auto;
   width: 50vw;
   height: 100vh;
