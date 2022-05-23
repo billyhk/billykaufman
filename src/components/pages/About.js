@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFilePdf } from 'react-icons/fa';
+import '../../styles/pages/about.css'
 
 const About = () => (
   <>
