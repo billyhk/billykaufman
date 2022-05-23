@@ -25,6 +25,7 @@ body {
 
 .page-container {
   overflow-y: auto;
+  overflow-x: hidden;
   flex-direction: column;
   display: flex;
   flex: 1 1 0%;
