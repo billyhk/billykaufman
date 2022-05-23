@@ -5,6 +5,7 @@ import { routes } from '../../utils/routing'
 import { XIcon } from './XIcon'
 import { HamburgerButton } from './HamburgerButton'
 import { useClickOutside } from '../../utils/hooks'
+import { Spin as Hamburger } from 'hamburger-react'
 
 const navRightIcons = [
   {
@@ -39,8 +40,17 @@ const NavBar = () => {
   return (
     <div className='nav-container'>
       {/* Mobile Nav Header */}
-      <span className='menu-toggle-button' onClick={toggleSide}>
+      {/* <span className='menu-toggle-button' onClick={toggleSide}>
         {!open ? <HamburgerButton /> : <XIcon />}
+      </span> */}
+      <span className='menu-toggle-button'>
+        <Hamburger
+          toggled={open}
+          toggle={toggleSide}
+          direction='right'
+          color='#fff'
+          burgerStyles={{ zIndex: 3 }}
+        />
       </span>
 
       {/* Mobile Nav Menu */}
