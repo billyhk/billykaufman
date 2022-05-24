@@ -17,7 +17,7 @@ const About = ({ referenceEl }) => {
             <h1>About Me</h1>
             <h4>Allow me to introduce myself...</h4>
           </div>
-          <div className='about__content-container'>
+          <div className='about__content-container about-section__animated-content'>
             <div className='about__content-text'>
               <div className='about__content-text--header'>
                 <p className='about__content-text--header-name'>
@@ -45,7 +45,7 @@ const About = ({ referenceEl }) => {
             <h1>Skills</h1>
             <h4>I do these things quite well</h4>
           </div>
-          <div className='skills-cards__container'>
+          <div className='skills-cards__container about-section__animated-content'>
             {skillsData.map((skill, i) => (
               <SkillsCard {...skill} />
             ))}
