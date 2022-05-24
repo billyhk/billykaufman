@@ -4,6 +4,7 @@ import { routes } from './utils/routing'
 import { useScrollToTopOnNav } from './utils/hooks'
 import NavBar from './components/Navigation/NavBar'
 import './index.css'
+import './styles/components/footer.css'
 
 function App() {
   const ref = useRef(null)

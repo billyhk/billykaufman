@@ -1,26 +1,10 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa'
 import { routes } from '../../utils/routing'
-import { XIcon } from './XIcon'
-import { HamburgerButton } from './HamburgerButton'
 import { useClickOutside } from '../../utils/hooks'
 import { Spin as Hamburger } from 'hamburger-react'
-
-const navRightIcons = [
-  {
-    icon: <FaGithub />,
-    href: 'https://github.com/billyhk',
-  },
-  {
-    icon: <FaLinkedin />,
-    href: 'https://www.linkedin.com/in/williamhkaufman/',
-  },
-  {
-    icon: <FaEnvelope />,
-    href: 'mailto:billyhkaufman@gmail.com',
-  },
-]
+import { socialIcons } from '../../utils/socialIcons'
+import '../../styles/components/navigation.css'
 
 const NavBar = () => {
   const [open, setOpen] = useState(false)
@@ -40,9 +24,6 @@ const NavBar = () => {
   return (
     <div className='nav-container'>
       {/* Mobile Nav Header */}
-      {/* <span className='menu-toggle-button' onClick={toggleSide}>
-        {!open ? <HamburgerButton /> : <XIcon />}
-      </span> */}
       <span className='menu-toggle-button'>
         <Hamburger
           toggled={open}
@@ -71,13 +52,13 @@ const NavBar = () => {
           <span className='signature'>Billy Kaufman</span>
         </NavLink>
 
-        {navRightIcons.map((el) => (
+        {socialIcons.map((el) => (
           <a
             className='nav-right-icon'
             href={el.href}
             target='_blank'
             rel='noopener noreferrer'>
-            {el.icon}
+            {el.icon()}
           </a>
         ))}
       </div>
