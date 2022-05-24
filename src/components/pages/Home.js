@@ -19,6 +19,18 @@ const Home = () => (
           </a>
         ))}
       </div>
+      <div className='home__social--container-mobile'>
+        {socialIcons.map((el) => (
+          <a
+            className='home__social--icon-mobile'
+            href={el.href}
+            target='_blank'
+            rel='noopener noreferrer'>
+            <el.icon />
+            {el.displayName}
+          </a>
+        ))}
+      </div>
     </div>
   </main>
 )

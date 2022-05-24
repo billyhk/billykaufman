@@ -179,6 +179,55 @@ a:hover {
 }
 /* END FADE IN */
 
+/* SLIDERIGHT */
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Internet Explorer */
+@-ms-keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Opera < 12.1 */
+@-o-keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* END SLIDERIGHT */
+
 /* ...DELETE ALL TO BOTTOM DURING REDESIGN... */
 
 /* Projects */
