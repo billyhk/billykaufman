@@ -6,9 +6,7 @@ import '../../styles/pages/about.css'
 const bioParagraphs = [
   <p>
     Experienced software developer specializing in front-end development.
-    Skilled in TypeScript (React-based frameworks), modularized
-    component-oriented architecture, Headless CMS, and integrating Application
-    Programming Interfaces.
+    Skilled in TypeScript (React-based frameworks), object-oriented software design patterns, Headless CMS, and integrating Application Programming Interfaces.
   </p>,
   <p>
     Strong engineering professional with a full-stack engineering certificate
@@ -24,7 +22,7 @@ const bioParagraphs = [
   </p>,
   <p>
     My favorite f/e stack: React, Context, Tailwind, Formik, Axios, with
-    deployment to AWS.
+    deployment with Amazon Web Services.
   </p>,
 ]
 
