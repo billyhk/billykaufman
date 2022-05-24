@@ -5,17 +5,23 @@
   justify-content: space-around;
   place-content: center;
   gap: 1rem;
-
-  max-width: 1200px;
 }
 
 .skills-card {
   width: 23%;
-  background-color: #fff;
   padding: 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
+  row-gap: 1.5rem;
+
+  border-radius: 10px;
+  background: #fefefe;
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #fff;
+}
+
+.skills-card svg {
+  max-width: 10rem;
 }
 
 .skills-ellipses-icon {
@@ -23,14 +29,27 @@
   border-radius: 50%;
 }
 
+.skills-card__body-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  text-align: center;
+}
+
 @media only screen and (max-width: 676px) {
   .skills-card {
     width: 45%;
+    padding: 0.5rem;
+    padding-bottom: 1rem;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .skills-card {
-    width: 90%;
+    width: 95%;
+  }
+
+  .skills-card__heading {
+    font-size: 1rem;
   }
 }
