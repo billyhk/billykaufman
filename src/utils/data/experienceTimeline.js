@@ -37,7 +37,7 @@ export const experienceData = [
           dissertation
         </a>{' '}
         was about getting SUPER organized for complicated and nuanced projects (i.e. Auditions).
-        Developing that kind structured mindset was about to influence me in a major way...
+        Developing that kind of creative and highly-structured mindset was about to influence me in a major way...
       </Fragment>
     ),
     dateRange: '2017 (coursework) / 2020 (final defense)',
