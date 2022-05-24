@@ -1,11 +1,14 @@
 import React, { Fragment } from 'react'
 import { NavToTop } from '../atoms'
-import { SkillsCard } from './Card'
+import { SkillsCard } from '../molecules/Card'
 import { bioData } from '../../utils/data/bio'
 import { skillsData } from '../../utils/data/skills'
 import headshot from '../../component-images/picture-of-self.png'
 import '../../styles/pages/about.css'
 import '../../styles/components/skills.css'
+import '../../styles/components/tools.css'
+import { toolsData } from '../../utils/data/tools'
+import ToolsLineItem from '../molecules/ToolsLineItem'
 
 const About = ({ referenceEl }) => {
   return (
@@ -52,7 +55,17 @@ const About = ({ referenceEl }) => {
           </div>
         </section>
 
-        {/* Tools: Tools of the trade that have made my dev-life easier */}
+        <section className='about-section'>
+          <div className='about-header about__secondary-header'>
+            <h1>Tools</h1>
+            <h4>Instruments of the trade that have made my dev-life easier</h4>
+          </div>
+          <div className='tools__container'>
+            {toolsData.map((tool, i) => (
+              <ToolsLineItem {...tool} />
+            ))}
+          </div>
+        </section>
 
         {/* Past Clients: "I've done work for the following companies" */}
       </main>

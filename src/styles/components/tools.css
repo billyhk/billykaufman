@@ -1,0 +1,42 @@
+.tools__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+
+  border-radius: 1rem;
+  background: linear-gradient(145deg, #ebebeb, #f0f0f0);
+  box-shadow: 1px 5px 60px #5a5a5a, -1px -5px 60px #ffffff;
+}
+
+.tools__line-item--container,
+.tools__tool-label {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+  align-items: flex-end;
+  place-items: center;
+}
+
+.tools__tool-label h2 {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 676px) {
+  .tools__container {
+    width: 80%;
+  }
+  .tools__line-item--container {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .tools__tool-label {
+    align-items: center;
+  }
+  .tools__tool-label > h2,
+  .tools__card-copy {
+    font-size: 1rem;
+  }
+}

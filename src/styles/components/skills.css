@@ -15,9 +15,9 @@
   flex-direction: column;
   row-gap: 1.5rem;
 
-  border-radius: 10px;
-  background: #fefefe;
-  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #fff;
+  border-radius: 1rem;
+  background: linear-gradient(145deg, #ffffff, #ebebeb);
+  box-shadow: 5px 5px 10px #969696, -5px -5px 10px #ffffff;
 }
 
 .skills-card svg {
