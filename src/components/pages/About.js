@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import { FaFilePdf } from 'react-icons/fa'
 import { NavToTop } from '../atoms'
 import headshot from '../../component-images/picture-of-self.png'
 import '../../styles/pages/about.css'
@@ -7,22 +6,26 @@ import '../../styles/pages/about.css'
 const bioParagraphs = [
   <p>
     Experienced software developer specializing in front-end development.
-    Skilled in TypeScript (React-based frameworks), component-oriented
-    architecture, Headless CMS, and integrating Application Programming
-    Interfaces.
+    Skilled in TypeScript (React-based frameworks), modularized
+    component-oriented architecture, Headless CMS, and integrating Application
+    Programming Interfaces.
   </p>,
   <p>
     Strong engineering professional with a full-stack engineering certificate
     from renowned accelerated education at{' '}
     <a
-      id='g-a-link'
+      className='g-a-link'
       href='https://generalassemb.ly/education/software-engineering-immersive-remote'
       target='_blank'
       rel='noopener noreferrer'>
       General Assembly
     </a>
+    .
   </p>,
-  '',
+  <p>
+    My favorite f/e stack: React, Context, Tailwind, Formik, Axios, with
+    deployment to AWS.
+  </p>,
 ]
 
 const About = ({ referenceEl }) => {
@@ -43,6 +46,20 @@ const About = ({ referenceEl }) => {
               </p>
             </div>
             {bioParagraphs.map((el) => el)}
+            <div className='about__content--buttons-container'>
+              <a
+                className='about__content--button-resume'
+                href='https://drive.google.com/file/d/1Ndt9q3jqmwThDpH3oa5DA4WHD20sUdYA/view?usp=sharing'
+                target='_blank'
+                rel='noopener noreferrer'>
+                Download Resume
+              </a>
+              <a
+                className='about__content--button-email'
+                href='mailto:billyhkaufman@gmail.com'>
+                Hire Me
+              </a>
+            </div>
           </div>
           <img
             alt='headshot of self'
@@ -50,11 +67,9 @@ const About = ({ referenceEl }) => {
             className='about__content-headshot'
           />
         </div>
-        <div>Skills &amp; Tools</div>
-        <div>Clients</div>
+        {/* <div>Skills &amp; Tools</div>
+        <div>Clients</div> */}
       </main>
-      {/* <main className='about-main-2'>Skills &amp; Tools</main>
-      <main className='about-main-3'>Clients</main> */}
     </Fragment>
   )
 }
