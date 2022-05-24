@@ -1,0 +1,36 @@
+.skills-cards__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  place-content: center;
+  gap: 1rem;
+
+  max-width: 1200px;
+}
+
+.skills-card {
+  width: 23%;
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-ellipses-icon {
+  background-color: rgb(109, 209, 255);
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 676px) {
+  .skills-card {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .skills-card {
+    width: 90%;
+  }
+}

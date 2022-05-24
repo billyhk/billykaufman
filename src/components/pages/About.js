@@ -1,72 +1,60 @@
 import React, { Fragment } from 'react'
 import { NavToTop } from '../atoms'
+import { SkillsCard } from './Card'
+import { bioData } from '../../utils/data/bio'
+import { skillsData } from '../../utils/data/skills'
 import headshot from '../../component-images/picture-of-self.png'
 import '../../styles/pages/about.css'
-
-const bioParagraphs = [
-  <p>
-    Experienced software developer specializing in front-end development.
-    Skilled in TypeScript (React-based frameworks), object-oriented software design patterns, Headless CMS, and integrating Application Programming Interfaces.
-  </p>,
-  <p>
-    Strong engineering professional with a full-stack engineering certificate
-    from renowned accelerated education at{' '}
-    <a
-      className='g-a-link'
-      href='https://generalassemb.ly/education/software-engineering-immersive-remote'
-      target='_blank'
-      rel='noopener noreferrer'>
-      General Assembly
-    </a>
-    .
-  </p>,
-  <p>
-    My favorite f/e stack: React, Context, Tailwind, Formik, Axios, with
-    deployment with Amazon Web Services.
-  </p>,
-]
+import '../../styles/components/skills.css'
 
 const About = ({ referenceEl }) => {
   return (
     <Fragment>
       <NavToTop referenceEl={referenceEl} />
       <main className='about-main'>
-        <div className='about-header'>
-          <h1>About Me</h1>
-          <h4>Allow me to introduce myself...</h4>
-        </div>
-        <div className='about__content-container'>
-          <div className='about__content-text'>
-            <div className='about__content-text--header'>
-              <p className='about__content-text--header-name'>Billy Kaufman</p>
-              <p className='about__content-text--header-title'>
-                Front-end web engineer in NYC
-              </p>
-            </div>
-            {bioParagraphs.map((el) => el)}
-            <div className='about__content--buttons-container'>
-              <a
-                className='about__content--button-resume'
-                href='https://drive.google.com/file/d/1fvTmpX9EZQhtmOdkbj6wFvb7EFDBw03b/view?usp=sharing'
-                target='_blank'
-                rel='noopener noreferrer'>
-                Download Resume
-              </a>
-              <a
-                className='about__content--button-email'
-                href='mailto:billyhkaufman@gmail.com'>
-                Hire Me
-              </a>
-            </div>
+        <section className='about-section'>
+          <div className='about-header'>
+            <h1>About Me</h1>
+            <h4>Allow me to introduce myself...</h4>
           </div>
-          <img
-            alt='headshot of self'
-            src={headshot}
-            className='about__content-headshot'
-          />
-        </div>
-        {/* <div>Skills &amp; Tools</div>
-        <div>Clients</div> */}
+          <div className='about__content-container'>
+            <div className='about__content-text'>
+              <div className='about__content-text--header'>
+                <p className='about__content-text--header-name'>
+                  {bioData.name}
+                </p>
+                <p className='about__content-text--header-title'>
+                  {bioData.title}
+                </p>
+              </div>
+              {bioData.bodyParagraphs.map((el) => el)}
+              <div className='about__content--buttons-container'>
+                {bioData.CTAs.map((el) => el)}
+              </div>
+            </div>
+            <img
+              alt='headshot of self'
+              src={headshot}
+              className='about__content-headshot'
+            />
+          </div>
+        </section>
+
+        <section className='about-section'>
+          <div className='about-header about__secondary-header'>
+            <h1>Skills</h1>
+            <h4>I do these things quite well</h4>
+          </div>
+          <div className='skills-cards__container'>
+            {skillsData.map((skill, i) => (
+              <SkillsCard {...skill} />
+            ))}
+          </div>
+        </section>
+
+        {/* Tools: Tools of the trade that have made my dev-life easier */}
+
+        {/* Past Clients: "I've done work for the following companies" */}
       </main>
     </Fragment>
   )
