@@ -3,16 +3,21 @@
   flex-direction: column;
   row-gap: 3rem;
   width: 100%;
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
+  color: #fff;
 
-  border-radius: 1rem;
-  background: linear-gradient(145deg, #ebebeb, #f0f0f0);
-  box-shadow: 1px 5px 60px #5a5a5a, -1px -5px 60px #ffffff;
+  border-radius: 10px;
+
+  background: #4f4f4f;
+  box-shadow: 2px 2px 51px #434343, -2px -2px 51px #5b5b5b;
 }
 
-.tools__line-item--container,
-.tools__tool-label {
+.tools__line-item--container > svg > path {
+  stroke: #fff;
+}
+
+.tools__line-item--container {
   display: flex;
   flex-direction: row;
   column-gap: 0.5rem;
@@ -20,22 +25,19 @@
   place-items: center;
 }
 
-.tools__tool-label h2 {
-  font-size: 1.5rem;
+.tools__card-title {
+  border-bottom: 1px solid white;
 }
 
 @media only screen and (max-width: 676px) {
   .tools__container {
-    width: 80%;
+    padding: 1rem;
   }
   .tools__line-item--container {
     flex-direction: column;
     row-gap: 1rem;
   }
-  .tools__tool-label {
-    align-items: center;
-  }
-  .tools__tool-label > h2,
+  .tools__card-title,
   .tools__card-copy {
     font-size: 1rem;
   }

@@ -1,14 +1,14 @@
 import React, { Fragment } from 'react'
 import { NavToTop } from '../atoms'
 import { SkillsCard } from '../molecules/Card'
+import { ToolsLineItem } from '../molecules'
 import { bioData } from '../../utils/data/bio'
 import { skillsData } from '../../utils/data/skills'
+import { toolsData } from '../../utils/data/tools'
 import headshot from '../../component-images/picture-of-self.png'
 import '../../styles/pages/about.css'
 import '../../styles/components/skills.css'
 import '../../styles/components/tools.css'
-import { toolsData } from '../../utils/data/tools'
-import ToolsLineItem from '../molecules/ToolsLineItem'
 
 const About = ({ referenceEl }) => {
   return (

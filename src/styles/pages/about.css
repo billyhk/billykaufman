@@ -45,7 +45,14 @@
 }
 
 .about__secondary-header h1 {
-  color: #c900ab;
+  color: #b81474;
+}
+.about__secondary-header h4 {
+  font-size: larger;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background: #b81474;
+  box-shadow: inset 26px 26px 51px #9c1163, inset -26px -26px 51px #d41785;
 }
 
 .about__content-container {
