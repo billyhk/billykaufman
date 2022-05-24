@@ -2,8 +2,8 @@ import {
   Home,
   About,
   Experience,
-  Projects,
-  Contact,
+  // Projects,
+  // Contact,
 } from '../../components/pages'
 import { pagePaths } from './pagePaths'
 

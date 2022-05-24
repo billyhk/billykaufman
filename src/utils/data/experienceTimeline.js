@@ -11,7 +11,7 @@ import gaLogoCrop from '../../component-images/ga-logo-gear-cropped.png'
 import umLogo from '../../component-images/um-logo.jpg'
 import umLogoLg from '../../component-images/umLogoLg.jpg'
 import { GiBookmarklet } from 'react-icons/gi'
-import { GrTechnology } from 'react-icons/gr'
+// import { GrTechnology } from 'react-icons/gr'
 
 export const experienceData = [
   {
