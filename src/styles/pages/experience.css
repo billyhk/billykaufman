@@ -1,7 +1,23 @@
 .experience-main {
-    /* background-color: rgb(62, 107, 189); */
-    background-color: #6687c4;
+  /* background-color: rgb(62, 107, 189); */
+  /* background-color: #6687c4; */
   /* background: rgb(33, 43, 58); */
+
+  /* background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  ); */
+
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #2b86c5 0%,
+    #784ba0 50%,
+    #ff3cac 100%
+  );
 }
 
 .experience-header {
@@ -12,8 +28,7 @@
   flex-direction: column;
   gap: 1rem;
   font-size: 1.5rem;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-  0 4px 6px -4px rgb(0 0 0 / 0.1);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 .experience-header > * {
@@ -53,11 +68,11 @@
 }
 
 .timeline-date {
-  color: #000
+  color: #000;
 }
 
 .bookmarkletSvgIcon {
-  transform: scale(1.25) translateY(0.1rem)
+  transform: scale(1.25) translateY(0.1rem);
 }
 
 a.dissertation {
@@ -79,14 +94,14 @@ a.dissertation:hover {
 }
 
 .timeline__um-icon {
-  transform: translateY(0.85rem) scale(0.8)
+  transform: translateY(0.85rem) scale(0.8);
 }
 
 .timeline__ga-icon {
   transform: translateY(0.3rem);
 }
 
-@media only screen and (min-width: 1170px) { 
+@media only screen and (min-width: 1170px) {
   .experience-header {
     place-items: center;
   }
@@ -100,25 +115,25 @@ a.dissertation:hover {
     font-size: 1.15rem;
   }
   .responsiveImgSm {
-    display: none
+    display: none;
   }
   .bookmarkletSvgIcon {
-    transform: scale(2) translateY(0.1rem)
+    transform: scale(2) translateY(0.1rem);
   }
   .timeline-date {
-    color: #fff
+    color: #fff;
   }
 }
 
 @media only screen and (max-width: 1170px) {
   .responsiveImgLg {
-    display: none
+    display: none;
   }
   .experience-item img {
     margin-bottom: 1rem;
   }
   .timeline__um-icon {
-    transform: translateY(0.5rem) scale(0.8)
+    transform: translateY(0.5rem) scale(0.8);
   }
   .timeline__ga-icon {
     transform: translateY(0.175rem);
@@ -141,7 +156,7 @@ a.dissertation:hover {
     place-items: center;
   }
   .experience-description {
-    order: 1
+    order: 1;
   }
   .experience-description h1 {
     font-size: 1rem;

@@ -1,9 +1,5 @@
 .about-main-1 {
-  /* background-color: #6687c4; */
-  /* background-color: rgb(119, 176, 195); */
-  /* background-color: rgb(26, 81, 148); */
-  background: linear-gradient(rgb(26, 81, 148), rgb(119, 176, 195));
-
+  background: linear-gradient(rgb(26, 81, 148) 5%, rgb(119, 176, 195) 50%);
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -17,7 +13,7 @@
 }
 
 .about-header {
-  padding: 3rem;
+  padding-top: 3rem;
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -121,97 +117,3 @@
     padding: 5%;
   }
 }
-
-/* 
-
-a.doctorate {
-  color: #f47525;
-}
-
-a.doctorate:hover {
-  color: #0d5330;
-}
-
-
-.about-heading {
-  text-align: center;
-  border-bottom: 2px solid black;
-}
-
-.about-caption-container {
-  display: grid;
-  place-items: center;
-}
-
-.about-caption {
-  color: black;
-  font-weight: 400;
-  text-align: center;
-  font-family: 'ubuntu';
-  max-width: 60rem;
-  padding: 0 2rem;
-}
-
-.about-heading2 {
-  margin-top: 5%;
-  text-align: center;
-  letter-spacing: 0.25vmin;
-  text-decoration: underline;
-}
-
-.skills-list {
-  list-style: none;
-  display: grid;
-  place-items: center;
-  border-radius: 1.5ch;
-  background: rgb(174, 213, 255);
-  box-shadow: 0px 1px 10px #999;
-  padding: 2%;
-
-  transition: 0.5s;
-}
-
-.skills-list:hover {
-  box-shadow: 0px 1px 10px 4px #999;
-}
-
-@media (min-width: 701px) {
-  .skills-list {
-    grid-template-columns: 50% 50%;
-  }
-
-  @media (min-width: 1200px) {
-    .skills-list {
-      grid-template-columns: 25% 25% 25% 25%;
-    }
-  }
-}
-
-.skills-list li {
-  padding: 1vmin;
-  text-align: center;
-}
-
-
-
-.resume-link {
-  color: red;
-  font-size: 4em;
-  text-align: center;
-  padding: 0.4em;
-  padding-top: .5em;
-  opacity: 1;
-  border-radius: 1ch;
-
-  transition: 0.5;
-}
-
-.resume-link:hover {
-  color: red;
-  opacity: 0.65;
-  box-shadow: 0px 1px 10px #999;
-}
-
-.resume-link:active {
-  box-shadow: 0px 1px 10px 4px #999;
-} */

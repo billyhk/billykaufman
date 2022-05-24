@@ -4,6 +4,27 @@ import { NavToTop } from '../atoms'
 import headshot from '../../component-images/picture-of-self.png'
 import '../../styles/pages/about.css'
 
+const bioParagraphs = [
+  <p>
+    Experienced software developer specializing in front-end development.
+    Skilled in TypeScript (React-based frameworks), component-oriented
+    architecture, Headless CMS, and integrating Application Programming
+    Interfaces.
+  </p>,
+  <p>
+    Strong engineering professional with a full-stack engineering certificate
+    from renowned accelerated education at{' '}
+    <a
+      id='g-a-link'
+      href='https://generalassemb.ly/education/software-engineering-immersive-remote'
+      target='_blank'
+      rel='noopener noreferrer'>
+      General Assembly
+    </a>
+  </p>,
+  '',
+]
+
 const About = ({ referenceEl }) => {
   return (
     <Fragment>
@@ -13,7 +34,6 @@ const About = ({ referenceEl }) => {
           <h1>About Me</h1>
           <h4>Allow me to introduce myself...</h4>
         </div>
-
         <div className='about__content-container'>
           <div className='about__content-text'>
             <div className='about__content-text--header'>
@@ -22,25 +42,7 @@ const About = ({ referenceEl }) => {
                 Front-end web engineer in NYC
               </p>
             </div>
-            <p>
-              Experienced software developer specializing in front-end
-              development. Skilled in TypeScript (React-based frameworks),
-              component-oriented architecture, Headless CMS, and integrating
-              Application Programming Interfaces.
-            </p>
-            <p>
-              Strong engineering professional with a full-stack engineering
-              certificate from renowned accelerated education at{' '}
-              <a
-                id='g-a-link'
-                href='https://generalassemb.ly/education/software-engineering-immersive-remote'
-                target='_blank'
-                rel='noopener noreferrer'>
-                General Assembly
-              </a>
-            </p>
-            <p>Work</p>
-            <p>Personal Interests</p>
+            {bioParagraphs.map((el) => el)}
           </div>
           <img
             alt='headshot of self'
@@ -57,8 +59,8 @@ const About = ({ referenceEl }) => {
 
 export default About
 
-      {
-        /* <main className='about-main'>
+{
+  /* <main className='about-main'>
         <h1 className='about-heading'>About Me</h1>
         <section className='about-caption-container'>
           <p className='about-caption'>
@@ -115,4 +117,4 @@ export default About
           </a>
         </section>
       </main> */
-      }
+}
