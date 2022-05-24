@@ -4,7 +4,8 @@ import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
 export const socialIcons = [
   {
     icon: (props) => <FaGithub {...props} />,
-    href: 'https://github.com/billyhk',
+    href: 'https://github.com/billyhk/billykaufman',
+    // href: 'https://github.com/billyhk',
   },
   {
     icon: (props) => <FaLinkedin {...props} />,
