@@ -49,7 +49,7 @@ const About = ({ referenceEl }) => {
             <div className='about__content--buttons-container'>
               <a
                 className='about__content--button-resume'
-                href='https://drive.google.com/file/d/1Ndt9q3jqmwThDpH3oa5DA4WHD20sUdYA/view?usp=sharing'
+                href='https://drive.google.com/file/d/1fvTmpX9EZQhtmOdkbj6wFvb7EFDBw03b/view?usp=sharing'
                 target='_blank'
                 rel='noopener noreferrer'>
                 Download Resume
