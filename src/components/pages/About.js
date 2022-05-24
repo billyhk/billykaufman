@@ -8,7 +8,7 @@ const About = ({ referenceEl }) => {
   return (
     <Fragment>
       <NavToTop referenceEl={referenceEl} />
-      <main className='about-main'>
+      <main className='about-main-1'>
         <div className='about-header'>
           <h1>About Me</h1>
           <h4>Allow me to introduce myself...</h4>
@@ -22,13 +22,25 @@ const About = ({ referenceEl }) => {
                 Front-end web engineer in NYC
               </p>
             </div>
-            <p>Content goes here...</p>
-            <p>Content goes here...</p>
-            <p>Content goes here...</p>
-
-            {/* <div className='about__content-text--body'>
-              <p></p>
-            </div> */}
+            <p>
+              Experienced software developer specializing in front-end
+              development. Skilled in TypeScript (React-based frameworks),
+              component-oriented architecture, Headless CMS, and integrating
+              Application Programming Interfaces.
+            </p>
+            <p>
+              Strong engineering professional with a full-stack engineering
+              certificate from renowned accelerated education at{' '}
+              <a
+                id='g-a-link'
+                href='https://generalassemb.ly/education/software-engineering-immersive-remote'
+                target='_blank'
+                rel='noopener noreferrer'>
+                General Assembly
+              </a>
+            </p>
+            <p>Work</p>
+            <p>Personal Interests</p>
           </div>
           <img
             alt='headshot of self'
@@ -37,8 +49,16 @@ const About = ({ referenceEl }) => {
           />
         </div>
       </main>
+      <main className='about-main-2'>Skills &amp; Tools</main>
+      <main className='about-main-3'>Clients</main>
+    </Fragment>
+  )
+}
 
-      {/* <main className='about-main'>
+export default About
+
+      {
+        /* <main className='about-main'>
         <h1 className='about-heading'>About Me</h1>
         <section className='about-caption-container'>
           <p className='about-caption'>
@@ -94,9 +114,5 @@ const About = ({ referenceEl }) => {
             <FaFilePdf />
           </a>
         </section>
-      </main> */}
-    </Fragment>
-  )
-}
-
-export default About
+      </main> */
+      }
