@@ -23,3 +23,9 @@
   border-color: rgb(236, 139, 139);
   cursor: default;
 }
+
+@media only screen and (max-width: 400px) {
+  .about-footer span {
+    font-size: 1rem;
+  }
+}

@@ -1,5 +1,10 @@
-.about-main-1 {
-  background: linear-gradient(rgb(26, 81, 148) 5%, rgb(119, 176, 195) 50%);
+.about-main {
+  background: linear-gradient(
+    160deg,
+    rgb(26, 81, 148) 0%,
+    rgb(119, 176, 195) 50%,
+    rgb(109, 209, 255) 100%
+  );
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -7,10 +12,10 @@
   place-items: center;
 }
 
-.about-main-2,
+/* .about-main-2,
 .about-main-3 {
   background-color: rgb(119, 176, 195);
-}
+} */
 
 .about-header {
   padding-top: 3rem;
@@ -35,6 +40,12 @@
   margin: 1rem 0;
   max-width: 1400px;
   width: 100%;
+
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
 }
 
 .about__content-text {

@@ -12,7 +12,6 @@
 
 .home-title {
   background: linear-gradient(rgb(0, 16, 78), transparent);
-
   border-radius: 2rem;
   padding: 4% 2%;
   font-family: 'Raleway';
@@ -25,20 +24,12 @@
   place-content: center;
   width: 90vw;
   margin: 2rem 0;
-  animation: bounce 10s infinite;
-}
 
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(-1rem);
-    animation-timing-function: ease-in-out;
-  }
-
-  50% {
-    transform: translateY(0);
-    animation-timing-function: ease-in-out;
-  }
+  -webkit-animation: bounce 8s infinite; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: bounce 8s infinite; /* Firefox < 16 */
+  -ms-animation: bounce 8s infinite; /* Internet Explorer */
+  -o-animation: bounce 8s infinite; /* Opera < 12.1 */
+  animation: bounce 8s infinite;
 }
 
 .home-title > * {
@@ -52,26 +43,23 @@
   color: rgb(253, 215, 143);
 } */
 
-.home-title > p {
+.home-title > .home-title__intro {
   color: rgb(106, 198, 252);
   font-size: 6vw;
-  margin-bottom: 0;
 }
 
-.home-title > h1 {
-  margin-top: 0;
+.home-title > .home-title__name {
   font-size: 10vw;
   color: #fd23de;
-  border-bottom: 3px solid #fd23de;
-  margin-bottom: 0;
-  text-align: left;
+  text-decoration: underline;
+  /* border-bottom: 3px solid #fd23de; */
+  /* text-align: right; */
 }
 
-.home-title > h2 {
+.home-title > .home-title__title {
   font-size: 4vw;
-  margin-top: 0;
   color: rgb(106, 198, 252);
-  text-align: right;
+  /* text-align: left; */
 }
 
 .home__social--container {
@@ -90,12 +78,18 @@
   background: rgb(106, 198, 252);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 850px) {
   .home__social--container {
+    margin: 0;
     transform: scale(0.65);
   }
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 480px) {
+  .home__social--container {
+    transform: scale(0.4);
+  }
+}
+@media only screen and (max-width: 350px) {
   .home__social--container {
     display: none;
   }

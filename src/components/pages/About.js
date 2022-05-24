@@ -29,7 +29,7 @@ const About = ({ referenceEl }) => {
   return (
     <Fragment>
       <NavToTop referenceEl={referenceEl} />
-      <main className='about-main-1'>
+      <main className='about-main'>
         <div className='about-header'>
           <h1>About Me</h1>
           <h4>Allow me to introduce myself...</h4>
@@ -50,17 +50,18 @@ const About = ({ referenceEl }) => {
             className='about__content-headshot'
           />
         </div>
+        <div>Skills &amp; Tools</div>
+        <div>Clients</div>
       </main>
-      <main className='about-main-2'>Skills &amp; Tools</main>
-      <main className='about-main-3'>Clients</main>
+      {/* <main className='about-main-2'>Skills &amp; Tools</main>
+      <main className='about-main-3'>Clients</main> */}
     </Fragment>
   )
 }
 
 export default About
 
-{
-  /* <main className='about-main'>
+/* <main className='about-main'>
         <h1 className='about-heading'>About Me</h1>
         <section className='about-caption-container'>
           <p className='about-caption'>
@@ -117,4 +118,3 @@ export default About
           </a>
         </section>
       </main> */
-}
