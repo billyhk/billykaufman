@@ -10,7 +10,7 @@
   border-radius: 10px;
 
   background: #4f4f4f;
-  box-shadow: 2px 2px 51px #434343, -2px -2px 51px #5b5b5b;
+  box-shadow: 15px 15px 40px #434343, -15px -15px 40px #5b5b5b;
 }
 
 .tools__line-item--container > svg > path {
