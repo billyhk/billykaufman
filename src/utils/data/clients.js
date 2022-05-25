@@ -1,6 +1,8 @@
 import React from 'react'
 import {
+  CrsLogo,
   DominosLogo,
+  PharmacareLogo,
   SebpoLogo,
   VerifyLogo,
   WestrockLogo,
@@ -10,7 +12,7 @@ export const clientsData = [
   {
     Logo: <VerifyLogo width='75%' />,
     title: 'Verify',
-    description: 'Employee records verification software.',
+    description: 'Employee records verification service provider.',
   },
   {
     Logo: <SebpoLogo width='75%' />,
@@ -21,32 +23,22 @@ export const clientsData = [
     Logo: <DominosLogo width='85%' />,
     title: "Domino's Pizza",
     description:
-      'Fast-food chain and founder of the Slice The Price Card fundraiser.',
+      'Fast-food chain and founder of the Slice-The-Price-Card fundraiser.',
   },
   {
     Logo: <WestrockLogo width='100%' />,
     title: 'Westrock Coffee',
     description:
-      "International coffee distributor. Major supplier for Dunkin' Donuts and Starbucks.",
+      "International coffee distributor & major supplier for Dunkin' Donuts and Starbucks.",
   },
   {
-    Logo: 'test',
-    title: 'test',
-    description: 'test',
+    Logo: <PharmacareLogo width='90%' />,
+    title: 'PharmaCare',
+    description: 'Specialty generic and brand pharmaceutical wholesaler.',
   },
   {
-    Logo: '',
-    title: '',
-    description: '',
-  },
-  {
-    Logo: '',
-    title: '',
-    description: '',
-  },
-  {
-    Logo: '',
-    title: '',
-    description: '',
+    Logo: <CrsLogo width='90%' lightcolor='#555'/>,
+    title: 'Credit Reporting Services (CRS)',
+    description: 'Credit data provider that handles reporting, CRM integrations, underwriting, and more.',
   },
 ]

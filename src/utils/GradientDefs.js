@@ -64,6 +64,17 @@ const GradientDefs = () => (
         <stop offset={0.825} stopColor='#f9bc34' />
         <stop offset={1} stopColor='#ffc535' />
       </linearGradient>
+
+      <linearGradient
+        id='crs-gradient'
+        x1='48.0348'
+        y1='-2.22119'
+        x2='-16.5112'
+        y2='52.1646'
+        gradientUnits='userSpaceOnUse'>
+        <stop stopColor='#F1955E' />
+        <stop offset='1' stopColor='#FFC047' />
+      </linearGradient>
     </defs>
   </svg>
 )

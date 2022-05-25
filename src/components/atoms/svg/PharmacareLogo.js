@@ -3,7 +3,7 @@ import React from 'react'
 const PharmacareLogo = ({
   className,
   width = 180,
-  lightColor = '#fff',
+  lightColor = '#054cdb',
   darkColor = '#07d80c',
   ...props
 }) => {
