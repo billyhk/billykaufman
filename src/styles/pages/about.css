@@ -6,12 +6,13 @@
     rgb(109, 209, 255) 100%
   );
   padding: 1rem;
+  padding-bottom: 3rem;
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   place-items: center;
-  row-gap: 3rem;
+  row-gap: 2rem;
 }
 
 .about-section {
@@ -20,6 +21,7 @@
   align-items: flex-start;
   place-items: center;
   row-gap: 3rem;
+  max-width: 90%;
 }
 
 .about-section__animated-content {
@@ -42,13 +44,18 @@
 
 .about-header h1 {
   font-size: 3rem;
+  font-weight: 400;
+}
+
+.about-header h4 {
+  font-weight: 500;
+  font-size: larger;
 }
 
 .about__secondary-header h1 {
   color: #b81474;
 }
 .about__secondary-header h4 {
-  font-size: larger;
   padding: 0.5rem;
   border-radius: 5px;
   background: #b81474;
@@ -204,5 +211,8 @@
 @media only screen and (max-width: 400px) {
   .about__bio-content--buttons-container {
     flex-direction: column;
+  }
+  .about__secondary-header h1 {
+    font-size: 1.5rem;
   }
 }

@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 import { NavToTop } from '../atoms'
-import { bioData } from '../../utils/data/bio'
-import { aboutPageSections } from '../../utils/data/aboutPageSections'
+import { bioData, aboutPageSections } from '../../utils/data'
 import headshot from '../../component-images/picture-of-self.png'
 import '../../styles/pages/about.css'
 

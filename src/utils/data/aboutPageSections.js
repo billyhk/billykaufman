@@ -1,45 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { GoTools } from 'react-icons/go'
 import { FaReact, FaHandsHelping } from 'react-icons/fa'
-
 import { ToolsLineItem } from '../../components/molecules'
-import { SkillsCard } from '../../components/molecules/Card'
-
+import { ClientCard, SkillsCard } from '../../components/molecules/Card'
 import { skillsData } from './skills'
 import { toolsData } from './tools'
+import { clientsData } from './clients'
 
 import '../../styles/components/skills.css'
 import '../../styles/components/tools.css'
 import '../../styles/components/clients.css'
-
-const clientsData = [
-  {
-    Logo: 'test',
-    title: 'test',
-    description: 'test',
-  },
-  {
-    Logo: '',
-    title: '',
-    description: '',
-  },
-  {
-    Logo: '',
-    title: '',
-    description: '',
-  },
-  {
-    Logo: '',
-    title: '',
-    description: '',
-  },
-]
-
-const ClientCard = ({ Logo, title, description }) => {
-  const [showReverse, setShowReverse] = useState(false)
-
-  return <div className='client-card'></div>
-}
 
 export const aboutPageSections = [
   {
@@ -67,18 +37,25 @@ export const aboutPageSections = [
     ),
   },
   {
-    Icon: <FaHandsHelping size={60} fill='url(#handshake-icon-gradient)' />,
+    Icon: (
+      <FaHandsHelping
+        size={60}
+        fill='url(#handshake-icon-gradient)'
+        className='pulse'
+      />
+    ),
     heading: 'Happy Customers',
-    subheading: "I've done development work for the following companies",
+    subheading: (
+      <span>
+        I've done development work for the following companies <br />{' '}
+        <span style={{ color: '#000' }}>(click each to learn more)</span>
+      </span>
+    ),
     body: (
       <div className='clients__container'>
-        {/* {
-
         {clientsData.map((client, i) => (
-          <ClientCard {client} />
-        )}
-
-      } */}
+          <ClientCard {...client} />
+        ))}
       </div>
     ),
   },

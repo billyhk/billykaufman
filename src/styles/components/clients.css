@@ -1,8 +1,64 @@
 .clients__container {
-  background: #fff;
-  width: 100%;
-  
+  padding: 2rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  gap: 2rem;
+  border-radius: 25px;
+  background: #ffffff;
+  box-shadow: 13px 13px 26px #a3a3a3, -13px -13px 26px #ffffff;
+}
+
+.client-card {
+  width: 14rem;
+  height: 14rem;
+  padding: 0.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.client-card__shadow-up {
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 7px 7px 14px #bdbdbd, -7px -7px 14px #ffffff;
+}
+.client-card__shadow-down {
+  background: #ffffff;
+  box-shadow: inset 7px 7px 14px #bdbdbd, inset -7px -7px 14px #ffffff;
+}
+
+.client-card__reverse-content-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.client-card__reverse--title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 676px) {
+  .client-card__reverse--title {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .clients__container {
+    padding: 0.5rem;
+  }
+  .client-card {
+    width: 8rem;
+    height: 8rem;
+  }
+  .client-card__reverse--title {
+    font-size: 1rem;
+  }
+  .client-card__reverse--body {
+    font-size: 0.75rem;
+  }
 }
