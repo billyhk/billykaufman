@@ -22,7 +22,8 @@
 
   display: grid;
   place-content: center;
-  width: 95%;
+  min-width: 65%;
+  max-width: 95%;
   margin: 2rem 0;
 
   -webkit-animation: slideRight 0.5s;
