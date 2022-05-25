@@ -1,0 +1,8 @@
+.clients__container {
+  background: #fff;
+  width: 100%;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

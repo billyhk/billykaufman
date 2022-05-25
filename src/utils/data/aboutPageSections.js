@@ -1,11 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { GoTools } from 'react-icons/go'
+import { FaReact, FaHandsHelping } from 'react-icons/fa'
+
 import { ToolsLineItem } from '../../components/molecules'
 import { SkillsCard } from '../../components/molecules/Card'
+
 import { skillsData } from './skills'
 import { toolsData } from './tools'
 
-import { GoTools } from 'react-icons/go'
-import { FaReact } from 'react-icons/fa'
+import '../../styles/components/skills.css'
+import '../../styles/components/tools.css'
+import '../../styles/components/clients.css'
+
+const clientsData = [
+  {
+    Logo: 'test',
+    title: 'test',
+    description: 'test',
+  },
+  {
+    Logo: '',
+    title: '',
+    description: '',
+  },
+  {
+    Logo: '',
+    title: '',
+    description: '',
+  },
+  {
+    Logo: '',
+    title: '',
+    description: '',
+  },
+]
+
+const ClientCard = ({ Logo, title, description }) => {
+  const [showReverse, setShowReverse] = useState(false)
+
+  return <div className='client-card'></div>
+}
 
 export const aboutPageSections = [
   {
@@ -13,7 +47,7 @@ export const aboutPageSections = [
     heading: 'Skills',
     subheading: 'I do these things quite well',
     body: (
-      <div className='skills-cards__container'>
+      <div className='skills__container'>
         {skillsData.map((skill, i) => (
           <SkillsCard {...skill} />
         ))}
@@ -33,9 +67,19 @@ export const aboutPageSections = [
     ),
   },
   {
-    Icon: '',
+    Icon: <FaHandsHelping size={60} fill='url(#handshake-icon-gradient)' />,
     heading: 'Happy Customers',
     subheading: "I've done development work for the following companies",
-    body: '',
+    body: (
+      <div className='clients__container'>
+        {/* {
+
+        {clientsData.map((client, i) => (
+          <ClientCard {client} />
+        )}
+
+      } */}
+      </div>
+    ),
   },
 ]

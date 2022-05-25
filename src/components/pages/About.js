@@ -4,8 +4,6 @@ import { bioData } from '../../utils/data/bio'
 import { aboutPageSections } from '../../utils/data/aboutPageSections'
 import headshot from '../../component-images/picture-of-self.png'
 import '../../styles/pages/about.css'
-import '../../styles/components/skills.css'
-import '../../styles/components/tools.css'
 
 const SecondarySection = ({ Icon, heading, subheading, body }) => (
   <div class='about-section'>

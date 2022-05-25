@@ -36,6 +36,34 @@ const GradientDefs = () => (
         <stop stopColor='#9ef6a6' offset='50%' />
         <stop stopColor='#c1fba4' offset='100%' />
       </linearGradient>
+
+      <linearGradient
+        id='sebpo-gradient1'
+        gradientUnits='userSpaceOnUse'
+        x1={41.541}
+        y1={106.234}
+        x2={41.541}
+        y2={19.761}>
+        <stop offset={0} stopColor='#bf6728' />
+        <stop offset={0.196} stopColor='#d07f2b' />
+        <stop offset={0.544} stopColor='#e9a531' />
+        <stop offset={0.825} stopColor='#f9bc34' />
+        <stop offset={1} stopColor='#ffc535' />
+      </linearGradient>
+
+      <linearGradient
+        id='sebpo-gradient2'
+        gradientUnits='userSpaceOnUse'
+        x1={65.866}
+        y1={92.236}
+        x2={65.866}
+        y2={19.579}>
+        <stop offset={0} stopColor='#bf6728' />
+        <stop offset={0.196} stopColor='#d07f2b' />
+        <stop offset={0.544} stopColor='#e9a531' />
+        <stop offset={0.825} stopColor='#f9bc34' />
+        <stop offset={1} stopColor='#ffc535' />
+      </linearGradient>
     </defs>
   </svg>
 )
