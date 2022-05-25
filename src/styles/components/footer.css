@@ -13,16 +13,18 @@
   padding: 0.5rem;
   border: 2px solid white;
   border-radius: 25px;
-  transition: 0.5s;
+  cursor: default;
+  
+  /* transition: 0.5s; */
 }
 
-.about-footer span:hover {
+/* .about-footer span:hover {
   letter-spacing: 0.25vmin;
 
   color: black;
   border-color: rgb(236, 139, 139);
   cursor: default;
-}
+} */
 
 @media only screen and (max-width: 400px) {
   .about-footer span {

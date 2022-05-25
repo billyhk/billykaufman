@@ -14,7 +14,8 @@
   background: linear-gradient(rgb(0, 16, 78), transparent);
   border-radius: 2rem;
   padding: 4% 2%;
-  font-family: 'Raleway';
+  cursor: default;
+
   /* box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); */
   -webkit-box-shadow: 0 -10px 140px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 0 -10px 140px rgba(50, 50, 50, 0.75);
@@ -33,36 +34,21 @@
   animation: slideRight 0.5s;
 }
 
-.home-title > * {
-  /* transition: 0.35s; */
-  font-family: Open Sans, sans-serif;
-  font-weight: 200;
-  cursor: default;
-}
-
-/* .home-title > *:hover {
-  color: rgb(253, 215, 143);
-} */
-
 .home-title > .home-title__intro {
   color: rgb(106, 198, 252);
-  /* font-size: 6vw; */
   font-size: 2rem;
 }
 
 .home-title > .home-title__name {
-  /* font-size: 10vw; */
   font-size: 5rem;
 
   color: #fd23de;
   border-bottom: 4px solid #fd23de;
-  /* text-decoration: underline; */
+  margin-bottom: 1rem;;
 }
 
 .home-title > .home-title__title {
-  /* font-size: 4vw; */
   font-size: 2rem;
-
   color: rgb(106, 198, 252);
 }
 
