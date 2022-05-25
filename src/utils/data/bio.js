@@ -23,7 +23,7 @@ export const bioData = {
       .
     </p>,
     <p>
-      My favorite f/e stack: React, Context, Tailwind, Formik, Axios, with
+      My favorite f/e stack: React, Context, Tailwind, Formik, Axios, and
       deployment with Amazon Web Services.
     </p>,
   ],
