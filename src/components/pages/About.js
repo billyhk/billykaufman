@@ -1,14 +1,22 @@
 import React, { Fragment } from 'react'
 import { NavToTop } from '../atoms'
-import { SkillsCard } from '../molecules/Card'
-import { ToolsLineItem } from '../molecules'
 import { bioData } from '../../utils/data/bio'
-import { skillsData } from '../../utils/data/skills'
-import { toolsData } from '../../utils/data/tools'
+import { aboutPageSections } from '../../utils/data/aboutPageSections'
 import headshot from '../../component-images/picture-of-self.png'
 import '../../styles/pages/about.css'
 import '../../styles/components/skills.css'
 import '../../styles/components/tools.css'
+
+const SecondarySection = ({ Icon, heading, subheading, body }) => (
+  <div class='about-section'>
+    <div className='about-header about__secondary-header'>
+      {Icon && Icon}
+      <h1>{heading}</h1>
+      <h4>{subheading}</h4>
+    </div>
+    <div className='about-section__animated-content'>{body}</div>
+  </div>
+)
 
 const About = ({ referenceEl }) => {
   return (
@@ -20,54 +28,32 @@ const About = ({ referenceEl }) => {
             <h1>About Me</h1>
             <h4>Allow me to introduce myself...</h4>
           </div>
-          <div className='about__content-container about-section__animated-content'>
-            <div className='about__content-text'>
-              <div className='about__content-text--header'>
-                <p className='about__content-text--header-name'>
+          <div className='about__bio-content-container about-section__animated-content'>
+            <div className='about__bio-content-text'>
+              <div className='about__bio-content-text--header'>
+                <p className='about__bio-content-text--header-name'>
                   {bioData.name}
                 </p>
-                <p className='about__content-text--header-title'>
+                <p className='about__bio-content-text--header-title'>
                   {bioData.title}
                 </p>
               </div>
               {bioData.bodyParagraphs.map((el) => el)}
-              <div className='about__content--buttons-container'>
+              <div className='about__bio-content--buttons-container'>
                 {bioData.CTAs.map((el) => el)}
               </div>
             </div>
             <img
               alt='headshot of self'
               src={headshot}
-              className='about__content-headshot'
+              className='about__bio-content-headshot'
             />
           </div>
         </section>
 
-        <section className='about-section'>
-          <div className='about-header about__secondary-header'>
-            <h1>Skills</h1>
-            <h4>I do these things quite well</h4>
-          </div>
-          <div className='skills-cards__container about-section__animated-content'>
-            {skillsData.map((skill, i) => (
-              <SkillsCard {...skill} />
-            ))}
-          </div>
-        </section>
-
-        <section className='about-section'>
-          <div className='about-header about__secondary-header'>
-            <h1>Tools</h1>
-            <h4>Instruments of the trade that have made my dev-life easier</h4>
-          </div>
-          <div className='tools__container'>
-            {toolsData.map((tool, i) => (
-              <ToolsLineItem {...tool} />
-            ))}
-          </div>
-        </section>
-
-        {/* Past Clients: "I've done work for the following companies" */}
+        {aboutPageSections.map((section, i) => (
+          <SecondarySection {...section} />
+        ))}
       </main>
     </Fragment>
   )
