@@ -3,10 +3,10 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component'
+import { NavToTop } from '../atoms'
+import { experienceData } from '../../utils/data'
 import 'react-vertical-timeline-component/style.min.css'
 import '../../styles/pages/experience.css'
-import { NavToTop } from '../atoms'
-import { experienceData } from '../../utils/data/experienceTimeline'
 
 const staticCopy = {
   pageHeader: 'Experience & Education',
@@ -64,9 +64,9 @@ const Experience = ({ referenceEl }) => {
               </VerticalTimelineElement>
             )
           )}
-          <VerticalTimelineElement
+          {/* <VerticalTimelineElement
             iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-          />
+          /> */}
         </VerticalTimeline>
       </main>
     </Fragment>

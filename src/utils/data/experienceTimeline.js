@@ -11,7 +11,7 @@ import gaLogoCrop from '../../component-images/ga-logo-gear-cropped.png'
 import umLogo from '../../component-images/um-logo.jpg'
 import umLogoLg from '../../component-images/umLogoLg.jpg'
 import { GiBookmarklet } from 'react-icons/gi'
-import { GrTechnology } from 'react-icons/gr'
+// import { GrTechnology } from 'react-icons/gr'
 
 export const experienceData = [
   {
@@ -36,8 +36,8 @@ export const experienceData = [
           rel='noopener noreferrer'>
           dissertation
         </a>{' '}
-        was about getting SUPER organized for complicated and nuanced projects.
-        That kind structured mindset was about to influence me in a major way...
+        was about getting SUPER organized for complicated and nuanced projects (i.e. Auditions).
+        Developing that kind of creative and highly-structured mindset was about to influence me in a major way...
       </Fragment>
     ),
     dateRange: '2017 (coursework) / 2020 (final defense)',

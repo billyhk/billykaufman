@@ -1,0 +1,31 @@
+.about-footer {
+  background: rgb(58, 157, 228);
+  padding: 0.5rem 0;
+  color: white;
+  font-family: 'ubuntu';
+  font-size: 1.25rem;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+.about-footer span {
+  padding: 0.5rem;
+  border: 2px solid white;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+
+.about-footer span:hover {
+  letter-spacing: 0.25vmin;
+
+  color: black;
+  border-color: rgb(236, 139, 139);
+  cursor: default;
+}
+
+@media only screen and (max-width: 400px) {
+  .about-footer span {
+    font-size: 1rem;
+  }
+}

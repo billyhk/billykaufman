@@ -2,8 +2,8 @@ import {
   Home,
   About,
   Experience,
-  Projects,
-  Contact,
+  // Projects,
+  // Contact,
 } from '../../components/pages'
 import { pagePaths } from './pagePaths'
 
@@ -23,14 +23,14 @@ export const routes = [
     path: pagePaths.experience,
     Component: Experience,
   },
-  {
-    name: 'Projects',
-    path: pagePaths.projects,
-    Component: Projects,
-  },
-  {
-    name: 'Contact',
-    path: pagePaths.contact,
-    Component: Contact,
-  },
+  // {
+  //   name: 'Projects',
+  //   path: pagePaths.projects,
+  //   Component: Projects,
+  // },
+  // {
+  //   name: 'Contact',
+  //   path: pagePaths.contact,
+  //   Component: Contact,
+  // },
 ]

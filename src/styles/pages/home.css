@@ -1,0 +1,158 @@
+.home-main {
+  background-image: url('https://d346xxcyottdqx.cloudfront.net/wp-content/uploads/2016/02/Big-data-storage-e1455012396729.jpg');
+  /* background-image: url(https://www.newenglandinnsandresorts.com/sites/default/files/styles/2048/public/media-images/Jordan-Pond-Acadia-National-Park.jpg?itok=YaNtml2f); */
+  /* background-image: url(https://images.fineartamerica.com/images-medium-large/calm-blue-water-disappearing-into-axiom-photographic.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+
+  display: grid;
+  place-items: center;
+}
+
+.home-title {
+  background: linear-gradient(rgb(0, 16, 78), transparent);
+  border-radius: 2rem;
+  padding: 4% 2%;
+  font-family: 'Raleway';
+  /* box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); */
+  -webkit-box-shadow: 0 -10px 140px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0 -10px 140px rgba(50, 50, 50, 0.75);
+  box-shadow: 0 -10px 12px rgba(50, 50, 50, 0.75);
+
+  display: grid;
+  place-content: center;
+  min-width: 65%;
+  max-width: 95%;
+  margin: 2rem 0;
+
+  -webkit-animation: slideRight 0.5s;
+  -moz-animation: slideRight 0.5s;
+  -ms-animation: slideRight 0.5s;
+  -o-animation: slideRight 0.5s;
+  animation: slideRight 0.5s;
+}
+
+.home-title > * {
+  /* transition: 0.35s; */
+  font-family: Open Sans, sans-serif;
+  font-weight: 200;
+  cursor: default;
+}
+
+/* .home-title > *:hover {
+  color: rgb(253, 215, 143);
+} */
+
+.home-title > .home-title__intro {
+  color: rgb(106, 198, 252);
+  /* font-size: 6vw; */
+  font-size: 2rem;
+}
+
+.home-title > .home-title__name {
+  /* font-size: 10vw; */
+  font-size: 5rem;
+
+  color: #fd23de;
+  border-bottom: 4px solid #fd23de;
+  /* text-decoration: underline; */
+}
+
+.home-title > .home-title__title {
+  /* font-size: 4vw; */
+  font-size: 2rem;
+
+  color: rgb(106, 198, 252);
+}
+
+.home__social--container {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  place-content: center;
+  width: 100%;
+  column-gap: 1rem;
+  margin: 2rem 0;
+}
+
+.home__social--icon {
+  border-radius: 50%;
+  padding: 1rem;
+  background: rgb(106, 198, 252);
+}
+
+.home__social--container-mobile {
+  display: none;
+
+  margin-top: 2rem;
+  row-gap: 1rem;
+}
+
+.home__social--icon-mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0.5rem;
+  transition: none;
+}
+
+.home__social--icon-mobile:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 1000px) {
+  .home-title > .home-title__intro,
+  .home-title > .home-title__title {
+    font-size: 3vw;
+  }
+  .home-title > .home-title__name {
+    font-size: 6vw;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .home-title {
+    border-radius: 5px;
+  }
+  
+  .home__social--container {
+    display: none;
+  }
+
+  .home__social--container-mobile {
+    display: grid;
+    row-gap: 0.5rem;
+    /* font-size: 4vw; */
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .home__social--container-mobile {
+    margin-top: 1rem;
+  }
+
+  .home-title > .home-title__intro,
+  .home-title > .home-title__title {
+    font-size: 2rem;
+  }
+  .home-title > .home-title__name {
+    font-size: 4rem;
+  }
+
+  .home-title > .home-title__name {
+    border: none;
+    word-break: break-all;
+  }
+
+  .home__social--container {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .home__social--container-mobile {
+    display: none;
+  }
+}
