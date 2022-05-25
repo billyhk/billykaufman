@@ -5,7 +5,7 @@ export const bioData = {
   title: 'Front-end web engineer in NYC',
   bodyParagraphs: [
     <p>
-      Experienced software developer specializing in front-end development.
+      Experienced software engineer specializing in front-end development.
       Skilled in TypeScript (React-based frameworks), object-oriented software
       design patterns, Headless CMS, and integrating Application Programming
       Interfaces.
