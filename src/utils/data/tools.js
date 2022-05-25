@@ -13,7 +13,7 @@ export const toolsData = [
   {
     Icon: <BsCodeSlash size={25} />,
     title: 'IDE',
-    copy: 'Visual Studio / Code, Sublime',
+    copy: 'Visual Studio Code, Atom, Sublime',
   },
   {
     Icon: <FaCodeBranch size={25} />,
