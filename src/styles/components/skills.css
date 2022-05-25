@@ -15,10 +15,15 @@
   row-gap: 1.5rem;
 
   border-radius: 1rem;
-  background: linear-gradient(145deg, #ffffff, #ebebeb);
-  box-shadow: 5px 5px 10px #969696, -5px -5px 10px #ffffff;
-  /* background: #6dd1ff;
-  box-shadow: 5px 5px 10px #2c5466, -5px -5px 10px #aeffff; */
+  /* background: linear-gradient(145deg, #ffffff, #ebebeb);
+  box-shadow: 5px 5px 10px #969696, -5px -5px 10px #ffffff; */
+  
+  /* background: linear-gradient(145deg, #4e81a0, #5d99be);
+  box-shadow: 5px 5px 10px #2b4657, -5px -5px 10px #83d8ff; */
+  /* color: #fff; */
+
+  background: linear-gradient(145deg, #d6d6d6, #ffffff);
+  box-shadow: 5px 5px 10px #757575, -5px -5px 10px #ffffff;
 }
 
 .skills-card svg {

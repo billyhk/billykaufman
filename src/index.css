@@ -56,6 +56,10 @@ a:hover {
   color: black;
 }
 
+.bg-black {
+  background: #000;
+}
+
 .spin {
   animation: spin 8s linear infinite;
 }

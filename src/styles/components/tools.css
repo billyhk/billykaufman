@@ -9,8 +9,11 @@
 
   border-radius: 10px;
 
-  background: #4f4f4f;
-  box-shadow: 15px 15px 40px #434343, -15px -15px 40px #5b5b5b;
+  /* background: #4f4f4f;
+  box-shadow: 15px 15px 40px #434343, -15px -15px 40px #5b5b5b; */
+
+  background: linear-gradient(145deg, #5b5b5b, #4d4d4d);
+  box-shadow: 10px 10px 30px #2c5466, -10px -10px 30px #2c5466;
 }
 
 .tools__line-item--container > svg > path {
