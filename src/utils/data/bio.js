@@ -29,14 +29,14 @@ export const bioData = {
   ],
   CTAs: [
     <a
-      className='about__content--button-resume'
+      className='about__bio-content--button-resume'
       href='https://drive.google.com/file/d/1fvTmpX9EZQhtmOdkbj6wFvb7EFDBw03b/view?usp=sharing'
       target='_blank'
       rel='noopener noreferrer'>
       Download Resume
     </a>,
     <a
-      className='about__content--button-email'
+      className='about__bio-content--button-email'
       href='mailto:billyhkaufman@gmail.com'>
       Hire Me
     </a>,

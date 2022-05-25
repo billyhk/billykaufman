@@ -56,6 +56,10 @@ a:hover {
   color: black;
 }
 
+.spin {
+  animation: spin 8s linear infinite;
+}
+
 /* ANIMATIONS */
 
 /* BOUNCE */
@@ -227,6 +231,54 @@ a:hover {
 }
 
 /* END SLIDERIGHT */
+
+/* ROTATE */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Internet Explorer */
+@-ms-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Opera < 12.1 */
+@-o-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* END ROTATE */
 
 /* ...DELETE ALL TO BOTTOM DURING REDESIGN... */
 
