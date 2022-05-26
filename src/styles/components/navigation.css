@@ -96,13 +96,8 @@
 .signature {
   text-transform: none !important;
   padding: 0;
+  font-family: Raleway;
   color: #e2f0fb;
-  font-family: 'Raleway';
-  transition: 0.5s;
-}
-
-.signature:hover {
-  color: #003d66;
 }
 
 .nav-left,
@@ -119,16 +114,21 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 1000px) {
-  .nav-right {
-    display: grid;
+@media only screen and (min-width: 1000px) {
+  .signature {
+    transition: 0.5s;
   }
+  .signature:hover {
+    color: #003d66;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
   .nav-right > .nav-right-icon {
     display: none;
   }
   .signature {
-    border-radius: 0.5ch;
-    margin-right: 2vw;
+    margin-right: 0.5rem;
   }
 }
 
@@ -137,7 +137,7 @@
   .side-nav {
     display: unset;
   }
-  .nav-left > * {
+  .nav-left {
     display: none;
   }
 }
@@ -149,7 +149,7 @@
 
 @media only screen and (max-width: 300px) {
   .signature {
-    font-size: 10vw;
+    font-size: 1rem;
   }
   .nav-container {
     padding: 0;

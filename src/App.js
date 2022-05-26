@@ -17,11 +17,11 @@ function App() {
       <NavBar />
       <div className='page-container' ref={ref}>
         {routes.map((r) => {
-          const { Component } = r
+          const { Component, path } = r
           return (
             <Route
               exact
-              path={r.path}
+              path={path}
               referenceEl={ref}
               component={() => <Component referenceEl={ref} />}
             />

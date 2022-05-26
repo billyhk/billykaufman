@@ -48,7 +48,7 @@ export const aboutPageSections = [
     subheading: (
       <span>
         I've done development work for the following companies <br />{' '}
-        <span style={{ color: '#000' }}>(click each to learn more)</span>
+        <span style={{ color: '#ccc' }}>(click each to learn more)</span>
       </span>
     ),
     body: (

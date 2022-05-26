@@ -15,7 +15,14 @@ export const clientsData = [
     description: 'Employee records verification service provider.',
   },
   {
-    Logo: <SebpoLogo width='75%' />,
+    Logo: (
+      <SebpoLogo
+        width='75%'
+        style={{
+          transform: 'translateY(-0.5rem)',
+        }}
+      />
+    ),
     title: 'Sebpo',
     description: 'Agency for advertising, media, and technical services.',
   },
@@ -32,13 +39,21 @@ export const clientsData = [
       "International coffee distributor & major supplier for Dunkin' Donuts and Starbucks.",
   },
   {
-    Logo: <PharmacareLogo width='90%' />,
+    Logo: (
+      <PharmacareLogo
+        width='90%'
+        style={{
+          transform: 'translateY(-0.5rem)',
+        }}
+      />
+    ),
     title: 'PharmaCare',
     description: 'Specialty generic and brand pharmaceutical wholesaler.',
   },
   {
-    Logo: <CrsLogo width='90%' lightcolor='#555'/>,
+    Logo: <CrsLogo width='90%' lightcolor='#555' />,
     title: 'Credit Reporting Services (CRS)',
-    description: 'Credit data provider that handles reporting, CRM integrations, underwriting, and more.',
+    description:
+      'Credit data provider that handles reporting, CRM integrations, underwriting, and more.',
   },
 ]

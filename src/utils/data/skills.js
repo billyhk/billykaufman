@@ -31,9 +31,9 @@ export const skillsData = [
     Logo: <TailwindLogo width='100%' />,
     heading: 'Styling & Animation',
     bodyList: [
-      'SVG animations',
+      'TailwindCSS / PostCSS',
       'CSS / SCSS',
-      'PostCSS / TailwindCSS',
+      'SVG animations',
       'Implementation of modern design trends',
     ],
   },
