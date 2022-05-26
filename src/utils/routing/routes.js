@@ -2,7 +2,7 @@ import {
   Home,
   About,
   Experience,
-  // Projects,
+  Projects,
   // Contact,
 } from '../../components/pages'
 import { pagePaths } from './pagePaths'
@@ -23,11 +23,11 @@ export const routes = [
     path: pagePaths.experience,
     Component: Experience,
   },
-  // {
-  //   name: 'Projects',
-  //   path: pagePaths.projects,
-  //   Component: Projects,
-  // },
+  {
+    name: 'Projects',
+    path: pagePaths.projects,
+    Component: Projects,
+  },
   // {
   //   name: 'Contact',
   //   path: pagePaths.contact,
