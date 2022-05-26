@@ -109,7 +109,7 @@ export const experienceData = [
     Image: <img alt='' src={gretrixLogo3} className='logo-padding' />,
     title: 'Front-End Engineer',
     description1:
-      'Agency based in Atlanta that handles various web-development business needs, from troubleshooting web-app performance issues to making custom e-commerce solutions with Shopify and Wordpress, to tracking user behavior with Google Tag Manager.',
+      'Agency based in Atlanta that handles various web-development business needs, from troubleshooting web-app performance issues, to making custom e-commerce solutions with Shopify and Wordpress, to tracking user behavior with Google Tag Manager.',
     description2:
       'As a front-end dev, I was responsible for a significant volume of JavaScript development, such as implementing complex animations, integrating CRMs with form-based webpages, and custom tag-management. Some of my JavaScript tags are currently in production for large-scale clients, such as Johnson & Johnson, Chrysler, and Key Bank.',
     dateRange: 'Feb 2021 - Oct 2021',
@@ -169,7 +169,7 @@ export const experienceData = [
     description1:
       'NYC-based agency that is contracted to deliiver web applications developed with React, Wordpress, and Shopify. We handle a variety of projects from the e-commerce space to those that are purely informational.',
     description2:
-      'I work closely with project managers, backend developers, and our internal design team to produce modern web applications with React that are as pleasant to use as they are aesthetically pleasing.',
+      'I work closely with project managers, backend developers, and our internal design team to produce modern web applications with React that are as pleasant to use as they are aesthetically captivating.',
     dateRange: 'Oct 2021 - Present',
   },
   // {
