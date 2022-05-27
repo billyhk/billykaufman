@@ -2,12 +2,18 @@ import React from 'react'
 import { socialIcons } from '../../utils/socialIcons'
 import '../../styles/pages/home.css'
 
+const staticCopy = {
+  intro: "Hi, I'm",
+  name: 'Billy Kaufman',
+  title: 'Front-End Software Engineer',
+}
+
 const Home = () => (
   <main className='home-main'>
     <div className='home-title'>
-      <p className='home-title__intro'>Hi, I'm</p>
-      <p className='home-title__name'>Billy Kaufman</p>
-      <p className='home-title__title'>Front-End Software Engineer</p>
+      <p className='home-title__intro'>{staticCopy.intro}</p>
+      <p className='home-title__name'>{staticCopy.name}</p>
+      <p className='home-title__title'>{staticCopy.title}</p>
       <div className='home__social--container'>
         {socialIcons.map((el) => (
           <a
