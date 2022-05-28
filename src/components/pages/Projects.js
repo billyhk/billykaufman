@@ -1,6 +1,6 @@
-import React, { Fragment, useState } from 'react'
-import { NavToTop } from '../atoms'
+import React, { useState } from 'react'
 import { Carousel } from 'react-responsive-carousel'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 import collective1 from '../../component-images/project-images/collective/01 login.png'
 import collective2 from '../../component-images/project-images/collective/02a dashboard.png'
@@ -10,7 +10,6 @@ import collective5 from '../../component-images/project-images/collective/04a cr
 import collective6 from '../../component-images/project-images/collective/04b requisitions are broken down into orders.png'
 import collective7 from '../../component-images/project-images/collective/04c order-details.png'
 import collective8 from '../../component-images/project-images/collective/04d send message to selected vendors on an order.png'
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 import '../../styles/pages/projects.css'
 
