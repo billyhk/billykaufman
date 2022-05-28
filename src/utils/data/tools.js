@@ -8,12 +8,12 @@ export const toolsData = [
   {
     Icon: <GrSystem size={25} />,
     title: 'Operating System',
-    copy: 'MacOS, Windows',
+    copy: 'MacOS',
   },
   {
     Icon: <BsCodeSlash size={25} />,
     title: 'IDE',
-    copy: 'Visual Studio Code, Atom, Sublime',
+    copy: 'Visual Studio Code',
   },
   {
     Icon: <FaCodeBranch size={25} />,
