@@ -70,7 +70,6 @@ a:hover {
 
 /* ANIMATIONS */
 
-
 @keyframes pulse {
   0%,
   100% {
@@ -250,6 +249,55 @@ a:hover {
 }
 
 /* END SLIDERIGHT */
+
+/* SLIDELEFT */
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Internet Explorer */
+@-ms-keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Opera < 12.1 */
+@-o-keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* END SLIDELEFT */
 
 /* ROTATE */
 @keyframes spin {
