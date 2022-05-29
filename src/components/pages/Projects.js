@@ -2,7 +2,8 @@ import React, { Fragment, useState } from 'react'
 import { Carousel } from 'react-responsive-carousel'
 import { ArrowNext, ArrowPrev, Indicator, NavToTop } from '../atoms'
 import { projectsData } from '../../utils/data/projects'
-
+import { Listbox } from '@headlessui/react'
+import { CheckIcon, SelectorIcon } from '@heroicons/react/solid'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import '../../styles/pages/projects.css'
 
@@ -27,7 +28,39 @@ const Projects = ({ referenceEl }) => {
           <h1>{staticCopy.pageHeader}</h1>
           <h4>{staticCopy.subheading}</h4>
         </div>
+
         {/* PROJECT SELECTOR (dropdown menu) */}
+        <div className='project-selector__container'>
+          <h1>Select a Project:</h1>
+          <Listbox
+            value={currentProjectSelected}
+            onChange={setCurrentProjectSelected}>
+            <Listbox.Button className='project-selector__button'>
+              <span className='block truncate'>
+                {projectsData[currentProjectSelected].title}
+              </span>
+              <span className='pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2'>
+                <SelectorIcon
+                  className='project-selector__selector-icon'
+                  aria-hidden='true'
+                />
+              </span>
+            </Listbox.Button>
+
+            <Listbox.Options>
+              {Object.entries(projectsData).map(
+                ([projectKey, projectData], i) => {
+                  console.log('currentProjectSelected', currentProjectSelected)
+                  return (
+                    <Listbox.Option key={i} value={projectKey}>
+                      {projectData.title}
+                    </Listbox.Option>
+                  )
+                }
+              )}
+            </Listbox.Options>
+          </Listbox>
+        </div>
 
         <div className='projects__data--container'>
           <div className='projects__carousel--container'>

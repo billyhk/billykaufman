@@ -15,7 +15,7 @@
   flex-direction: column;
   align-items: flex-start;
   place-items: center;
-  row-gap: 2rem;
+  row-gap: 4rem;
 }
 
 .projects-header {
@@ -38,9 +38,51 @@
   font-size: larger;
 }
 
+.project-selector__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 1rem;
+  width: 100%;
+}
+
+.project-selector__container h1 {
+  color: #fff;
+  font-weight: 500;
+  border-bottom: 2px solid #fff;
+}
+
+.project-selector__button {
+  position: relative;
+  width: 25%;
+  cursor: default;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 15px rgba(0 0 0 / 0.25);
+  box-shadow: 0 0 15px rgba(0 0 0 / 0.5);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.project-selector__selector-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: #fff;
+}
+
 .projects__data--container {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   gap: 2rem;
 }
 
@@ -62,26 +104,11 @@
   animation: slideRight 0.5s;
 }
 
-.projects__carousel--arrow-button {
-  /* position: 'absolute';
-  z-index: 2;
-  top: 'calc(50% - 15px)';
-  width: 30;
-  height: 30;
-  background-color: '#afb5bd';
-  font-weight: 800;
-  cursor: 'pointer';
-  border: '2px solid black';
-  border-radius: '50%';
-  background: 'linear-gradient(145deg, #d6d6d6, #afb5bd)';
-  box-shadow: '1px 1px 1px #757575, -1px -1px 1px #afb5bd'; */
-}
-
 .projects__info-card {
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 
   color: #fff;
   padding: 1rem;
@@ -112,8 +139,21 @@
 }
 
 @media only screen and (max-width: 1050px) {
+  .projects-main {
+    row-gap: 2rem;
+  }
   .projects-header {
     padding: 1rem 0;
+  }
+  .project-selector__container {
+    flex-direction: column;
+    max-width: 90vw;
+  }
+  .project-selector__container h1 {
+    border-bottom: none;
+  }
+  .project-selector__button {
+    width: 90%;
   }
   .projects__data--container {
     flex-direction: column;
@@ -134,6 +174,7 @@
     border-radius: 5px;
   }
   .projects-header h1,
+  .project-selector__container h1,
   .projects__info-card h1 {
     font-size: 1.5rem;
   }
