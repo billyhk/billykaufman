@@ -60,6 +60,40 @@ a:hover {
   background: #000;
 }
 
+.block {
+  display: block;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 400;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.duration-100 {
+  transition-duration: 100ms;
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
 .spin {
   animation: spin 8s linear infinite;
 }
