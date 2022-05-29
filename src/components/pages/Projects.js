@@ -4,6 +4,8 @@ import { DropdownGlassmorphism } from '../molecules/Input/Dropdown'
 import { Carousel } from 'react-responsive-carousel'
 import { ArrowNext, ArrowPrev, Indicator, NavToTop } from '../atoms'
 import { ProjectCard } from '../molecules/Card'
+import { TemplateIcon } from '@heroicons/react/outline'
+
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import '../../styles/pages/projects.css'
 
@@ -37,6 +39,7 @@ const Projects = ({ referenceEl }) => {
 
       <main className='projects-main'>
         <div className='projects-header'>
+          <TemplateIcon style={{ width: '4rem' }} />
           <h1>{staticCopy.pageHeader}</h1>
           <h4>{staticCopy.subheading}</h4>
         </div>
