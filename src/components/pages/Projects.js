@@ -18,6 +18,7 @@ const carouselProps = {
   stopOnHover: true,
   showArrows: true,
   emulateTouch: true,
+  useKeyboardArrows: true,
   autoPlay: true,
   showStatus: false,
   renderArrowPrev: ArrowPrev,
