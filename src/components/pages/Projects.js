@@ -6,6 +6,12 @@ import { projectsData } from '../../utils/data/projects'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import '../../styles/pages/projects.css'
 
+const staticCopy = {
+  pageHeader: 'My Past Projects',
+  subheading:
+    "Here are some projects I've worked on as a professional front-end web-dev",
+}
+
 const Projects = ({ referenceEl }) => {
   const [currentProjectSelected, setCurrentProjectSelected] = useState(
     Object.keys(projectsData)[0]
@@ -18,15 +24,11 @@ const Projects = ({ referenceEl }) => {
       <main className='projects-main'>
         {/* Heading */}
         <div className='projects-header'>
-          <h1>My Past Projects</h1>
-          <h4>
-            Here are some projects I've worked on as a professional front-end
-            web-dev
-          </h4>
+          <h1>{staticCopy.pageHeader}</h1>
+          <h4>{staticCopy.subheading}</h4>
         </div>
         {/* PROJECT SELECTOR (dropdown menu) */}
 
-        
         <div className='projects__data--container'>
           <div className='projects__carousel--container'>
             <Carousel
