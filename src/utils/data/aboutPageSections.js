@@ -1,6 +1,5 @@
 import React from 'react'
-import { GoTools } from 'react-icons/go'
-import { FaReact, FaHandsHelping } from 'react-icons/fa'
+import { HandsHelping, ReactLogo, Tools } from '../../components/atoms/svg'
 import { ToolsLineItem } from '../../components/molecules'
 import { ClientCard, SkillsCard } from '../../components/molecules/Card'
 import { skillsData } from './skills'
@@ -13,7 +12,7 @@ import '../../styles/components/clients.css'
 
 export const aboutPageSections = [
   {
-    Icon: <FaReact size={50} fill='#62dafb' className='spin' />,
+    Icon: <ReactLogo size={50} fill='#62dafb' className='spin' />,
     heading: 'Skills',
     subheading: 'I do these things quite well',
     body: (
@@ -25,7 +24,7 @@ export const aboutPageSections = [
     ),
   },
   {
-    Icon: <GoTools size={50} fill='#555' />,
+    Icon: <Tools width={50} />,
     heading: 'Tools',
     subheading: 'Instruments of the trade that have made my dev-life easier',
     body: (
@@ -38,8 +37,8 @@ export const aboutPageSections = [
   },
   {
     Icon: (
-      <FaHandsHelping
-        size={60}
+      <HandsHelping
+        width={60}
         fill='url(#handshake-icon-gradient)'
         className='pulse'
       />

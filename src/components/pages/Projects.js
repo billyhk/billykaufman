@@ -4,8 +4,7 @@ import { DropdownGlassmorphism } from '../molecules/Input/Dropdown'
 import { Carousel } from 'react-responsive-carousel'
 import { ArrowNext, ArrowPrev, Indicator, NavToTop } from '../atoms'
 import { ProjectCard } from '../molecules/Card'
-// import { TemplateIcon } from '@heroicons/react/outline'
-import { CgTemplate } from '../atoms/svg'
+import { Template } from '../atoms/svg'
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import '../../styles/pages/projects.css'
@@ -49,7 +48,7 @@ const Projects = ({ referenceEl }) => {
 
       <main className='projects-main'>
         <div className='projects-header'>
-          <CgTemplate
+          <Template
             width={100}
             color='rgba(93, 0, 137, 1)'
             style={{ transform: 'rotate(25deg)' }}

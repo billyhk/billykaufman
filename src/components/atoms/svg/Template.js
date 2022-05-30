@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CgTemplate = ({ width = 24, color = '#000', ...props }) => (
+const Template = ({ width = 24, color = '#000', ...props }) => (
   <svg width={width} viewBox='0 0 24 24' fill='none' {...props}>
     <path
       fillRule='evenodd'
@@ -19,4 +19,4 @@ const CgTemplate = ({ width = 24, color = '#000', ...props }) => (
     <path d='M21 19H13V21H21V19Z' fill={color} />
   </svg>
 )
-export default CgTemplate
+export default Template

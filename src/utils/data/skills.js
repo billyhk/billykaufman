@@ -14,7 +14,7 @@ export const skillsData = [
       'ReactJS / NextJS',
       'Redux / Context',
       'ES6 / ES2020+',
-      'Libraries: Formik/Yup, MaterialUI, React Table',
+      'Libraries: HeadlessUI, React Table, Formik/Yup',
     ],
   },
   {
