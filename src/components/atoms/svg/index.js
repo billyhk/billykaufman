@@ -17,7 +17,9 @@ export { default as Template } from './Template'
 export { default as SystemIcon } from './SystemIcon'
 export { default as CodeSlash } from './CodeSlash'
 export { default as CodeBranch } from './CodeBranch'
-export {default as Tasks} from './Tasks'
+export { default as Tasks } from './Tasks'
+export { default as SelectorIcon } from './SelectorIcon'
+export { default as CheckIcon } from './CheckIcon'
 
 // SocialIcons.js
 export { default as GithubIcon } from './GithubIcon'

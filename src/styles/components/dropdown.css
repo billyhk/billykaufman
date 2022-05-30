@@ -65,6 +65,10 @@
   color: #ff3cac;
 }
 
+.dropdown-glass-selector__menu--option-active svg {
+  fill: #ff3cac;
+}
+
 .dropdown-glass-selector__check--container {
   position: absolute;
   left: 0;

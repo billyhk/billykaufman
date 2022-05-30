@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
-import { CheckIcon, SelectorIcon } from '@heroicons/react/solid'
+import { SelectorIcon, CheckIcon } from '../../atoms/svg'
 import '../../../styles/components/dropdown.css'
 
 export const DropdownGlassmorphism = ({
