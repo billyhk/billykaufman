@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { Suspense, useRef } from 'react'
 import { Route } from 'react-router-dom'
 import { routes } from './utils/routing'
 import { useScrollToTopOnNav } from './utils/hooks'
@@ -19,12 +19,14 @@ function App() {
         {routes.map((r) => {
           const { Component, path } = r
           return (
-            <Route
-              exact
-              path={path}
-              referenceEl={ref}
-              component={() => <Component referenceEl={ref} />}
-            />
+            // <Suspense fallback={() => '...'}>
+              <Route
+                exact
+                path={path}
+                referenceEl={ref}
+                component={() => <Component referenceEl={ref} />}
+              />
+            // </Suspense>
           )
         })}
         <div className='about-footer'>

@@ -7,6 +7,12 @@ import {
 } from '../../components/pages'
 import { pagePaths } from './pagePaths'
 
+// import { lazy } from 'react'
+// const Home = lazy(() => import('../../components/pages/Home'))
+// const About = lazy(() => import('../../components/pages/About'))
+// const Experience = lazy(() => import('../../components/pages/Experience'))
+// const Projects = lazy(() => import('../../components/pages/Projects'))
+
 export const routes = [
   {
     name: 'Home',
