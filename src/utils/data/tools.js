@@ -1,8 +1,4 @@
 import React from 'react'
-
-import { GrSystem, GrTasks } from 'react-icons/gr'
-import { BsCodeSlash } from 'react-icons/bs'
-import { FaCodeBranch } from 'react-icons/fa'
 import { CodeSlash, SystemIcon, CodeBranch, Tasks } from '../../components/atoms/svg'
 
 export const toolsData = [
