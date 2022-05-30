@@ -21,7 +21,7 @@ const Home = () => (
             href={el.href}
             target='_blank'
             rel='noopener noreferrer'>
-            <el.icon size={40} />
+            <el.icon size={50} />
           </a>
         ))}
       </div>
@@ -32,7 +32,7 @@ const Home = () => (
             href={el.href}
             target='_blank'
             rel='noopener noreferrer'>
-            <el.icon />
+            <el.icon size={25}/>
             {el.displayName}
           </a>
         ))}

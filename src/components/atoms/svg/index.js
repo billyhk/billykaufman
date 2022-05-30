@@ -9,3 +9,7 @@ export { default as DominosLogo } from './DominosLogo'
 export { default as WestrockLogo } from './WestrockLogo'
 export { default as CrsLogo } from './CrsLogo'
 export { default as CgTemplate } from './CgTemplate'
+
+export { default as GithubIcon } from './GithubIcon'
+export { default as LinkedInIcon } from './LinkedInIcon'
+export { default as Envelope } from './Envelope'

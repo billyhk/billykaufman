@@ -58,7 +58,7 @@ const NavBar = () => {
             href={el.href}
             target='_blank'
             rel='noopener noreferrer'>
-            {el.icon()}
+            {el.icon({ size: 30 })}
           </a>
         ))}
       </div>

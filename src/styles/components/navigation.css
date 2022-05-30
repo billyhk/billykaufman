@@ -104,6 +104,7 @@
 .nav-right {
   list-style: none;
   display: flex;
+  align-items: center;
   column-gap: 1rem;
 }
 
@@ -112,6 +113,18 @@
 }
 .active {
   color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-right-icon {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+.nav-right-icon:hover {
+ background: black
 }
 
 @media only screen and (min-width: 1000px) {
