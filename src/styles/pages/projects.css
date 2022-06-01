@@ -197,7 +197,7 @@
     max-width: 90vw;
   }
   .projects__carousel--container {
-    order: 2;
+    /* order: 2; */
 
     width: 100%;
     padding: 0.5rem;

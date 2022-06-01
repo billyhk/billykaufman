@@ -44,7 +44,7 @@ const Projects = ({ referenceEl }) => {
 
   return (
     <Fragment>
-      {/* <NavToTop referenceEl={referenceEl} /> */}
+      <NavToTop referenceEl={referenceEl} />
 
       <main className='projects-main'>
         <div className='projects-header'>
