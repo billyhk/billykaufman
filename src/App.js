@@ -23,7 +23,6 @@ function App() {
               <Route
                 exact
                 path={path}
-                referenceEl={ref}
                 component={() => <Component referenceEl={ref} />}
               />
             // </Suspense>
