@@ -31,9 +31,9 @@
   padding-top: 0.25rem;
 }
 
-.nav-to-top:active {
+/* .nav-to-top:active {
   opacity: 1;
-}
+} */
 
 .menu-toggle-button {
   cursor: pointer;
@@ -81,6 +81,7 @@
   place-items: center;
   justify-content: center;
   flex: 1;
+  padding: 1rem 0;
 }
 
 .sidebar-links a:hover {
