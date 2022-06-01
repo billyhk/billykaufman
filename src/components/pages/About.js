@@ -15,6 +15,11 @@ const SecondarySection = ({ Icon, heading, subheading, body }) => (
   </div>
 )
 
+const staticCopy = {
+  pageHeader: 'About Me',
+  subheader: 'Allow me to introduce myself...',
+}
+
 const About = ({ referenceEl }) => {
   return (
     <Fragment>
@@ -22,8 +27,8 @@ const About = ({ referenceEl }) => {
       <main className='about-main'>
         <section className='about-section'>
           <div className='about-header'>
-            <h1>About Me</h1>
-            <h4>Allow me to introduce myself...</h4>
+            <h1>{staticCopy.pageHeader}</h1>
+            <h4>{staticCopy.subheader}</h4>
           </div>
           <div className='about__bio-content-container about-section__animated-content'>
             <div className='about__bio-content-text'>

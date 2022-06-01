@@ -1,0 +1,101 @@
+.dropdown-glass-selector__listbox--content {
+  position: relative;
+}
+
+.dropdown-glass-selector__button {
+  position: relative;
+  cursor: default;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 1rem;
+
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 15px rgba(0 0 0 / 0.25);
+  box-shadow: 0 0 15px rgba(0 0 0 / 0.5);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.dropdown-glass-selector__selector-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: #fff;
+}
+
+.dropdown-glass-selector__menu {
+  position: absolute;
+  z-index: 2;
+  margin-top: 0.5rem;
+  padding: 0rem;
+  overflow-y: auto;
+  list-style: none;
+  background-color: #fff;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  border-radius: 10px;
+
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 15px rgba(0 0 0 / 0.25);
+  box-shadow: 0 0 15px rgba(0 0 0 / 0.5);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.dropdown-glass-selector__menu--option {
+  position: relative;
+  cursor: default;
+  user-select: none;
+  padding: 1rem 3rem;
+}
+
+.dropdown-glass-selector__menu--option-active {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ff3cac;
+}
+
+.dropdown-glass-selector__menu--option-active svg {
+  fill: #ff3cac;
+}
+
+.dropdown-glass-selector__check--container {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.dropdown-glass-selector__check--icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.dropdown-glass-selector__menu--option-selected {
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 1050px) {
+  .dropdown-glass-selector__button {
+    min-width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .dropdown-glass-selector__button {
+    width: 80vw;
+  }
+}

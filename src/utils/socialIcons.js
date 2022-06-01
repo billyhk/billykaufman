@@ -1,20 +1,20 @@
 import React from 'react'
-import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { GithubIcon, LinkedInIcon, Envelope } from '../components/atoms/svg'
 
 export const socialIcons = [
   {
-    icon: (props) => <FaGithub {...props} />,
+    icon: (props) => <GithubIcon {...props} />,
     href: 'https://github.com/billyhk/billykaufman',
     // href: 'https://github.com/billyhk',
     displayName: 'github.com/billyhk',
   },
   {
-    icon: (props) => <FaLinkedin {...props} />,
+    icon: (props) => <LinkedInIcon {...props} />,
     href: 'https://www.linkedin.com/in/williamhkaufman/',
     displayName: '/in/williamhkaufman',
   },
   {
-    icon: (props) => <FaEnvelope {...props} />,
+    icon: (props) => <Envelope {...props} />,
     href: 'mailto:billyhkaufman@gmail.com',
     displayName: 'billyhkaufman@gmail.com',
   },

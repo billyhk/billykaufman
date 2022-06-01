@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 
+import { Bookmarklet } from '../../components/atoms/svg'
 import ruckusLogoSvg from '../../component-images/ruckusLogoSvg.svg'
 import gretrixLogo2 from '../../component-images/gx-logo.png'
 import gretrixLogo3 from '../../component-images/Gx_Logo_Horz.svg'
@@ -10,8 +11,6 @@ import gaLogo from '../../component-images/ga-logo-gear.png'
 import gaLogoCrop from '../../component-images/ga-logo-gear-cropped.png'
 import umLogo from '../../component-images/um-logo.jpg'
 import umLogoLg from '../../component-images/umLogoLg.jpg'
-import { GiBookmarklet } from 'react-icons/gi'
-// import { GrTechnology } from 'react-icons/gr'
 
 export const experienceData = [
   {
@@ -78,7 +77,7 @@ export const experienceData = [
   },
   {
     institutionName: 'Freelancing, Projects, Study',
-    Icon: <GiBookmarklet className='bookmarkletSvgIcon' fill='#fff' />,
+    Icon: <Bookmarklet className='bookmarkletSvgIcon' fill='#fff' />,
     iconBackgroundColor: '#fd23de',
     backgroundColor: '#fff',
     textColor: '',
