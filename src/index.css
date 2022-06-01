@@ -56,6 +56,43 @@ a:hover {
   color: black;
 }
 
+.fancy-link {
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.5s;
+}
+
+.fancy-link:hover {
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0 0 0 / 0.25);
+  background-position: 0 0;
+}
+
+.fancy-bg-blue {
+  background-image: radial-gradient(
+    circle 976px at 51.2% 51%,
+    rgba(11, 27, 103, 1) 0%,
+    rgba(16, 66, 157, 1) 0%,
+    rgba(11, 27, 103, 1) 17.3%,
+    rgba(11, 27, 103, 1) 58.8%,
+    rgba(11, 27, 103, 1) 71.4%,
+    rgba(16, 66, 157, 1) 100.2%,
+    rgba(187, 187, 187, 1) 100.2%
+  );
+}
+
+.fancy-bg-red {
+  background-image: radial-gradient(
+    circle farthest-corner at 51.2% 51% ,
+    rgba(247, 87, 0, 1) 0%,
+    rgba(249, 0, 0, 1) 90.1%
+  );
+}
+
 .bg-black {
   background: #000;
 }

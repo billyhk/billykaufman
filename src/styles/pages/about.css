@@ -127,42 +127,6 @@
   gap: 1rem;
 }
 
-.about__bio-content--buttons-container > a {
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-
-  background-size: 200% 100%;
-  background-position: 100% 0;
-  transition: background-position 0.5s;
-}
-
-.about__bio-content--buttons-container > a:hover {
-  color: #fff;
-  box-shadow: 0 0 15px rgba(0 0 0 / 0.25);
-  background-position: 0 0;
-}
-
-.about__bio-content--button-resume {
-  background-image: radial-gradient(
-    circle 976px at 51.2% 51%,
-    rgba(11, 27, 103, 1) 0%,
-    rgba(16, 66, 157, 1) 0%,
-    rgba(11, 27, 103, 1) 17.3%,
-    rgba(11, 27, 103, 1) 58.8%,
-    rgba(11, 27, 103, 1) 71.4%,
-    rgba(16, 66, 157, 1) 100.2%,
-    rgba(187, 187, 187, 1) 100.2%
-  );
-}
-
-.about__bio-content--button-email {
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(247, 87, 0, 1) 0%,
-    rgba(249, 0, 0, 1) 90.1%
-  );
-}
-
 @media only screen and (max-width: 676px) {
   .about-section {
     row-gap: 1rem;

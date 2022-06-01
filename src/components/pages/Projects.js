@@ -10,7 +10,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import '../../styles/pages/projects.css'
 
 const staticCopy = {
-  pageHeader: 'My Past Projects',
+  pageHeader: 'My Recent Projects',
   subheading:
     "Here are some projects I've worked on as a professional front-end web-dev",
   disclaimer: (
