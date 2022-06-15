@@ -8,6 +8,7 @@ export { default as SebpoLogo } from './SebpoLogo'
 export { default as DominosLogo } from './DominosLogo'
 export { default as WestrockLogo } from './WestrockLogo'
 export { default as CrsLogo } from './CrsLogo'
+export { default as BloombergLogo } from './BloombergLogo'
 
 export { default as ReactLogo } from './ReactLogo'
 export { default as Tools } from './Tools'

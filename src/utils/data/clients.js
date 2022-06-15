@@ -1,5 +1,6 @@
 import React from 'react'
 import {
+  BloombergLogo,
   CrsLogo,
   DominosLogo,
   PharmacareLogo,
@@ -26,12 +27,12 @@ export const clientsData = [
     title: 'Sebpo',
     description: 'Agency for advertising, media, and technical services.',
   },
-  {
-    Logo: <DominosLogo width='85%' />,
-    title: "Domino's Pizza",
-    description:
-      'Fast-food chain and founder of the Slice-The-Price-Card fundraiser.',
-  },
+  // {
+  //   Logo: <DominosLogo width='85%' />,
+  //   title: "Domino's Pizza",
+  //   description:
+  //     'Fast-food chain and founder of the Slice-The-Price-Card fundraiser.',
+  // },
   {
     Logo: <WestrockLogo width='100%' />,
     title: 'Westrock Coffee',
@@ -55,5 +56,11 @@ export const clientsData = [
     title: 'Credit Reporting Services (CRS)',
     description:
       'Credit data provider that handles reporting, CRM integrations, underwriting, and more.',
+  },
+  {
+    Logo: <BloombergLogo width='90%' />,
+    title: 'Bloomberg',
+    description:
+      "The world's leading source for financial news and private banking solutions.",
   },
 ]
