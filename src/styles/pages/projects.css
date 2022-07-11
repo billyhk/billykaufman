@@ -221,8 +221,8 @@
     font-size: 1rem;
   }
 
-  .projects__carousel--arrow-button,
+  /* .projects__carousel--arrow-button,
   .projects__carousel--indicator-button {
     display: none !important;
-  }
+  } */
 }

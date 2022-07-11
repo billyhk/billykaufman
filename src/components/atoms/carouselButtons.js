@@ -1,4 +1,5 @@
 import React from 'react'
+import Arrow from './svg/Arrow'
 
 const arrowStyles = {
   position: 'absolute',
@@ -14,11 +15,16 @@ const arrowStyles = {
   background: 'linear-gradient(145deg, #d6d6d6, #afb5bd)',
 }
 
+const rotate = {
+  right: { transform: 'rotate(90deg)' },
+  left: { transform: 'rotate(-90deg)' },
+}
+
 const indicatorStyles = {
   background: 'rgba(0,0,0,0)',
-  border: '2px solid black',
-  width: 15,
-  height: 15,
+  border: '1px solid black',
+  width: 10,
+  height: 10,
   borderRadius: '50%',
   display: 'inline-block',
   margin: '0 8px',
@@ -32,8 +38,8 @@ export const ArrowPrev = (onClickHandler, hasPrev, label) =>
       type='button'
       onClick={onClickHandler}
       title={label}
-      style={{ ...arrowStyles, left: 15 }}>
-      {'<'}
+      style={{ ...arrowStyles, left: 15, ...rotate.left }}>
+      <Arrow />
     </button>
   )
 
@@ -44,8 +50,8 @@ export const ArrowNext = (onClickHandler, hasNext, label) =>
       type='button'
       onClick={onClickHandler}
       title={label}
-      style={{ ...arrowStyles, right: 15 }}>
-      {'>'}
+      style={{ ...arrowStyles, right: 15, ...rotate.right }}>
+      <Arrow />
     </button>
   )
 
@@ -53,8 +59,8 @@ export const Indicator = (onClickHandler, isSelected, index, label) => {
   if (isSelected) {
     return (
       <li
-        style={{ ...indicatorStyles, background: '#afb5bd' }}
-        className='projects__carousel--indicator-button'
+        style={{ ...indicatorStyles, background: '#DC143C' }}
+        // className='projects__carousel--indicator-button'
         aria-label={`Selected: ${label} ${index + 1}`}
         title={`Selected: ${label} ${index + 1}`}
       />
@@ -63,7 +69,7 @@ export const Indicator = (onClickHandler, isSelected, index, label) => {
   return (
     <li
       style={indicatorStyles}
-      className='projects__carousel--indicator-button'
+      // className='projects__carousel--indicator-button'
       onClick={onClickHandler}
       onKeyDown={onClickHandler}
       value={index}
