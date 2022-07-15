@@ -22,8 +22,7 @@ const NavBar = () => {
       exact
       to={r.path}
       activeClassName='active'
-      onClick={closeNav}
-      key={i}>
+      onClick={closeNav}>
       {r.name}
     </NavLink>
   ))

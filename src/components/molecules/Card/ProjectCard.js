@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 const ProjectCard = ({
   project: { title, client, technologies, description, deployment, sourceCode },

@@ -1,4 +1,5 @@
-import React, { Suspense, useRef } from 'react'
+import React, { useRef } from 'react'
+// import { Suspense } from 'react'
 import { Route } from 'react-router-dom'
 import { routes } from './utils/routing'
 import { useScrollToTopOnNav } from './utils/hooks'
