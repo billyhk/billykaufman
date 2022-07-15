@@ -74,7 +74,7 @@ a:hover {
 
 .fancy-bg-blue {
   background-image: radial-gradient(
-    circle 976px at 51.2% 51%,
+    circle farthest-corner at 51.2% 51%,
     rgba(11, 27, 103, 1) 0%,
     rgba(16, 66, 157, 1) 0%,
     rgba(11, 27, 103, 1) 17.3%,
