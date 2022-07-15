@@ -26,26 +26,6 @@
   cursor: pointer;
   background: rgb(164, 213, 255);
   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.5);
-
-  /* color: black;
-  position: fixed;
-  bottom: 2.5rem;
-  right: 2.5rem;
-  z-index: 1;
-  transition: 0.5s;
-  opacity: 0.5;
-  font-size: 2em;
-  font-weight: 800;
-  border: 1px solid black;
-  height: 4rem;
-  width: 4rem;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  cursor: pointer;
-  background: rgb(164, 213, 255);
-  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.5);
-  padding-top: 0.25rem; */
 }
 
 .nav-to-top:active {
