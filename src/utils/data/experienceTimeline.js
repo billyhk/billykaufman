@@ -35,8 +35,9 @@ export const experienceData = [
           rel='noopener noreferrer'>
           dissertation
         </a>{' '}
-        was about getting SUPER organized for complicated and nuanced projects (i.e. Auditions).
-        Developing that kind of creative and highly-structured mindset was about to influence me in a major way...
+        was about getting SUPER organized for complicated and nuanced projects
+        (i.e. Auditions). Developing that kind of creative and highly-structured
+        mindset was about to influence me in a major way...
       </Fragment>
     ),
     dateRange: '2017 (coursework) / 2020 (final defense)',
@@ -59,7 +60,7 @@ export const experienceData = [
     description1:
       'Full-time, fully-emersive education in the skills required to be a pro software engineer.',
     description2: (
-      <p>
+      <span>
         This web-dev centric bootcamp taught me the fundamentals of programming
         beyond the syntax, and introduced me to many critical areas in the CS
         space. From the moment I started at{' '}
@@ -71,7 +72,7 @@ export const experienceData = [
           GA
         </a>
         , I was hooked on this never-ending and ever-evolving discipline.
-      </p>
+      </span>
     ),
     dateRange: 'March 2020 - June 2020',
   },
@@ -139,12 +140,12 @@ export const experienceData = [
     description1:
       'I was contracted by Look Far Labs (LFL) to build the front-end of a two-way purchasing agent with ReactJS and TypeScript. ',
     description2: (
-      <p>
+      <span>
         This web app was called <em>The Collective</em> -- a newtwork of users
         who can post and/or rent instruments of construction. Excavators,
         Backhoes, Hydraulic Drills. If you can name it, it can be posted and
         requisitioned.
-      </p>
+      </span>
     ),
     dateRange: 'April 2021 - Oct 2021',
   },
@@ -178,10 +179,10 @@ export const experienceData = [
   //   textColor: '',
   //   title: <h3 className='vertical-timeline-element-title'>What's Next?</h3>,
   //   description1: (
-  //     <p>
+  //     <span>
   //       Keeping up with current technologies and design trends. <br />
   //       Continuing to further my knowledgebase for the love of software design!
-  //     </p>
+  //     </span>
   //   ),
   //   description2: '',
   //   dateRange: `${new Date().getFullYear()} and beyond!`,

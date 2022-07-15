@@ -16,8 +16,14 @@ const NavBar = () => {
   }
   const ref = useClickOutside(closeNav)
 
-  const linkElements = routes.map((r) => (
-    <NavLink exact to={r.path} activeClassName='active' onClick={closeNav}>
+  const linkElements = routes.map((r, i) => (
+    <NavLink
+      key={i}
+      exact
+      to={r.path}
+      activeClassName='active'
+      onClick={closeNav}
+      key={i}>
       {r.name}
     </NavLink>
   ))
@@ -52,8 +58,9 @@ const NavBar = () => {
           <span className='signature'>Billy Kaufman</span>
         </NavLink>
 
-        {socialIcons.map((el) => (
+        {socialIcons.map((el, i) => (
           <a
+            key={i}
             className='nav-right-icon'
             href={el.href}
             target='_blank'

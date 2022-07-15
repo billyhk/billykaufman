@@ -15,8 +15,9 @@ const Home = () => (
       <p className='home-title__name'>{staticCopy.name}</p>
       <p className='home-title__title'>{staticCopy.title}</p>
       <div className='home__social--container'>
-        {socialIcons.map((el) => (
+        {socialIcons.map((el, i) => (
           <a
+            key={i}
             className='home__social--icon'
             href={el.href}
             target='_blank'
@@ -26,13 +27,14 @@ const Home = () => (
         ))}
       </div>
       <div className='home__social--container-mobile'>
-        {socialIcons.map((el) => (
+        {socialIcons.map((el, i) => (
           <a
+            key={i}
             className='home__social--icon-mobile'
             href={el.href}
             target='_blank'
             rel='noopener noreferrer'>
-            <el.icon size={25}/>
+            <el.icon size={25} />
             {el.displayName}
           </a>
         ))}

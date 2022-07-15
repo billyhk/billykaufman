@@ -18,7 +18,7 @@ export const aboutPageSections = [
     body: (
       <div className='skills__container'>
         {skillsData.map((skill, i) => (
-          <SkillsCard {...skill} />
+          <SkillsCard key={i} {...skill} />
         ))}
       </div>
     ),
@@ -30,7 +30,7 @@ export const aboutPageSections = [
     body: (
       <div className='tools__container'>
         {toolsData.map((tool, i) => (
-          <ToolsLineItem {...tool} />
+          <ToolsLineItem key={i} {...tool} />
         ))}
       </div>
     ),
@@ -53,7 +53,7 @@ export const aboutPageSections = [
     body: (
       <div className='clients__container'>
         {clientsData.map((client, i) => (
-          <ClientCard {...client} />
+          <ClientCard key={i} {...client} />
         ))}
       </div>
     ),

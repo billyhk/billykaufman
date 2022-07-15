@@ -6,8 +6,8 @@ const SkillsCard = ({ Logo, heading, bodyList }) => {
       <div>{Logo}</div>
       <h2 className='skills-card__heading'>{heading}</h2>
       <div className='skills-card__body-list'>
-        {bodyList.map((listEl) => (
-          <p>{listEl}</p>
+        {bodyList.map((listEl, i) => (
+          <p key={i}>{listEl}</p>
         ))}
       </div>
     </div>

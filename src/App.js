@@ -16,15 +16,16 @@ function App() {
       <GradientDefs />
       <NavBar />
       <div className='page-container' ref={ref}>
-        {routes.map((r) => {
+        {routes.map((r, i) => {
           const { Component, path } = r
           return (
             // <Suspense fallback={() => '...'}>
-              <Route
-                exact
-                path={path}
-                component={() => <Component referenceEl={ref} />}
-              />
+            <Route
+              key={i}
+              exact
+              path={path}
+              component={() => <Component referenceEl={ref} />}
+            />
             // </Suspense>
           )
         })}

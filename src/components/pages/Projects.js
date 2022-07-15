@@ -72,8 +72,8 @@ const Projects = ({ referenceEl }) => {
         <div className='projects__data--container'>
           <div className='projects__carousel--container'>
             <Carousel {...carouselProps}>
-              {projectsData[currentProjectSelected].images.map((image) => (
-                <img alt='' src={image} />
+              {projectsData[currentProjectSelected].images.map((image, i) => (
+                <img key={i} alt='' src={image} />
               ))}
             </Carousel>
           </div>
