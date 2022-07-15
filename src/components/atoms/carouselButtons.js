@@ -12,8 +12,7 @@ const arrowStyles = {
   cursor: 'pointer',
   border: '2px solid black',
   borderRadius: '50%',
-  background: 'linear-gradient(145deg, #d6d6d6, #afb5bd)',
-  opacity: 0.75,
+  background: 'linear-gradient(145deg, rgba(214, 214, 214, 0.75), rgba(175, 181, 189, 0.75))',
 }
 
 const rotate = {
@@ -22,10 +21,11 @@ const rotate = {
 }
 
 const indicatorStyles = {
-  background: 'rgba(0,0,0,0)',
-  border: '1px solid black',
-  width: 10,
-  height: 10,
+  zIndex: 1,
+  background: 'linear-gradient(145deg, rgba(214, 214, 214, 0.75), rgba(175, 181, 189, 0.75))',
+  border: '2px solid black',
+  width: 15,
+  height: 15,
   borderRadius: '50%',
   display: 'inline-block',
   margin: '0 8px',
@@ -61,7 +61,7 @@ export const Indicator = (onClickHandler, isSelected, index, label) => {
     return (
       <li
         style={{ ...indicatorStyles, background: '#DC143C' }}
-        // className='projects__carousel--indicator-button'
+        className='projects__carousel--indicator-button'
         aria-label={`Selected: ${label} ${index + 1}`}
         title={`Selected: ${label} ${index + 1}`}
       />
@@ -70,7 +70,7 @@ export const Indicator = (onClickHandler, isSelected, index, label) => {
   return (
     <li
       style={indicatorStyles}
-      // className='projects__carousel--indicator-button'
+      className='projects__carousel--indicator-button'
       onClick={onClickHandler}
       onKeyDown={onClickHandler}
       value={index}

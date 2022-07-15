@@ -1,9 +1,8 @@
 import React, { Fragment, useState } from 'react'
 import { projectsData } from '../../utils/data/projects'
 import { DropdownGlassmorphism } from '../molecules/Input/Dropdown'
-import { Carousel } from 'react-responsive-carousel'
-import { ArrowNext, ArrowPrev, Indicator, NavToTop } from '../atoms'
-import { ProjectCard } from '../molecules/Card'
+import { NavToTop } from '../atoms'
+import { ProjectCard, CarouselCard } from '../molecules/Card'
 import { Template } from '../atoms/svg'
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
@@ -13,28 +12,15 @@ const staticCopy = {
   pageHeader: 'My Recent Projects',
   subheading:
     "Here are some projects I've worked on as a professional front-end web-dev",
-  disclaimer: (
-    <span>
-      (Please be aware that many of these projects are still in development with
-      code that is <em>proprietary</em>, and therefore{' '}
-      <span style={{ fontFamily: 'monospace' }}>CLASSIFIED</span>. However, for
-      my non-proprietary words included here, feel free to check out their source
-      and/or code staging site.)
-    </span>
-  ),
-}
-
-const carouselProps = {
-  infiniteLoop: true,
-  stopOnHover: true,
-  showArrows: true,
-  emulateTouch: true,
-  useKeyboardArrows: true,
-  autoPlay: true,
-  showStatus: false,
-  renderArrowPrev: ArrowPrev,
-  renderArrowNext: ArrowNext,
-  renderIndicator: Indicator,
+  // disclaimer: (
+  //   <span className='projects-disclaimer'>
+  //    [NOTE: Please be aware that some of these projects are still in development with
+  //     code that is <em>proprietary</em>, and therefore{' '}
+  //     <span style={{ fontFamily: 'monospace' }}>CLASSIFIED</span>. However, for
+  //     the other works included here, feel free to check out their
+  //     source code and/or staging deployment.]
+  //   </span>
+  // ),
 }
 
 const Projects = ({ referenceEl }) => {
@@ -55,7 +41,7 @@ const Projects = ({ referenceEl }) => {
           />
           <h1>{staticCopy.pageHeader}</h1>
           <h4>{staticCopy.subheading}</h4>
-          {/* <p style={{width: '50%'}}>{staticCopy.disclaimer}</p> */}
+          <p>{staticCopy.disclaimer}</p>
         </div>
 
         <div className='project-selector__container ease-in'>
@@ -71,11 +57,9 @@ const Projects = ({ referenceEl }) => {
 
         <div className='projects__data--container'>
           <div className='projects__carousel--container'>
-            <Carousel {...carouselProps}>
-              {projectsData[currentProjectSelected].images.map((image, i) => (
-                <img key={i} alt='' src={image} />
-              ))}
-            </Carousel>
+            <CarouselCard
+              images={projectsData[currentProjectSelected].images}
+            />
           </div>
           <ProjectCard project={projectsData[currentProjectSelected]} />
         </div>
