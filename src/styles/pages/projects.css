@@ -226,7 +226,8 @@
   }
 
   /* .projects__carousel--arrow-button, */
-  .projects__carousel--indicator-button {
+  .projects__carousel--indicator-button,
+  .projects__carousel--arrow-button-icon {
     display: none !important;
   }
 }

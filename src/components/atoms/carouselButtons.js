@@ -40,7 +40,7 @@ export const ArrowPrev = (onClickHandler, hasPrev, label) =>
       onClick={onClickHandler}
       title={label}
       style={{ ...arrowStyles, left: 15, ...rotate.left }}>
-      <Arrow />
+      <Arrow className='projects__carousel--arrow-button-icon' />
     </button>
   )
 
@@ -52,7 +52,7 @@ export const ArrowNext = (onClickHandler, hasNext, label) =>
       onClick={onClickHandler}
       title={label}
       style={{ ...arrowStyles, right: 15, ...rotate.right }}>
-      <Arrow />
+      <Arrow className='projects__carousel--arrow-button-icon' />
     </button>
   )
 
