@@ -30,7 +30,7 @@ export const bioData = {
   CTAs: [
     <a
       className='fancy-link fancy-bg-blue'
-      href='https://drive.google.com/file/d/1fvTmpX9EZQhtmOdkbj6wFvb7EFDBw03b/view?usp=sharing'
+      href='https://drive.google.com/file/d/1pV1WX7Nq5_XD9x8pre1pyK6xLUHjnVHx/view?usp=sharing'
       target='_blank'
       rel='noopener noreferrer'>
       Download Resume
