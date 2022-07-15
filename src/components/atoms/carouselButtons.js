@@ -13,6 +13,7 @@ const arrowStyles = {
   border: '2px solid black',
   borderRadius: '50%',
   background: 'linear-gradient(145deg, #d6d6d6, #afb5bd)',
+  opacity: 0.75,
 }
 
 const rotate = {
