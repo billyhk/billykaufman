@@ -3,7 +3,7 @@ import Arrow from './svg/Arrow'
 
 const arrowStyles = {
   position: 'absolute',
-  zIndex: 2,
+  zIndex: 1,
   top: 'calc(50% - 15px)',
   width: 30,
   height: 30,
