@@ -80,7 +80,7 @@
   justify-content: center;
   align-items: center;
   column-gap: 1rem;
-  row-gap: 0.25rem;
+  row-gap: 0.5rem;
   width: 100%;
 
   /* -webkit-animation: fadein 1s;
@@ -153,6 +153,10 @@
     inset -2px -2px 10px rgba(0, 0, 0, 0.3);
 }
 
+.projects-disclaimer {
+  color: yellow;
+}
+
 @media only screen and (min-width: 1050px) {
   .project-selector__button {
     min-width: 20rem;
@@ -221,7 +225,7 @@
     font-size: 1rem;
   }
 
-  .projects__carousel--arrow-button,
+  /* .projects__carousel--arrow-button, */
   .projects__carousel--indicator-button {
     display: none !important;
   }

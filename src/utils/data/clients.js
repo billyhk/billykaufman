@@ -2,7 +2,7 @@ import React from 'react'
 import {
   BloombergLogo,
   CrsLogo,
-  DominosLogo,
+  // DominosLogo,
   PharmacareLogo,
   SebpoLogo,
   VerifyLogo,

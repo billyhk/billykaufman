@@ -21,6 +21,7 @@ export { default as CodeBranch } from './CodeBranch'
 export { default as Tasks } from './Tasks'
 export { default as SelectorIcon } from './SelectorIcon'
 export { default as CheckIcon } from './CheckIcon'
+export { default as Arrow } from './Arrow'
 
 // SocialIcons.js
 export { default as GithubIcon } from './GithubIcon'

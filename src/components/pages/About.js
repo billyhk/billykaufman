@@ -5,7 +5,7 @@ import headshot from '../../component-images/picture-of-self.png'
 import '../../styles/pages/about.css'
 
 const SecondarySection = ({ Icon, heading, subheading, body }) => (
-  <div class='about-section'>
+  <div className='about-section'>
     <div className='about-header about__secondary-header'>
       {Icon && Icon}
       <h1>{heading}</h1>
@@ -40,9 +40,13 @@ const About = ({ referenceEl }) => {
                   {bioData.title}
                 </p>
               </div>
-              {bioData.bodyParagraphs.map((el) => el)}
+              {bioData.bodyParagraphs.map((el, i) => (
+                <Fragment key={i}>{el}</Fragment>
+              ))}
               <div className='about__bio-content--buttons-container'>
-                {bioData.CTAs.map((el) => el)}
+                {bioData.CTAs.map((el, i) => (
+                  <Fragment key={i}>{el}</Fragment>
+                ))}
               </div>
             </div>
             <img
@@ -54,7 +58,7 @@ const About = ({ referenceEl }) => {
         </section>
 
         {aboutPageSections.map((section, i) => (
-          <SecondarySection {...section} />
+          <SecondarySection key={i} {...section} />
         ))}
       </main>
     </Fragment>

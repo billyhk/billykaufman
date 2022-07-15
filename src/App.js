@@ -1,4 +1,5 @@
-import React, { Suspense, useRef } from 'react'
+import React, { useRef } from 'react'
+// import { Suspense } from 'react'
 import { Route } from 'react-router-dom'
 import { routes } from './utils/routing'
 import { useScrollToTopOnNav } from './utils/hooks'
@@ -16,15 +17,16 @@ function App() {
       <GradientDefs />
       <NavBar />
       <div className='page-container' ref={ref}>
-        {routes.map((r) => {
+        {routes.map((r, i) => {
           const { Component, path } = r
           return (
             // <Suspense fallback={() => '...'}>
-              <Route
-                exact
-                path={path}
-                component={() => <Component referenceEl={ref} />}
-              />
+            <Route
+              key={i}
+              exact
+              path={path}
+              component={() => <Component referenceEl={ref} />}
+            />
             // </Suspense>
           )
         })}

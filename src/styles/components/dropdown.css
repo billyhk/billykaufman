@@ -31,7 +31,7 @@
 
 .dropdown-glass-selector__menu {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   margin-top: 0.5rem;
   padding: 0rem;
   overflow-y: auto;

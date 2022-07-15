@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 const ProjectCard = ({
   project: { title, client, technologies, description, deployment, sourceCode },
@@ -12,8 +12,8 @@ const ProjectCard = ({
     <div>
       <h4>Technologies:</h4>
       <div>
-        {technologies.map((technology) => (
-          <p>{technology}</p>
+        {technologies.map((technology, i) => (
+          <p key={i}>{technology}</p>
         ))}
       </div>
     </div>
