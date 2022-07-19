@@ -4,7 +4,7 @@ import { ArrowNext, ArrowPrev, Indicator } from '../../atoms'
 
 const carouselProps = {
   infiniteLoop: true,
-  stopOnHover: true,
+  stopOnHover: false,
   showArrows: true,
   emulateTouch: true,
   useKeyboardArrows: true,
