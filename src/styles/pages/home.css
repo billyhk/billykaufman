@@ -27,12 +27,6 @@
   min-width: 65%;
   max-width: 95%;
   margin: 2rem 0;
-
-  -webkit-animation: slideRight 0.5s;
-  -moz-animation: slideRight 0.5s;
-  -ms-animation: slideRight 0.5s;
-  -o-animation: slideRight 0.5s;
-  animation: slideRight 0.5s;
 }
 
 .home-title > .home-title__intro {
