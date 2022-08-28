@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useMemo } from 'react'
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -20,6 +20,8 @@ const staticStyles = {
 }
 
 const Experience = ({ referenceEl }) => {
+  const reverseChronology = useMemo(() => [...experienceData.reverse()] || [], [])
+
   return (
     <Fragment>
       <NavToTop referenceEl={referenceEl} />
@@ -30,50 +32,48 @@ const Experience = ({ referenceEl }) => {
           <p>{staticCopy.subheader}</p>
         </div>
         <VerticalTimeline>
-          {experienceData
-            .reverse()
-            .map(
-              (
-                {
-                  institutionName,
-                  Icon,
-                  iconBackgroundColor,
-                  backgroundColor,
-                  textColor,
-                  Image,
-                  title,
-                  description1,
-                  description2,
-                  dateRange,
-                },
-                i
-              ) => (
-                <VerticalTimelineElement
-                  key={i}
-                  dateClassName='timeline-date'
-                  iconStyle={{ background: iconBackgroundColor }}
-                  date={dateRange}
-                  contentStyle={{
-                    background: backgroundColor,
-                    color: textColor,
-                    ...staticStyles,
-                  }}
-                  contentArrowStyle={{
-                    borderRight: `7px solid ${backgroundColor}`,
-                  }}
-                  icon={Icon}>
-                  <div className='experience-item'>
-                    <div className='experience-description'>
-                      {institutionName && <h2>{institutionName}</h2>}
-                      {Image}
-                      <h1>{title}</h1>
-                      <p>{description1}</p>
-                      {description2 && <p>{description2}</p>}
-                    </div>
+          {reverseChronology.map(
+            (
+              {
+                institutionName,
+                Icon,
+                iconBackgroundColor,
+                backgroundColor,
+                textColor,
+                Image,
+                title,
+                description1,
+                description2,
+                dateRange,
+              },
+              i
+            ) => (
+              <VerticalTimelineElement
+                key={i}
+                dateClassName='timeline-date'
+                iconStyle={{ background: iconBackgroundColor }}
+                date={dateRange}
+                contentStyle={{
+                  background: backgroundColor,
+                  color: textColor,
+                  ...staticStyles,
+                }}
+                contentArrowStyle={{
+                  borderRight: `7px solid ${backgroundColor}`,
+                }}
+                icon={Icon}>
+                <div className='experience-item'>
+                  <div className='experience-description'>
+                    {institutionName && <h2>{institutionName}</h2>}
+                    {Image}
+                    <h1>{title}</h1>
+                    <p>{description1}</p>
+                    {description2 && <p>{description2}</p>}
                   </div>
-                </VerticalTimelineElement>
-              )
-            )}
+                </div>
+              </VerticalTimelineElement>
+            )
+          )}
           {/* <VerticalTimelineElement
             iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
           /> */}
