@@ -171,6 +171,14 @@ a:hover {
   animation: slideLeft 0.5s;
 }
 
+.animate-rotate-90-25 {
+  -webkit-animation: rotate_90_25 1.5s;
+  -moz-animation: rotate_90_25 1.5s;
+  -ms-animation: rotate_90_25 1.5s;
+  -o-animation: rotate_90_25 1.5s;
+  animation: rotate_90_25 1.5s;
+}
+
 /* ANIMATIONS */
 
 @keyframes pulse {
@@ -462,7 +470,7 @@ a:hover {
 
 /* END SLIDELEFT */
 
-/* ROTATE */
+/* SPIN */
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -508,4 +516,54 @@ a:hover {
   }
 }
 
-/* END ROTATE */
+/* END SPIN */
+
+/* ROTATE 90-25 */
+@keyframes rotate_90_25 {
+  0% {
+    opacity: 0.25;
+    transform: rotate(90deg);
+  }
+  100% {
+    opacity: 0.9;
+    transform: rotate(25deg);
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes rotate_90_25 {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(25deg);
+  }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes rotate_90_25 {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(25deg);
+  }
+}
+/* Internet Explorer */
+@-ms-keyframes rotate_90_25 {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(25deg);
+  }
+}
+/* Opera < 12.1 */
+@-o-keyframes rotate_90_25 {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(25deg);
+  }
+}
+
+/* END ROTATE 90-25 */

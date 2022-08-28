@@ -36,7 +36,8 @@ const Projects = ({ referenceEl }) => {
         <div className='projects-header'>
           <Template
             width={100}
-            color='rgba(93, 0, 137, 1)'
+            color='rgb(93, 0, 137)'
+            className='animate-rotate-90-25'
             style={{ transform: 'rotate(25deg)' }}
           />
           <h1>{staticCopy.pageHeader}</h1>
@@ -55,7 +56,7 @@ const Projects = ({ referenceEl }) => {
           />
         </div>
 
-        <div className='projects__data--container animate-fade-in'>
+        <div className='projects__data--container'>
           <div className='projects__carousel--container'>
             <CarouselCard
               images={projectsData[currentProjectSelected].images}
