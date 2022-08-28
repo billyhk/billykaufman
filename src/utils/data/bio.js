@@ -1,4 +1,5 @@
 import React from 'react'
+import { REMOTE_ASSETS } from './remoteAssets'
 
 export const bioData = {
   name: 'Billy Kaufman',
@@ -30,7 +31,7 @@ export const bioData = {
   CTAs: [
     <a
       className='fancy-link fancy-bg-blue'
-      href='https://drive.google.com/file/d/1pV1WX7Nq5_XD9x8pre1pyK6xLUHjnVHx/view?usp=sharing'
+      href={REMOTE_ASSETS.resume}
       target='_blank'
       rel='noopener noreferrer'>
       Download Resume

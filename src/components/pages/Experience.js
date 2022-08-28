@@ -1,4 +1,4 @@
-import React, { Fragment, useMemo } from 'react'
+import React, { Fragment } from 'react'
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -20,8 +20,6 @@ const staticStyles = {
 }
 
 const Experience = ({ referenceEl }) => {
-  const reverseChronology = useMemo(() => [...experienceData.reverse()] || [], [])
-
   return (
     <Fragment>
       <NavToTop referenceEl={referenceEl} />
@@ -32,7 +30,7 @@ const Experience = ({ referenceEl }) => {
           <p>{staticCopy.subheader}</p>
         </div>
         <VerticalTimeline>
-          {reverseChronology.map(
+          {experienceData.map(
             (
               {
                 institutionName,
