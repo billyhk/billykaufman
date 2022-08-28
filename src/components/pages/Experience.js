@@ -31,7 +31,6 @@ const Experience = ({ referenceEl }) => {
         </div>
         <VerticalTimeline>
           {experienceData
-            .reverse()
             .map(
               (
                 {
