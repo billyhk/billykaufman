@@ -44,7 +44,7 @@ const Projects = ({ referenceEl }) => {
           <p>{staticCopy.disclaimer}</p>
         </div>
 
-        <div className='project-selector__container ease-in'>
+        <div className='project-selector__container animate-fade-in-rise'>
           <h1>Select a Project:</h1>
           <DropdownGlassmorphism
             value={currentProjectSelected}
@@ -55,7 +55,7 @@ const Projects = ({ referenceEl }) => {
           />
         </div>
 
-        <div className='projects__data--container'>
+        <div className='projects__data--container animate-fade-in'>
           <div className='projects__carousel--container'>
             <CarouselCard
               images={projectsData[currentProjectSelected].images}

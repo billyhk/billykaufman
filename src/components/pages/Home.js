@@ -10,7 +10,7 @@ const staticCopy = {
 
 const Home = () => (
   <main className='home-main'>
-    <div className='home-title'>
+    <div className='home-title animate-slide-right'>
       <p className='home-title__intro'>{staticCopy.intro}</p>
       <p className='home-title__name'>{staticCopy.name}</p>
       <p className='home-title__title'>{staticCopy.title}</p>
