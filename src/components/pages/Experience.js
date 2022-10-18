@@ -64,7 +64,7 @@ const Experience = ({ referenceEl }) => {
                   <div className='experience-description'>
                     {institutionName && <h2>{institutionName}</h2>}
                     {Image}
-                    <h1>{title}</h1>
+                    <h1>{title}{i === 0 && '(current position)'}</h1>
                     <p>{description1}</p>
                     {description2 && <p>{description2}</p>}
                   </div>

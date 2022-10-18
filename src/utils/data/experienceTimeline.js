@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import { Bookmarklet } from '../../components/atoms/svg'
+import concertivLogo from '../../component-images/concertiv-logo.png'
 import ruckusLogoSvg from '../../component-images/ruckusLogoSvg.svg'
 import gretrixLogo2 from '../../component-images/gx-logo.png'
 import gretrixLogo3 from '../../component-images/Gx_Logo_Horz.svg'
@@ -28,6 +29,35 @@ export const experienceData = [
   //   dateRange: `${new Date().getFullYear()} and beyond!`,
   // },
   {
+    institutionName: 'Concertiv',
+    Icon: (
+      <span
+        style={{
+          display: 'grid',
+          placeItems: 'center',
+          height: '100%',
+          color: '#fff',
+          fontWeight: '600',
+          fontSize: '1.5rem',
+        }}>
+        <div>
+          <span>C</span>
+          <span style={{ color: '#d79760' }}>V</span>
+        </div>
+      </span>
+    ),
+    iconBackgroundColor: '#172a3f',
+    backgroundColor: '#d79760',
+    // textColor: '#fff',
+    Image: <img alt='' src={concertivLogo} />,
+    title: 'Software Engineer',
+    description1:
+      'B2B software company offering procurement-as-a-service, resulting in massive savings for corporate clients on market data, technology infrastructure, insurance, and travel.',
+    description2:
+      "As a member of the engineering team, my work contributes to the development of the company's internal platform, which is central to the management of client services.",
+    dateRange: 'Oct 2022 - Present',
+  },
+  {
     institutionName: 'Ruckus Marketing',
     Icon: (
       <svg viewBox='0 0 68 63.783'>
@@ -43,9 +73,9 @@ export const experienceData = [
     backgroundColor: '#ffbd00',
     textColor: '',
     Image: <img alt='' src={ruckusLogoSvg} className='logo-padding' />,
-    title: 'Front-End Software Engineer (current position)',
+    title: 'Front-End Software Engineer',
     description1:
-      'NYC-based agency that is contracted to deliiver web applications developed with React, Wordpress, and Shopify. We handle a variety of projects from the e-commerce space to those that are purely informational.',
+      'NYC-based agency that is contracted to deliver web applications developed with React, Wordpress, and Shopify. We handle a variety of projects from the e-commerce space to those that are purely informational.',
     description2:
       'I work closely with project managers, backend developers, and our internal design team to produce modern web applications with React that are as pleasant to use as they are aesthetically captivating.',
     dateRange: 'Oct 2021 - Present',
@@ -72,7 +102,7 @@ export const experienceData = [
         <img alt='' src={lookFarLogoCrop} className='responsiveImgSm' />
       </Fragment>
     ),
-    title: 'React / TypeScript Developer',
+    title: 'React/TypeScript Developer',
     description1:
       'I was contracted by Look Far Labs (LFL) to build the front-end of a two-way purchasing agent with ReactJS and TypeScript. ',
     description2: (
@@ -137,7 +167,7 @@ export const experienceData = [
         <img alt='' src={gaLogoCrop} className='responsiveImgSm logo-padding' />
       </Fragment>
     ),
-    title: 'Full Stack Software Engineering Bootcamp (remote)',
+    title: 'Full-Stack Software Engineering Bootcamp (remote)',
     description1:
       'Full-time, fully-emersive education in the skills required to be a pro software engineer.',
     description2: (
