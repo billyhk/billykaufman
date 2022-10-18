@@ -48,7 +48,6 @@ export const experienceData = [
     ),
     iconBackgroundColor: '#172a3f',
     backgroundColor: '#d79760',
-    // textColor: '#fff',
     Image: <img alt='' src={concertivLogo} />,
     title: 'Software Engineer',
     description1:
