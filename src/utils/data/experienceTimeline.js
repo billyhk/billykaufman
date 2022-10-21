@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import { Bookmarklet } from '../../components/atoms/svg'
 import concertivLogo from '../../component-images/concertiv-logo.png'
+import concertivLogoSm from '../../component-images/concertiv-logo-sm.png'
 import ruckusLogoSvg from '../../component-images/ruckusLogoSvg.svg'
 import gretrixLogo2 from '../../component-images/gx-logo.png'
 import gretrixLogo3 from '../../component-images/Gx_Logo_Horz.svg'
@@ -31,22 +32,16 @@ export const experienceData = [
   {
     institutionName: 'Concertiv',
     Icon: (
-      <span
+      <img
         style={{
-          display: 'grid',
-          placeItems: 'center',
-          height: '100%',
-          color: '#fff',
-          fontWeight: '600',
-          fontSize: '1.5rem',
-        }}>
-        <div>
-          <span>C</span>
-          <span style={{ color: '#d79760' }}>V</span>
-        </div>
-      </span>
+          borderRadius: '50%',
+        }}
+        alt=''
+        src={concertivLogoSm}
+        width='100%'
+      />
     ),
-    iconBackgroundColor: '#172a3f',
+    iconBackgroundColor: '#fff',
     backgroundColor: '#d79760',
     Image: <img alt='' src={concertivLogo} />,
     title: 'Software Engineer',
