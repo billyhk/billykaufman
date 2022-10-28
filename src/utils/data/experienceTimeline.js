@@ -72,7 +72,7 @@ export const experienceData = [
       'NYC-based agency that is contracted to deliver web applications developed with React, Wordpress, and Shopify. We handle a variety of projects from the e-commerce space to those that are purely informational.',
     description2:
       'I work closely with project managers, backend developers, and our internal design team to produce modern web applications with React that are as pleasant to use as they are aesthetically captivating.',
-    dateRange: 'Oct 2021 - Present',
+    dateRange: 'Oct 2021 - Oct 2022',
   },
   {
     institutionName: 'Look Far Labs',
