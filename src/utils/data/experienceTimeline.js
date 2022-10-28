@@ -69,9 +69,9 @@ export const experienceData = [
     Image: <img alt='' src={ruckusLogoSvg} className='logo-padding' />,
     title: 'Front-End Software Engineer',
     description1:
-      'NYC-based agency that is contracted to deliver web applications developed with React, Wordpress, and Shopify. We handle a variety of projects from the e-commerce space to those that are purely informational.',
+      'NYC-based business-facing agency that delivers web applications developed with React, Wordpress, and Shopify across a variety of industries.',
     description2:
-      'I work closely with project managers, backend developers, and our internal design team to produce modern web applications with React that are as pleasant to use as they are aesthetically captivating.',
+      'I worked closely with project managers, backend developers, and an internal design team to produce modern web apps with React that are as pleasant to use as they are aesthetically captivating.',
     dateRange: 'Oct 2021 - Oct 2022',
   },
   {
@@ -98,10 +98,10 @@ export const experienceData = [
     ),
     title: 'React/TypeScript Developer',
     description1:
-      'I was contracted by Look Far Labs (LFL) to build the front-end of a two-way purchasing agent with ReactJS and TypeScript. ',
+      'I was contracted by Look Far Labs (LFL) to build the front-end of a two-way purchasing agent with ReactJS and TypeScript.',
     description2: (
       <span>
-        This web app was called <em>The Collective</em> -- a newtwork of users
+        Our web app, called <em>The Collective</em>, empowers a newtwork of users
         who can post and/or rent instruments of construction. Excavators,
         Backhoes, Hydraulic Drills. If you can name it, it can be posted and
         requisitioned.
