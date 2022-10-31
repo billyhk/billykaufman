@@ -75,7 +75,7 @@ export const experienceData = [
     dateRange: 'Oct 2021 - Oct 2022',
   },
   {
-    institutionName: 'Look Far Labs',
+    institutionName: 'LookFar Labs',
     Icon: (
       <img
         style={{
@@ -98,7 +98,7 @@ export const experienceData = [
     ),
     title: 'React/TypeScript Developer',
     description1:
-      'I was contracted by Look Far Labs (LFL) to build the front-end of a two-way purchasing agent with ReactJS and TypeScript.',
+      'I was contracted by LookFar to build the front-end of a two-way purchasing agent with ReactJS and TypeScript.',
     description2: (
       <span>
         Our web app, called <em>The Collective</em>, empowers a newtwork of users

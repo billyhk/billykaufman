@@ -1,5 +1,5 @@
 export const REMOTE_ASSETS = {
   resume:
-    'https://drive.google.com/file/d/18d6_chvv2gb6XwtpS2Vk8xvuE-MT-jux/view?usp=sharing',
+    'https://drive.google.com/file/d/1Gl9fkJR0UugvL8acKgA_ftzqC2AOLUpq/view?usp=share_link',
   projects: {},
 }
