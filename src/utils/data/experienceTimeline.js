@@ -46,7 +46,7 @@ export const experienceData = [
     Image: <img alt='' src={concertivLogo} />,
     title: 'Software Engineer',
     description1:
-      'B2B software company offering procurement-as-a-service, resulting in massive savings for corporate clients on market data, technology infrastructure, insurance, and travel.',
+      'B2B software company offering Procurement as a service, resulting in massive savings for corporate clients on market data, technology infrastructure, insurance, and travel.',
     description2:
       "As a member of the engineering team, my work contributes to the development of the company's internal platform, which is central to the management of client services.",
     dateRange: 'Oct 2022 - Present',
@@ -101,7 +101,7 @@ export const experienceData = [
       'I was contracted by LookFar to build the front-end of a two-way purchasing agent with ReactJS and TypeScript.',
     description2: (
       <span>
-        Our web app, called <em>The Collective</em>, empowers a newtwork of users
+        Our web app, called <em>The Collective</em>, empowers a network of users
         who can post and/or rent instruments of construction. Excavators,
         Backhoes, Hydraulic Drills. If you can name it, it can be posted and
         requisitioned.
@@ -130,7 +130,7 @@ export const experienceData = [
     description1:
       'Agency based in Atlanta that handles various web-development business needs, from troubleshooting web-app performance issues, to making custom e-commerce solutions with Shopify and Wordpress, to tracking user behavior with Google Tag Manager.',
     description2:
-      'As a front-end dev, I was responsible for a significant volume of JavaScript development, such as implementing complex animations, integrating CRMs with form-based webpages, and custom tag-management. Some of my JavaScript tags are currently in production for large-scale clients, such as Johnson & Johnson, Chrysler, and Key Bank.',
+      'As a front-end dev, I was responsible for a significant volume of JavaScript development, such as implementing complex animations, integrating CRMs with form-based webpages, and custom tag-management. Some of my JavaScript tags are currently in production with enterprise clients, such as as Johnson & Johnson, Chrysler, and Key Bank.',
     dateRange: 'Feb 2021 - Oct 2021',
   },
   {
