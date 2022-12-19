@@ -8,7 +8,7 @@ export const bioData = {
     <p>
       Experienced software engineer specializing in front-end development.
       Skilled in TypeScript (React-based frameworks), object-oriented software
-      design patterns, Headless CMS, and integrating Application Programming
+      design patterns, and integrating Application Programming
       Interfaces.
     </p>,
     <p>
@@ -24,8 +24,7 @@ export const bioData = {
       .
     </p>,
     <p>
-      My favorite f/e stack: React, Context, Tailwind, Formik, Axios, and
-      deployment with Amazon Web Services.
+      My favorite f/e stack: React, Tailwind, HeadlessUI, Formik, React Query, React Table, and deployment solutions with Amazon Web Services.
     </p>,
   ],
   CTAs: [

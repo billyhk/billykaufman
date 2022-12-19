@@ -6,7 +6,6 @@ import '../../styles/pages/about.css'
 import cn from 'classnames'
 
 import { useInView } from 'react-intersection-observer'
-import { useRef, useCallback } from 'react'
 
 const inViewOptions = {
   threshold: 0,
@@ -24,7 +23,9 @@ const SecondarySection = ({ Icon, heading, subheading, body }) => {
         <h1>{heading}</h1>
         <h4>{subheading}</h4>
       </div>
-      <div ref={ref} className={cn(inView ? 'animate-fade-in-rise' : 'opacity-0')}>
+      <div
+        ref={ref}
+        className={cn(inView ? 'animate-fade-in-rise' : 'opacity-0')}>
         {body}
       </div>
     </div>
@@ -46,8 +47,7 @@ const About = ({ referenceEl }) => {
             <h1>{staticCopy.pageHeader}</h1>
             <h4>{staticCopy.subheader}</h4>
           </div>
-          <div
-            className='about__bio-content-container animate-fade-in-rise'>
+          <div className='about__bio-content-container animate-fade-in-rise'>
             <div className='about__bio-content-text'>
               <div className='about__bio-content-text--header'>
                 <p className='about__bio-content-text--header-name'>
