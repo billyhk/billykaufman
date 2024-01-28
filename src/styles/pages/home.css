@@ -15,7 +15,7 @@
   border-radius: 2rem;
   padding: 4% 2%;
   cursor: default;
-    
+
   background: rgba(0, 16, 78, 0.75);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(5.5px);
@@ -29,6 +29,10 @@
   margin: 2rem 0;
 }
 
+.home-title > h1 {
+  font-weight: 400;
+}
+
 .home-title > .home-title__intro {
   color: rgb(106, 198, 252);
   font-size: 2rem;
@@ -36,10 +40,31 @@
 
 .home-title > .home-title__name {
   font-size: 5rem;
-
-  color: #fd23de;
-  border-bottom: 4px solid #fd23de;
+  font-weight: 600;
   margin-bottom: 1rem;
+  position: relative;
+  color: transparent; /* Hide the original text color */
+
+  /* Gradient for border */
+  border-bottom: 4px solid;
+  background-image: linear-gradient(to right, #fd23de, #23fdde);
+  background-repeat: no-repeat;
+  background-size: 100% 4px;
+  background-position: bottom;
+}
+
+.home-title > .home-title__name::before {
+  content: attr(data-text); /* Use an attribute to duplicate the text */
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #fd23de, #23fdde);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Hide the text color, show only the gradient */
+  pointer-events: none;
 }
 
 .home-title > .home-title__title {

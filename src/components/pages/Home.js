@@ -27,9 +27,11 @@ const Home = () => {
       className='home-main'
       style={{ backgroundImage: `url(${BACKGROUND_IMAGE_URL})` }}>
       <div className='home-title animate-slide-right'>
-        <p className='home-title__intro'>{staticCopy.intro}</p>
-        <p className='home-title__name'>{staticCopy.name}</p>
-        <p className='home-title__title'>{staticCopy.title}</p>
+        <h1 className='home-title__intro'>{staticCopy.intro}</h1>
+        <h1 className='home-title__name' data-text={staticCopy.name}>
+          {staticCopy.name}
+        </h1>
+        <h1 className='home-title__title'>{staticCopy.title}</h1>
         <div className='home__social--container'>
           {socialIcons.map((el, i) => (
             <a
