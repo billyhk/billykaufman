@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import { routes } from '../../utils/routing'
-import { useClickOutside } from '../../utils/hooks'
-import { Spin as Hamburger } from 'hamburger-react'
-import { socialIcons } from '../../utils/socialIcons'
 import '../../styles/components/navigation.css'
 
-const NavBar = () => {
+import React, { useState } from 'react'
+
+import { Spin as Hamburger } from 'hamburger-react'
+import { NavLink } from 'react-router-dom'
+import { routes } from '../../utils/routing'
+import { socialIcons } from '../../utils/socialIcons'
+import { useClickOutside } from '../../utils/hooks'
+
+const NavBar = ({ pageContainerRef }) => {
   const [open, setOpen] = useState(false)
   const toggleSide = () => {
     setOpen(!open)
@@ -14,7 +16,20 @@ const NavBar = () => {
   const closeNav = () => {
     if (open) setOpen(false)
   }
+
   const ref = useClickOutside(closeNav)
+
+  const handleMouseEnterMobileMenu = () => {
+    if (pageContainerRef.current) {
+      pageContainerRef.current.style.overflow = 'hidden'
+    }
+  }
+
+  const handleMouseLeaveMobileMenu = () => {
+    if (pageContainerRef.current) {
+      pageContainerRef.current.style.overflow = 'auto'
+    }
+  }
 
   const linkElements = routes.map((r, i) => (
     <NavLink
@@ -26,6 +41,7 @@ const NavBar = () => {
       {r.name}
     </NavLink>
   ))
+
   return (
     <div className='nav-container'>
       {/* Mobile Nav Header */}
@@ -40,7 +56,11 @@ const NavBar = () => {
       </span>
 
       {/* Mobile Nav Menu */}
-      <nav className='side-nav' id={open ? 'open' : 'closed'}>
+      <nav
+        className='side-nav'
+        id={open ? 'open' : 'closed'}
+        onMouseEnter={handleMouseEnterMobileMenu}
+        onMouseLeave={handleMouseLeaveMobileMenu}>
         {/* Mobile Nav Menu */}
         <div className='sidebar-links' ref={ref}>
           {linkElements}

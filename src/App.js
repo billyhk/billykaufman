@@ -1,12 +1,14 @@
+import './index.css'
+import './styles/components/footer.css'
+
 import React, { useRef } from 'react'
+
+import GradientDefs from './utils/GradientDefs'
+import NavBar from './components/Navigation/NavBar'
 // import { Suspense } from 'react'
 import { Route } from 'react-router-dom'
 import { routes } from './utils/routing'
 import { useScrollToTopOnNav } from './utils/hooks'
-import GradientDefs from './utils/GradientDefs'
-import NavBar from './components/Navigation/NavBar'
-import './index.css'
-import './styles/components/footer.css'
 
 function App() {
   const ref = useRef(null)
@@ -15,7 +17,7 @@ function App() {
   return (
     <div className='site-container'>
       <GradientDefs />
-      <NavBar />
+      <NavBar pageContainerRef={ref} />
       <div className='page-container' ref={ref}>
         {routes.map((r, i) => {
           const { Component, path } = r
