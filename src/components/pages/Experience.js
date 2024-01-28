@@ -14,7 +14,7 @@ import { useAssetLoader } from '../../utils/hooks/useAssetLoader'
 
 const staticCopy = {
   pageHeader: 'Experience & Education',
-  subheader: 'Follow my journey into a career in computer science.',
+  subheader: 'Follow my journey into a career in computer science',
 }
 
 const staticStyles = {
