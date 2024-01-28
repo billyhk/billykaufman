@@ -1,12 +1,14 @@
-import React, { Fragment } from 'react'
-import { NavToTop } from '../atoms'
-import { bioData, aboutPageSections } from '../../utils/data'
-import headshot from '../../component-images/picture-of-self.png'
 import '../../styles/pages/about.css'
-import cn from 'classnames'
 
+import React, { Fragment } from 'react'
+import { aboutPageSections, bioData } from '../../utils/data'
+
+import Loader from '../molecules/Loader'
+import { NavToTop } from '../atoms'
+import cn from 'classnames'
+import headshot from '../../component-images/picture-of-self.png'
+import { useAssetLoader } from '../../utils/hooks/useAssetLoader'
 import { useInView } from 'react-intersection-observer'
-import { useRef, useCallback } from 'react'
 
 const inViewOptions = {
   threshold: 0,
@@ -24,7 +26,9 @@ const SecondarySection = ({ Icon, heading, subheading, body }) => {
         <h1>{heading}</h1>
         <h4>{subheading}</h4>
       </div>
-      <div ref={ref} className={cn(inView ? 'animate-fade-in-rise' : 'opacity-0')}>
+      <div
+        ref={ref}
+        className={cn(inView ? 'animate-fade-in-rise' : 'opacity-0')}>
         {body}
       </div>
     </div>
@@ -37,6 +41,12 @@ const staticCopy = {
 }
 
 const About = ({ referenceEl }) => {
+  const showLoader = useAssetLoader([headshot])
+
+  if (showLoader) {
+    return <Loader />
+  }
+
   return (
     <Fragment>
       <NavToTop referenceEl={referenceEl} />
@@ -46,8 +56,7 @@ const About = ({ referenceEl }) => {
             <h1>{staticCopy.pageHeader}</h1>
             <h4>{staticCopy.subheader}</h4>
           </div>
-          <div
-            className='about__bio-content-container animate-fade-in-rise'>
+          <div className='about__bio-content-container animate-fade-in-rise'>
             <div className='about__bio-content-text'>
               <div className='about__bio-content-text--header'>
                 <p className='about__bio-content-text--header-name'>

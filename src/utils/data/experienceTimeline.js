@@ -1,15 +1,16 @@
 import React, { Fragment } from 'react'
+
 import { Bookmarklet } from '../../components/atoms/svg'
 import concertivLogo from '../../component-images/concertiv-logo.png'
 import concertivLogoSm from '../../component-images/concertiv-logo-sm.png'
-import ruckusLogoSvg from '../../component-images/ruckusLogoSvg.svg'
+import gaLogo from '../../component-images/ga-logo-gear.png'
+import gaLogoCrop from '../../component-images/ga-logo-gear-cropped.png'
 import gretrixLogo2 from '../../component-images/gx-logo.png'
 import gretrixLogo3 from '../../component-images/Gx_Logo_Horz.svg'
 import lookFarLogo from '../../component-images/lf-logo-512.png'
 import lookFarLogoCrop from '../../component-images/lf-logo-512-crop.png'
 import lookFarLogoSm from '../../component-images/lfl-logo-sm.png'
-import gaLogo from '../../component-images/ga-logo-gear.png'
-import gaLogoCrop from '../../component-images/ga-logo-gear-cropped.png'
+import ruckusLogoSvg from '../../component-images/ruckusLogoSvg.svg'
 import umLogo from '../../component-images/um-logo.jpg'
 import umLogoLg from '../../component-images/umLogoLg.jpg'
 
@@ -44,6 +45,7 @@ export const experienceData = [
     iconBackgroundColor: '#fff',
     backgroundColor: '#d79760',
     Image: <img alt='' src={concertivLogo} />,
+    imageSources: [concertivLogo],
     title: 'Software Engineer',
     description1:
       'B2B software company offering Procurement as a service, resulting in massive savings for corporate clients on market data, technology infrastructure, insurance, and travel.',
@@ -66,6 +68,7 @@ export const experienceData = [
     iconBackgroundColor: '#ff8300',
     backgroundColor: '#ffbd00',
     textColor: '',
+    imageSources: [ruckusLogoSvg],
     Image: <img alt='' src={ruckusLogoSvg} className='logo-padding' />,
     title: 'Front-End Software Engineer',
     description1:
@@ -76,6 +79,7 @@ export const experienceData = [
   },
   {
     institutionName: 'LookFar Labs',
+    imageSources: [lookFarLogoSm, lookFarLogoCrop],
     Icon: (
       <img
         style={{
@@ -111,6 +115,7 @@ export const experienceData = [
   },
   {
     institutionName: 'Gretrix',
+    imageSources: [gretrixLogo2, gretrixLogo3],
     Icon: (
       <img
         style={{
@@ -149,6 +154,7 @@ export const experienceData = [
   },
   {
     institutionName: 'General Assembly',
+    imageSources: [gaLogoCrop, gaLogo],
     Icon: (
       <img alt='' src={gaLogoCrop} width='100%' className='timeline__ga-icon' />
     ),
@@ -183,6 +189,7 @@ export const experienceData = [
   },
   {
     institutionName: 'University of Miami (FL)',
+    imageSources: [umLogo, umLogoLg],
     Icon: (
       <img alt='' src={umLogo} width='100%' className='timeline__um-icon' />
     ),

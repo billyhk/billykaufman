@@ -1,12 +1,16 @@
+import 'react-vertical-timeline-component/style.min.css'
+import '../../styles/pages/experience.css'
+
 import React, { Fragment } from 'react'
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component'
+
+import Loader from '../molecules/Loader'
 import { NavToTop } from '../atoms'
 import { experienceData } from '../../utils/data'
-import 'react-vertical-timeline-component/style.min.css'
-import '../../styles/pages/experience.css'
+import { useAssetLoader } from '../../utils/hooks/useAssetLoader'
 
 const staticCopy = {
   pageHeader: 'Experience & Education',
@@ -20,6 +24,16 @@ const staticStyles = {
 }
 
 const Experience = ({ referenceEl }) => {
+  const allImages = experienceData.flatMap(
+    ({ imageSources }) => imageSources ?? []
+  )
+
+  const showLoader = useAssetLoader(allImages)
+
+  if (showLoader) {
+    return <Loader />
+  }
+
   return (
     <Fragment>
       <NavToTop referenceEl={referenceEl} />
@@ -44,10 +58,10 @@ const Experience = ({ referenceEl }) => {
                 description2,
                 dateRange,
               },
-              i
+              index
             ) => (
               <VerticalTimelineElement
-                key={i}
+                key={index}
                 dateClassName='timeline-date'
                 iconStyle={{ background: iconBackgroundColor }}
                 date={dateRange}
@@ -64,7 +78,8 @@ const Experience = ({ referenceEl }) => {
                   <div className='experience-description'>
                     {institutionName && <h2>{institutionName}</h2>}
                     {Image}
-                    <h1>{title}{i === 0 && '(current position)'}</h1>
+                    <h1>{title}</h1>
+                    {!index && <h3>[current position]</h3>}
                     <p>{description1}</p>
                     {description2 && <p>{description2}</p>}
                   </div>

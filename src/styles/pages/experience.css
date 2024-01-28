@@ -55,6 +55,12 @@
   font-weight: 800;
 }
 
+.experience-description h3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
 .experience-item img {
   max-width: 300px;
   max-height: 300px;
