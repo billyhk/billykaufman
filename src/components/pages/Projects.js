@@ -1,12 +1,15 @@
-import React, { Fragment, useState } from 'react'
-import { projectsData } from '../../utils/data/projects'
-import { DropdownGlassmorphism } from '../molecules/Input/Dropdown'
-import { NavToTop } from '../atoms'
-import { ProjectCard, CarouselCard } from '../molecules/Card'
-import { Template } from '../atoms/svg'
-
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import '../../styles/pages/projects.css'
+
+import { CarouselCard, ProjectCard } from '../molecules/Card'
+import React, { Fragment, useState } from 'react'
+
+import { DropdownGlassmorphism } from '../molecules/Input/Dropdown'
+import Loader from '../molecules/Loader'
+import { NavToTop } from '../atoms'
+import { Template } from '../atoms/svg'
+import { projectsData } from '../../utils/data/projects'
+import { useAssetLoader } from '../../utils/hooks/useAssetLoader'
 
 const staticCopy = {
   pageHeader: 'My Recent Projects',
@@ -24,9 +27,17 @@ const staticCopy = {
 }
 
 const Projects = ({ referenceEl }) => {
+  const defaultProjectSelected = Object.keys(projectsData)[0]
+
   const [currentProjectSelected, setCurrentProjectSelected] = useState(
-    Object.keys(projectsData)[0]
+    defaultProjectSelected
   )
+
+  const showLoader = useAssetLoader(projectsData[defaultProjectSelected].images)
+
+  if (showLoader) {
+    return <Loader />
+  }
 
   return (
     <Fragment>

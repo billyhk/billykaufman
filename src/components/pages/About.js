@@ -1,10 +1,13 @@
-import React, { Fragment } from 'react'
-import { NavToTop } from '../atoms'
-import { bioData, aboutPageSections } from '../../utils/data'
-import headshot from '../../component-images/picture-of-self.png'
 import '../../styles/pages/about.css'
-import cn from 'classnames'
 
+import React, { Fragment } from 'react'
+import { aboutPageSections, bioData } from '../../utils/data'
+
+import Loader from '../molecules/Loader'
+import { NavToTop } from '../atoms'
+import cn from 'classnames'
+import headshot from '../../component-images/picture-of-self.png'
+import { useAssetLoader } from '../../utils/hooks/useAssetLoader'
 import { useInView } from 'react-intersection-observer'
 
 const inViewOptions = {
@@ -38,6 +41,12 @@ const staticCopy = {
 }
 
 const About = ({ referenceEl }) => {
+  const showLoader = useAssetLoader([headshot])
+
+  if (showLoader) {
+    return <Loader />
+  }
+
   return (
     <Fragment>
       <NavToTop referenceEl={referenceEl} />
