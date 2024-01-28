@@ -1,6 +1,6 @@
 import '../../styles/components/navigation.css'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { Spin as Hamburger } from 'hamburger-react'
 import { NavLink } from 'react-router-dom'
@@ -19,17 +19,15 @@ const NavBar = ({ pageContainerRef }) => {
 
   const ref = useClickOutside(closeNav)
 
-  const handleMouseEnterMobileMenu = () => {
+  useEffect(() => {
     if (pageContainerRef.current) {
-      pageContainerRef.current.style.overflow = 'hidden'
+      if (open) {
+        pageContainerRef.current.style.overflow = 'hidden'
+      } else {
+        pageContainerRef.current.style.overflow = 'auto'
+      }
     }
-  }
-
-  const handleMouseLeaveMobileMenu = () => {
-    if (pageContainerRef.current) {
-      pageContainerRef.current.style.overflow = 'auto'
-    }
-  }
+  }, [open, pageContainerRef])
 
   const linkElements = routes.map((r, i) => (
     <NavLink
@@ -56,11 +54,7 @@ const NavBar = ({ pageContainerRef }) => {
       </span>
 
       {/* Mobile Nav Menu */}
-      <nav
-        className='side-nav'
-        id={open ? 'open' : 'closed'}
-        onMouseEnter={handleMouseEnterMobileMenu}
-        onMouseLeave={handleMouseLeaveMobileMenu}>
+      <nav className='side-nav' id={open ? 'open' : 'closed'}>
         {/* Mobile Nav Menu */}
         <div className='sidebar-links' ref={ref}>
           {linkElements}
