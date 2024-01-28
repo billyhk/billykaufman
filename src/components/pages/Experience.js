@@ -58,10 +58,10 @@ const Experience = ({ referenceEl }) => {
                 description2,
                 dateRange,
               },
-              i
+              index
             ) => (
               <VerticalTimelineElement
-                key={i}
+                key={index}
                 dateClassName='timeline-date'
                 iconStyle={{ background: iconBackgroundColor }}
                 date={dateRange}
@@ -78,10 +78,8 @@ const Experience = ({ referenceEl }) => {
                   <div className='experience-description'>
                     {institutionName && <h2>{institutionName}</h2>}
                     {Image}
-                    <h1>
-                      {title}
-                      {i === 0 && '(current position)'}
-                    </h1>
+                    <h1>{title}</h1>
+                    {!index && <h3>[current position]</h3>}
                     <p>{description1}</p>
                     {description2 && <p>{description2}</p>}
                   </div>
