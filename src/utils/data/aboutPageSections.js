@@ -1,14 +1,33 @@
-import React from 'react'
-import { HandsHelping, ReactLogo, Tools } from '../../components/atoms/svg'
-import { ToolsLineItem } from '../../components/molecules'
-import { ClientCard, SkillsCard } from '../../components/molecules/Card'
-import { skillsData } from './skills'
-import { toolsData } from './tools'
-import { clientsData } from './clients'
-
 import '../../styles/components/skills.css'
 import '../../styles/components/tools.css'
 import '../../styles/components/clients.css'
+
+import { ClientCard, SkillsCard } from '../../components/molecules/Card'
+import { HandsHelping, ReactLogo, Tools } from '../../components/atoms/svg'
+import React, { useState } from 'react'
+
+import { ToolsLineItem } from '../../components/molecules'
+import { clientsData } from './clients'
+import { skillsData } from './skills'
+import { toolsData } from './tools'
+
+const ClientCardSection = () => {
+  const [showReverse, setShowReverse] = useState(0)
+
+  return (
+    <div className='clients__container'>
+      {clientsData.map((client, i) => (
+        <ClientCard
+          key={i}
+          showReverse={showReverse}
+          setShowReverse={setShowReverse}
+          index={i}
+          {...client}
+        />
+      ))}
+    </div>
+  )
+}
 
 export const aboutPageSections = [
   {
@@ -50,12 +69,6 @@ export const aboutPageSections = [
         <span style={{ color: '#ccc' }}>(click each to learn more)</span>
       </span>
     ),
-    body: (
-      <div className='clients__container'>
-        {clientsData.map((client, i) => (
-          <ClientCard key={i} {...client} />
-        ))}
-      </div>
-    ),
+    body: <ClientCardSection />,
   },
 ]

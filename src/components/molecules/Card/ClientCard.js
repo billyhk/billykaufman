@@ -1,19 +1,27 @@
-import React, { useState } from 'react'
+import React from 'react'
 import cn from 'classnames'
 
-const ClientCard = ({ Logo, title, description }) => {
-  const [showReverse, setShowReverse] = useState(false)
-  const toggleShowReverse = () => setShowReverse(!showReverse)
+const ClientCard = ({
+  Logo,
+  title,
+  description,
+  showReverse,
+  setShowReverse,
+  index,
+}) => {
+  const toggleShowReverse = () =>
+    setShowReverse(isCardReversed ? undefined : index)
+  const isCardReversed = index === showReverse
 
   return (
     <div
       onClick={toggleShowReverse}
       className={cn(
         'client-card',
-        showReverse && 'client-card__shadow-down',
-        !showReverse && 'client-card__shadow-up'
+        isCardReversed && 'client-card__shadow-down',
+        !isCardReversed && 'client-card__shadow-up'
       )}>
-      {showReverse ? (
+      {isCardReversed ? (
         <div className='client-card__reverse-content-container'>
           <p className='client-card__reverse--title'>{title}</p>
           <p className='client-card__reverse--body'>{description}</p>
