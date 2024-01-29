@@ -18,6 +18,7 @@
     #784ba0 50%,
     #ff3cac 100%
   );
+  overflow-x: hidden;
 }
 
 .experience-header {
