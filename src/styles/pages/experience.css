@@ -18,7 +18,6 @@
     #784ba0 50%,
     #ff3cac 100%
   );
-  overflow-x: hidden;
 }
 
 .experience-header {
@@ -58,7 +57,7 @@
 
 .experience-description h3 {
   font-family: 'Courier New', Courier, monospace;
-  font-weight: 800;
+  font-weight: 400;
   font-size: 1rem;
 }
 

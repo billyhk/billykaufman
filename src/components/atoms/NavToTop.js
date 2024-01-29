@@ -1,5 +1,5 @@
-import React from 'react'
 import { Arrow } from './svg'
+import React from 'react'
 
 export default function NavToTop({ referenceEl }) {
   return (
