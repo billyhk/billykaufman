@@ -12,7 +12,7 @@ import { skillsData } from './skills'
 import { toolsData } from './tools'
 
 const ClientCardSection = () => {
-  const [showReverse, setShowReverse] = useState(0)
+  const [showReverse, setShowReverse] = useState(undefined)
 
   return (
     <div className='clients__container'>

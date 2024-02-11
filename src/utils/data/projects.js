@@ -1,34 +1,9 @@
-// SEBPO
-import sebpo1 from '../../component-images/project-images/sebpo/01 home.png'
-import sebpo2 from '../../component-images/project-images/sebpo/02 services index.png'
-import sebpo3 from '../../component-images/project-images/sebpo/03 our process.png'
-import sebpo4 from '../../component-images/project-images/sebpo/04 case studies.png'
-import sebpo5 from '../../component-images/project-images/sebpo/05 news index.png'
-import sebpo6 from '../../component-images/project-images/sebpo/07 job detail.png'
-import sebpo7 from '../../component-images/project-images/sebpo/06 contact us.png'
-// END SEBPO
-
-// VERIFY
-import verify1 from '../../component-images/project-images/verify/01 home.png'
-import verify2 from '../../component-images/project-images/verify/02 search by img or vid.png'
-import verify3 from '../../component-images/project-images/verify/03 search by name.png'
-import verify4 from '../../component-images/project-images/verify/04 about hero.png'
-import verify5 from '../../component-images/project-images/verify/05 why verify.png'
-import verify6 from '../../component-images/project-images/verify/06 lets connect form.png'
-import verify7 from '../../component-images/project-images/verify/07 terms page.png'
-// END VERIFY
-
-// WESTROCK
-import westrock1 from '../../component-images/project-images/westrock/01 home.png'
-import westrock2 from '../../component-images/project-images/westrock/02 capabilities innovation.png'
-import westrock3 from '../../component-images/project-images/westrock/03 capabilities contact form.png'
-import westrock4 from '../../component-images/project-images/westrock/04 animated card.png'
-import westrock5 from '../../component-images/project-images/westrock/05 svg timeline.png'
-import westrock6 from '../../component-images/project-images/westrock/06 retail.png'
-import westrock7 from '../../component-images/project-images/westrock/07 global.png'
-// import westrock8 from '../../component-images/project-images/westrock/08 mobile nav.png'
-// END WESTROCK
-
+// ARTISTFINDR
+import artistFindr1 from '../../component-images/project-images/artistfindr/01 home.png'
+import artistFindr2 from '../../component-images/project-images/artistfindr/02 auth.png'
+import artistFindr3 from '../../component-images/project-images/artistfindr/03 new releases.png'
+import artistFindr4 from '../../component-images/project-images/artistfindr/04 artist top tracks.png'
+import artistFindr5 from '../../component-images/project-images/artistfindr/05 search and filter.png'
 // THE COLLECTIVE
 import collective1 from '../../component-images/project-images/collective/01 login.png'
 import collective2 from '../../component-images/project-images/collective/02a dashboard.png'
@@ -37,31 +12,50 @@ import collective4 from '../../component-images/project-images/collective/3 user
 import collective5 from '../../component-images/project-images/collective/04a create requisition for placing orders with other vendors.png'
 import collective6 from '../../component-images/project-images/collective/04b requisitions are broken down into orders.png'
 import collective7 from '../../component-images/project-images/collective/04c order-details.png'
-// import collective8 from '../../component-images/project-images/collective/04d send message to selected vendors on an order.png'
-// END THE COLLECTIVE
-
-// ARTISTFINDR
-import artistFindr1 from '../../component-images/project-images/artistfindr/01 home.png'
-import artistFindr2 from '../../component-images/project-images/artistfindr/02 auth.png'
-import artistFindr3 from '../../component-images/project-images/artistfindr/03 new releases.png'
-import artistFindr4 from '../../component-images/project-images/artistfindr/04 artist top tracks.png'
-import artistFindr5 from '../../component-images/project-images/artistfindr/05 search and filter.png'
-// END ARTISTFINDR
-
 // JSPECT
 import jspect1 from '../../component-images/project-images/jspect/jspect-home.png'
 import jspect2 from '../../component-images/project-images/jspect/jspect-works.png'
 import jspect3 from '../../component-images/project-images/jspect/jspect-detail.png'
 import jspect4 from '../../component-images/project-images/jspect/jspect-form.png'
 import jspect5 from '../../component-images/project-images/jspect/jspect-table.png'
-// END JSPECT
+// SEBPO
+import sebpo1 from '../../component-images/project-images/sebpo/01 home.png'
+import sebpo2 from '../../component-images/project-images/sebpo/02 services index.png'
+import sebpo3 from '../../component-images/project-images/sebpo/03 our process.png'
+import sebpo4 from '../../component-images/project-images/sebpo/04 case studies.png'
+import sebpo5 from '../../component-images/project-images/sebpo/05 news index.png'
+import sebpo6 from '../../component-images/project-images/sebpo/07 job detail.png'
+import sebpo7 from '../../component-images/project-images/sebpo/06 contact us.png'
+// VERIFY
+import verify1 from '../../component-images/project-images/verify/01 home.png'
+import verify2 from '../../component-images/project-images/verify/02 search by img or vid.png'
+import verify3 from '../../component-images/project-images/verify/03 search by name.png'
+import verify4 from '../../component-images/project-images/verify/04 about hero.png'
+import verify5 from '../../component-images/project-images/verify/05 why verify.png'
+import verify6 from '../../component-images/project-images/verify/06 lets connect form.png'
+import verify7 from '../../component-images/project-images/verify/07 terms page.png'
+// WESTROCK
+import westrock1 from '../../component-images/project-images/westrock/01 home.png'
+import westrock2 from '../../component-images/project-images/westrock/02 capabilities innovation.png'
+import westrock3 from '../../component-images/project-images/westrock/03 capabilities contact form.png'
+import westrock4 from '../../component-images/project-images/westrock/04 animated card.png'
+import westrock5 from '../../component-images/project-images/westrock/05 svg timeline.png'
+import westrock6 from '../../component-images/project-images/westrock/06 retail.png'
+import westrock7 from '../../component-images/project-images/westrock/07 global.png'
 
 export const projectsData = {
   sebpo: {
     title: 'SEBPO',
     client: 'Sebpo USA',
-    technologies: ['React / Gatsby', 'TailwindCSS', 'GraphQL', 'Wordpress (headless)', 'Dynamic data generation with Wordpress plugins CPT-UI and Advanced Custom Fields (ACFs)' ],
-    description: 'Sebpo is a digital service provider that needed to reflect their technical prowess with a new and improved version of their old, stale, traditional Wordpress build. Gatsby was the perfect framework for this project because it provided seamless data delivery from Wordpress to offer the same content-control the client was used to, but paired with the luster of a fully custom user interface. Sebpo is an award-winning, international agency that requires a platform to showcase posts about their press-releases, case-studies, upcoming events, and job-openings.',
+    technologies: [
+      'React / Gatsby',
+      'TailwindCSS',
+      'GraphQL',
+      'Wordpress (headless)',
+      'Dynamic data generation with Wordpress plugins CPT-UI and Advanced Custom Fields (ACFs)',
+    ],
+    description:
+      'Sebpo is a digital service provider that needed to reflect their technical prowess with a new and improved version of their old, stale, traditional Wordpress build. Gatsby was the perfect framework for this project because it provided seamless data delivery from Wordpress to offer the same content-control the client was used to, but paired with the luster of a fully custom user interface. Sebpo is an award-winning, international agency that requires a platform to showcase posts about their press-releases, case-studies, upcoming events, and job-openings.',
     images: [sebpo1, sebpo2, sebpo3, sebpo4, sebpo5, sebpo6, sebpo7],
   },
   verify: {
@@ -93,7 +87,7 @@ export const projectsData = {
       westrock7,
       // westrock8,
     ],
-    deployment: 'https://westrockcoffee.com/',
+    // deployment: 'https://westrockcoffee.com/',
   },
   the_collective: {
     title: 'The Collective',
@@ -119,7 +113,7 @@ export const projectsData = {
       collective7,
       // collective8,
     ],
-    deployment: 'https://dev.app.buyinghub.org/signin',
+    // deployment: 'https://dev.app.buyinghub.org/signin',
   },
   artist_findr: {
     title: 'Artist Findr',
@@ -143,7 +137,7 @@ export const projectsData = {
       artistFindr4,
       artistFindr5,
     ],
-    deployment: 'https://artist-findr.herokuapp.com',
+    // deployment: 'https://artist-findr.herokuapp.com',
     sourceCode: 'https://github.com/billyhk/ArtistFindr',
   },
   j_spect: {

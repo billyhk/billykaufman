@@ -1,13 +1,13 @@
-import React from 'react'
 import {
   BloombergLogo,
   CrsLogo,
-  // DominosLogo,
   PharmacareLogo,
   SebpoLogo,
   VerifyLogo,
   WestrockLogo,
 } from '../../components/atoms/svg'
+
+import React from 'react'
 
 export const clientsData = [
   {

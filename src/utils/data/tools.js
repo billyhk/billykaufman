@@ -1,5 +1,11 @@
+import {
+  CodeBranch,
+  CodeSlash,
+  SystemIcon,
+  Tasks,
+} from '../../components/atoms/svg'
+
 import React from 'react'
-import { CodeSlash, SystemIcon, CodeBranch, Tasks } from '../../components/atoms/svg'
 
 export const toolsData = [
   {
@@ -20,6 +26,6 @@ export const toolsData = [
   {
     Icon: <Tasks width={25} />,
     title: 'Project Management Software',
-    copy: 'Aha!, Asana, Clickup, Gitlab',
+    copy: 'Jira, Aha!, Asana, Clickup',
   },
 ]
