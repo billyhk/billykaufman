@@ -1,9 +1,9 @@
 // ARTISTFINDR
-import artistFindr1 from "../../component-images/project-images/artistfindr/01 home.png";
-import artistFindr2 from "../../component-images/project-images/artistfindr/02 auth.png";
-import artistFindr3 from "../../component-images/project-images/artistfindr/03 new releases.png";
-import artistFindr4 from "../../component-images/project-images/artistfindr/04 artist top tracks.png";
-import artistFindr5 from "../../component-images/project-images/artistfindr/05 search and filter.png";
+// import artistFindr1 from "../../component-images/project-images/artistfindr/01 home.png";
+// import artistFindr2 from "../../component-images/project-images/artistfindr/02 auth.png";
+// import artistFindr3 from "../../component-images/project-images/artistfindr/03 new releases.png";
+// import artistFindr4 from "../../component-images/project-images/artistfindr/04 artist top tracks.png";
+// import artistFindr5 from "../../component-images/project-images/artistfindr/05 search and filter.png";
 // THE COLLECTIVE
 import collective1 from "../../component-images/project-images/collective/01 login.png";
 import collective2 from "../../component-images/project-images/collective/02a dashboard.png";
@@ -57,31 +57,31 @@ export const projectsData = {
     images: [pageNote1, pageNote2, pageNote3],
     sourceCode: "https://github.com/billyhk/PageNote",
   },
-  artist_findr: {
-    title: "Artist Findr",
-    client: "Personal Project",
-    technologies: [
-      "ReactJS",
-      "TypeScript",
-      "TailwindCSS",
-      "Axios",
-      "SpotifyAPI",
-      "NodeJS (authentication)",
-      "Express",
-      "Spotify-Web-Api-Node",
-    ],
-    description:
-      "This was a personal project to experiment with Spotify API, API throttling, NodeJS, and TailwindCSS. Users must have a Spotify account to use the application. Authenticated users can search for artists, filter by genre, view an artist, their images, and their top tracks.",
-    images: [
-      artistFindr1,
-      artistFindr2,
-      artistFindr3,
-      artistFindr4,
-      artistFindr5,
-    ],
-    // deployment: 'https://artist-findr.herokuapp.com',
-    sourceCode: "https://github.com/billyhk/ArtistFindr",
-  },
+  // artist_findr: {
+  //   title: "Artist Findr",
+  //   client: "Personal Project",
+  //   technologies: [
+  //     "ReactJS",
+  //     "TypeScript",
+  //     "TailwindCSS",
+  //     "Axios",
+  //     "SpotifyAPI",
+  //     "NodeJS (authentication)",
+  //     "Express",
+  //     "Spotify-Web-Api-Node",
+  //   ],
+  //   description:
+  //     "This was a personal project to experiment with Spotify API, API throttling, NodeJS, and TailwindCSS. Users must have a Spotify account to use the application. Authenticated users can search for artists, filter by genre, view an artist, their images, and their top tracks.",
+  //   images: [
+  //     artistFindr1,
+  //     artistFindr2,
+  //     artistFindr3,
+  //     artistFindr4,
+  //     artistFindr5,
+  //   ],
+  //   // deployment: 'https://artist-findr.herokuapp.com',
+  //   sourceCode: "https://github.com/billyhk/ArtistFindr",
+  // },
   sebpo: {
     title: "SEBPO",
     client: "Sebpo USA",
