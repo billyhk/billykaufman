@@ -3,11 +3,9 @@ import '../../styles/components/loader.css'
 
 import Loader from '../molecules/Loader'
 import React from 'react'
+import backgroundImage from '../../component-images/home-background.webp'
 import { socialIcons } from '../../utils/socialIcons'
 import { useAssetLoader } from '../../utils/hooks/useAssetLoader'
-
-const BACKGROUND_IMAGE_URL =
-  'https://d346xxcyottdqx.cloudfront.net/wp-content/uploads/2016/02/Big-data-storage-e1455012396729.jpg'
 
 const staticCopy = {
   intro: "Hi, I'm",
@@ -16,7 +14,7 @@ const staticCopy = {
 }
 
 const Home = () => {
-  const showLoader = useAssetLoader([BACKGROUND_IMAGE_URL])
+  const showLoader = useAssetLoader([backgroundImage])
 
   if (showLoader) {
     return <Loader />
@@ -25,7 +23,9 @@ const Home = () => {
   return (
     <main
       className='home-main'
-      style={{ backgroundImage: `url(${BACKGROUND_IMAGE_URL})` }}>
+      style={{
+        backgroundImage: `linear-gradient(rgba(49, 124, 185, 0.5), rgba(49, 124, 185, 0.5)), url(${backgroundImage})`,
+      }}>
       <div className='home-title animate-slide-right'>
         <h1 className='home-title__intro'>{staticCopy.intro}</h1>
         <h1 className='home-title__name' data-text={staticCopy.name}>
