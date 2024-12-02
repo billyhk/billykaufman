@@ -46,7 +46,7 @@ export const experienceData = [
     backgroundColor: '#d79760',
     Image: <img alt='' src={concertivLogo} />,
     imageSources: [concertivLogo],
-    title: 'Software Engineer',
+    title: 'Senior Software Engineer',
     description1:
       'B2B software company offering Procurement as a service, resulting in massive savings for corporate clients on market data, technology infrastructure, insurance, and travel.',
     description2:
@@ -70,7 +70,7 @@ export const experienceData = [
     textColor: '',
     imageSources: [ruckusLogoSvg],
     Image: <img alt='' src={ruckusLogoSvg} className='logo-padding' />,
-    title: 'Front-End Software Engineer',
+    title: 'Software Engineer',
     description1:
       'NYC-based business-facing agency that delivers web applications developed with React, Wordpress, and Shopify across a variety of industries.',
     description2:

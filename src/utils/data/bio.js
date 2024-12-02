@@ -1,19 +1,18 @@
-import React from 'react'
 import { REMOTE_ASSETS } from './remoteAssets'
+import React from 'react'
 
 export const bioData = {
   name: 'Billy Kaufman',
   title: 'Front-end web engineer in NYC',
   bodyParagraphs: [
     <p>
-      Experienced software engineer specializing in front-end development.
+      Experienced software engineer specializing in full-stack web development.
       Skilled in TypeScript (React-based frameworks), object-oriented software
-      design patterns, and integrating Application Programming
-      Interfaces.
+      design patterns, and integrating APIs.
     </p>,
     <p>
       Strong engineering professional with a full-stack engineering certificate
-      from renowned accelerated education at{' '}
+      from{' '}
       <a
         className='g-a-link'
         href='https://generalassemb.ly/education/software-engineering-immersive-remote'
@@ -24,7 +23,7 @@ export const bioData = {
       .
     </p>,
     <p>
-      My favorite f/e stack: React, Tailwind, HeadlessUI, Formik, React Query, React Table, and deployment solutions with Amazon Web Services.
+      My favorite web stack: TypeScript, React, Python, Django, PostgreSQL, and AWS for cloud.
     </p>,
   ],
   CTAs: [

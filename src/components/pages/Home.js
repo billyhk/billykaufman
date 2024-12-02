@@ -10,7 +10,7 @@ import { useAssetLoader } from '../../utils/hooks/useAssetLoader'
 const staticCopy = {
   intro: "Hi, I'm",
   name: 'Billy Kaufman',
-  title: 'Front-End Software Engineer',
+  title: 'Software Engineer',
 }
 
 const Home = () => {
