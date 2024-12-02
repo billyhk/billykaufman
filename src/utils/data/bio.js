@@ -3,7 +3,7 @@ import React from 'react'
 
 export const bioData = {
   name: 'Billy Kaufman',
-  title: 'Front-end web engineer in NYC',
+  title: 'Full-stack web engineer in NYC',
   bodyParagraphs: [
     <p>
       Experienced software engineer specializing in full-stack web development.
