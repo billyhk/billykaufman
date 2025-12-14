@@ -13,6 +13,8 @@ import lookFarLogoSm from '../../component-images/lfl-logo-sm.png'
 import ruckusLogoSvg from '../../component-images/ruckusLogoSvg.svg'
 import umLogo from '../../component-images/um-logo.jpg'
 import umLogoLg from '../../component-images/umLogoLg.jpg'
+import zapierLogo from '../../component-images/zapier-logo.png'
+import zapierLogoSm from '../../component-images/zapier-logo-sm.png'
 
 export const experienceData = [
   // {
@@ -30,6 +32,30 @@ export const experienceData = [
   //   description2: '',
   //   dateRange: `${new Date().getFullYear()} and beyond!`,
   // },
+  {
+    institutionName: 'Zapier',
+    Icon: (
+      <img
+        style={{
+          borderRadius: '50%',
+          scale: '0.75',
+        }}
+        alt=''
+        src={zapierLogoSm}
+        width='100%'
+      />
+    ),
+    iconBackgroundColor: '#fff',
+    backgroundColor: '#ffbca1ff',
+    Image: <img alt='' src={zapierLogo} />,
+    imageSources: [zapierLogo],
+    title: 'Software Engineer',
+    description1:
+      'Zapier is a no-code automation platform that enables millions of users to connect apps, automate workflows, and build powerful integrations without writing code.',
+    description2:
+      'As a software engineer on the Interfaces team, my work focuses on building and evolving user-facing products such as forms and workflow interfaces, emphasizing usability, scalability, and maintainable front-end architecture while collaborating closely with product and design.',
+    dateRange: 'Dec 2025 - Present',
+  },
   {
     institutionName: 'Concertiv',
     Icon: (
@@ -50,8 +76,8 @@ export const experienceData = [
     description1:
       'B2B software company offering Procurement as a service, resulting in massive savings for corporate clients on market data, technology infrastructure, insurance, and travel.',
     description2:
-      "As a member of the engineering team, my work contributes to the development of the company's internal platform, which is central to the management of client services.",
-    dateRange: 'Oct 2022 - Present',
+      "As a member of the engineering team, my work contributes to the development of the company's internal platform, C360, which is central to the management of client services.",
+    dateRange: 'Oct 2022 - Dec 2025',
   },
   {
     institutionName: 'Ruckus Marketing',
@@ -100,7 +126,7 @@ export const experienceData = [
         <img alt='' src={lookFarLogoCrop} className='responsiveImgSm' />
       </Fragment>
     ),
-    title: 'React/TypeScript Developer',
+    title: 'React Developer (Contractor)',
     description1:
       'I was contracted by LookFar to build the front-end of a two-way purchasing agent with ReactJS and TypeScript.',
     description2: (
